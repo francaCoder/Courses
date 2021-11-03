@@ -1,8 +1,0 @@
-Bash
-Celular
-Computador
-Internet
-Mouse
-Teclado
-Unix
-Zsh
