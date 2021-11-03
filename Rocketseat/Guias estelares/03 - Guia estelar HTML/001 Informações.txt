@@ -1,0 +1,14 @@
+HTML = Hypertext Markup Language
+é uma linguagem de marcação
+
+URL - Define aonde algo está localizado na Web
+
+Podemos também comentar nos seus códigos usando:   <!--  -->
+
+Anatomia de tags
+A maioria de abertura e fechamento, outras apenas abertura, chamados também de elementos vazios.
+<> e </> 
+
+Também temos tags que recebem atributos, como "Img", "Input", etc
+
+Temos caracteres e nomes reservados, se quisermos usar eles no código temos que usar seus respectivos comandos
