@@ -1,0 +1,30 @@
+Árvore DOM
+
+Começa da raiz, chamada de --Window-- (Janela) tudo está dentro de Window
+
+abaixo temos varios outros objetos. ex:
+-Location {
+    Diz a localização do seu site, url, pagina atual/ anterior
+}
+
+-Document {
+    Documento atual
+        - html: - head{ (Head e body são --Child-- de parent --Html--) cabeçalho 
+                    Tags {
+                        meta,title
+                    }
+
+              }
+                - body{ corpo
+                       h1,p,p,div
+                            2ºp {
+                               strong
+                    }
+
+              }  
+
+}
+
+-History {
+    Facilita a nagevação dentro do site, de onde vc veio pra onde vc vai
+}
