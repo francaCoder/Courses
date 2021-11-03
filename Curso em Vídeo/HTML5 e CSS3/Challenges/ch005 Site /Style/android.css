@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: "Android";
+    src: url(../fontes/idroid.otf) format("opentype");
+    font-weight: normal;  
+}
+
+:root{ 
+    /* Vai servir para o arquivo todo */
+    /* vamos usar variáveis dentro de CSS */
+    /* Se o cliente quiser mudar a paleta é só mudar uma vez */
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --font-android: "Android", cursive;
+}
+
+*{ /* O asterísco representa um estilo global em todos os elementos */
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+
+}
+
+header > h1{
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.63);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
+
+}
+
+nav{
+    padding: 10px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.418);
+    background-color: var(--cor2);
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    padding: 20px; /* Espaço interno do conteúdo até a borda */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+}
+
+main  h1{ 
+    /* O caminho "correto" seria "main > article > h1" , mas ainda sim o "main h1" está certo porque quer dizer que H1 é descendente de main, e não um filho direto*/
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-weight: normal;
+
+}
+
+main h2{
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-size: 1.2em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    /* Background gradiente da cor um para o transparente para a direita */
+    text-indent: 8px;
+    
+}
+
+main p{
+    margin: 15px 0 15px 0; /* Ou só 15 0 */
+    text-align: justify;
+    text-indent: 30px; /* Parágrafo */
+    font-size: 1em;
+    line-height: 2em; /* Sem espaço nas linhas */
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
+
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+a.externo::after{
+    content: " \1f517";
+}
+
+main a{ /* Todos os links do main */
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: #83e1ad81;
+    border-radius: 2px;
+    padding: 2px 6px;
+
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main  img{ /* Mesma coisa do caminho, img é filho de article */
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block; /* Uma imagem por padrão ela não é um bloco, então teve que dar um display block */
+    margin: auto;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.479);
+}
+
+aside > ul{
+    list-style-type: "\2714\00a0"; /* NBSP espaço sem quebra, emoji do emojipedia e não é compatível com todos os navegadores */
+    list-style-position: inside; /* Bolinha para o lado de dentro */
+    columns: 2; /* Dividir em 2 colunas */
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /* O negativo é para crescer */
+    border-radius:5px 5px 0px 0px;
+
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
