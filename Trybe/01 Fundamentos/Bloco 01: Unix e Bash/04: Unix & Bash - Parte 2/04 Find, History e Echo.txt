@@ -1,0 +1,43 @@
+Find (Pesquisar em diretórios por arquivos ou outras pastas)
+
+Find . (Todos arquivos e pontos. O ponto é a pasta atua, você tem que dizer a partir de onde começa a busca do find)
+
+O Find pode receber 4 parâmetros:
+name, date, size, type
+
+Find . -name "*.txt" (Listar todos os arquivos que terminam em .txt)
+
+find . -type d (Para localizar todos os diretórios)
+
+find . -type f (Para localizar todos os arquivos)
+
+find ./teste -name exemplo* (Localizar tanto arquivos quanto diretórios que comecem por algum trecho)
+
+find ./teste -type f -name "exemplo*" (# Localizar somente arquivos que comecem por algum trecho)
+
+find ./teste -type d -name "exemplo*" (# Localizar somente diretórios que comecem por algum trecho)
+
+
+
+O `history` é um comando que mostra o histórico de comandos que você executou no terminal. A quantidade ou o tamanho desse _"histórico"_ podem ser configurados para um número arbitrário de comandos ou para ver todo o histórico.
+
+# Mostra o histórico de comandos
+history
+# Pegar os últimos 10 comandos
+history | tail
+History é aonde vai ficar os comandos que você fez, as vezes você esquece algum comando e pode procurar lá, com head -numero ou tail -numero
+
+
+O `echo` é um comando utilizado em scripts ou no terminal para exibir mensagens na tela ou em um arquivo.
+
+echo "Este é um teste"
+# Resultado
+Este é um teste
+
+# Pode ser usado para colocar textos dentro de arquivos.
+echo "Este é mais um teste" > teste.txt
+cat teste.txt
+Este é mais um teste
+Echo só mostra um texto, não faz mais nada. Normalmente vem  acompanhado de Aspas
+
+Echo 'Laranja' > Frutas1.txt (Vai colocar laranja dentro do arquivo)

@@ -1,0 +1,43 @@
+Cat  Recebe valores que o usuário  coloca, e conseguimos manipular ele
+
+cat > cores.txt 
+vermelho
+azul
+verde
+crtl+d
+
+(O sinal de maior quer dizer que nós vamos atribuir valores a um determinado arquivo, e depois que escrevermos podemos dar um enter e adicionar esses valores)
+
+cat cores.txt (Vai mostrar o arquivo já com as cores)
+
+Cat >> cores.txt (Dois maiores eu posso adicionar novos valores)
+amarelo
+laranja
+marrom
+crtl + d
+
+cat cores.txt
+vermelho
+azul
+verde
+amarelo
+laranja
+marrom
+
+cat > frutas.txt
+morango 
+uva
+banana
+
+ls (Vai mostrar os 2 arquivos)
+
+cat cores.txt frutas.txt > tudo.txt (Tudo.txt vai receber os valores dos 2 arquivos anteriores)
+
+sort (Ordem alfabética)
+sort < cores.txt (As cores ficarão ordenadas)
+sort < cores.txt > coresOrdenadas.txt (O novo arquivo de coresOdernadas vai receber as cores do cores.txt, só que ordenadas)
+
+who (Mostra os usuários que tem acesso ao seu terminal)
+| = Pipe (Pode ser utilizado no meio de dois comandos, um servindo de entrada para o outro por meio dele)
+
+who | sort (Pegaria os usuários e ordenaria eles, poderia enviar para um outro arquivo também)

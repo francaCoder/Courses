@@ -1,0 +1,38 @@
+    A gente usa o shell para controlar o kernell, os PCS antigos só tinham 
+    SHELL. Windowns, linux e mac são baseados no SHELL
+    E na terceira camada temos os ultilites - Aplicativos
+
+    Por que usar o terminal? Toda nova linguagem está disponível em primeira mão no SHELL, lá ficam as novidades do meio
+
+    clear limpa o terminal
+    pwd - Mostra aonde nós estamos
+    ls - Lista as pastas que você está no momento 
+    ls - l - Mostra mais detalhes dos arquivos
+    la - a - Mostra os arquivos ocultos 
+    mkdir - Cria pastas (Making diretory)
+    cd - Quando eu quiser entrar em um diretório eu escrevo CD e o nome da pasta 
+    cd .. - Volta uma pasta 
+    cd + letra + Tab  - Vai dando um auto complete para você achar a pasta
+    Seta para cima - Pega os últimos comandos que você fez, tipo um histórico
+    Crtl + Shift + C - Quebra a linha no caso que você não queira executar o código
+    touch - Cria arquivos e no final você coloca a extensão desses arquivos 
+    cp - Copiar arquivos (cp arquivo.extensão arquivonovo.extensão)
+    mv - Mover arquivos(mv caminho(Absoluto partindo da raiz /users)/arquivo. extensão -para- Outro caminho )
+    mv - Mover aquivos (mv arquivo.extensão(Caminho relativo) ../arquivo.extensão)
+    mv - Serve para renomear também (mv nome.extensão novonome.extensão)
+    rm - Remove (rm nomedoarquivo.ex)
+    rm * - Remove tudo
+    rm *3*.txt - Vai remover  tudo que tem o 3
+    xdg-open nomedoarquivo - Abre o arquivo
+    cat nomedoarquivo - Lista o que tem dentro do arquivo no termina 
+    head -numero - Vai mostrar as linhas do documento que você abriu
+    tail -numero - vai mostrar as ultimas linhas do documento que você abriu 
+    Crtl + Z - Ele sai do arquivo 
+    q, crtl + q, quit - Sai do arquivo
+    nano nomedoarquivo - Abre o arquivo
+    rmdir - Para deletar diretórios, eu tenho que estar fora dele
+    less - Lista o que tem dentro
+    less/nomedapalavra
+    grep palavra arquivo - Mostra se tem a palavra ou não
+    grep -v palavra arquivo - Mostra todas as palavras menos ela
+    wc -w phrases.txt - Mostra quantas palavras tem
