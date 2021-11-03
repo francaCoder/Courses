@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largura e altura</title>
+    <style>
+
+        *{ /* Seletor global */
+            box-sizing: border-box; /* O tamanho que você definir para um alemento vai ser esse tamanho. mesmo incluindo o padding e o border. A soma do elemento + padding + border = tamanho inicial definido*/
+
+        }
+
+        body{
+            margin: 0px;
+        }
+
+        div#um{
+            background-color: rgb(0, 0, 0);
+            width: 500px; /* auto */
+            height: 500px;
+        }
+
+        img{
+            width: inherit; /* inherit vai ficar com a largura do elemento anterior 
+            anterior*/ 
+            max-width: 450px ; /* Ele ia preencher todo a largura do preto, mas o max width é 450, e o preto  é 500*/ 
+            /* Mínimo e máximo sempre tem prioridade aos outros tamanhos */
+        }
+
+        div#dois{
+            background-color: rgb(0, 255, 0);
+            padding: 10px;
+            margin: 20px;
+            width: 400px;
+            height: 400px;
+            border: 5px solid black;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="um">
+        <img src="https://www.google.com.br/google.jpg" alt="">
+
+    </div>
+
+    <div id="dois">
+
+    </div>
+    
+</body>
+</html>

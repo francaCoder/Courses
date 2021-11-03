@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas CSS</title>
+    <style>
+
+        body{
+            background-color: rgb(24, 24, 24);
+            color: white;
+        }
+
+        h1{
+            background-color: red;
+
+        }
+
+        p{
+            border: 5px solid blue; /* Largura, tipo de borda e cor */
+            /* Temos também o tipo dotted - pontilhada, dashed - tracejada, double - dois tracinhos, groove - parecida com o solid, etc */
+            /* Posso escolher a direção da borda usando border-Direção */
+            border-radius: 5px;
+        }
+
+        div{
+            background-color: green;
+            border-radius: 100px; /* Se eu colocar em pixels eu tenho que colocar metade do tamanho, se eu quiser transformar em círculo independente do tamanho, eu tenho que colocar o border radius de 50% */
+            border: 3px solid rgb(103, 209, 103);
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Título exemplo</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ipsam autem facilis. Non id, ad eius quo temporibus deleniti facere facilis officiis excepturi harum voluptatem tenetur fugiat sit! Modi, rem?</p>
+    <br>
+    <div id="Quadrado"></div>
+</body>
+</html>

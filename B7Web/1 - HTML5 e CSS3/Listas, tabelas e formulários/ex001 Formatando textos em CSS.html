@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style>
+
+        body{
+            background-color: lightgray
+        }
+
+        p#principal{
+            color: blue;
+            font-size: 20px;
+            font-weight: 400; /* Podemos usar o Crtl + space aonde colocamos os parâmetros para vermos as opções */
+            font-family: Arial, Helvetica, sans-serif; /* Nem todo pc é compatível com alguma fonte, então geralmente colocamos mais de uma, se a primeira não for compatível ele coloca a próxima, e assim sucessivamente  */
+            text-align: justify; /* O padrão já vem com o left */
+        }
+
+        p#secundario{
+            text-transform: uppercase; /* Maiúsculo. Lowercase é minúsculo */
+            letter-spacing: 5px; /* 5px de espaçamente entreletras */
+            word-spacing: 15px; /* Entre palavras */
+        }
+
+        p#terceiro{
+            line-height: 30px; /* Altura da linha */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.692); /* Sombra do texto */
+
+        }
+
+        a{
+            color: green;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Formatando texto em html</h1>
+
+    <p id="principal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde fuga doloremque exercitationem iure aliquid maiores ipsum nobis expedita, cupiditate sunt optio possimus laborum esse temporibus mollitia ea vitae architecto tempora? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, perferendis sunt consequatur soluta voluptate vero molestias aliquid maiores dolor nulla nostrum libero, sed porro sint mollitia eveniet perspiciatis dolores illo.</p>
+
+    <a href="#">Testando testando testando</a>
+
+    <p id="secundario">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quos modi eaque illo nesciunt sequi. Ducimus itaque nulla, assumenda sunt recusandae nisi iusto, placeat praesentium veniam debitis vel quae quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora animi assumenda. Voluptates quo mollitia recusandae eligendi quod corrupti dolorum minima veniam nulla perspiciatis nostrum fugit, officia laborum consequatur quia?</p>
+    
+    <p id="terceiro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellendus alias atque eos suscipit pariatur inventore assumenda velit et. Labore iste culpa asperiores commodi facere sit est laboriosam fugit magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ducimus maxime repellat cum veritatis aliquam magnam id fugiat aliquid nobis est exercitationem iste doloremque, necessitatibus blanditiis quos quaerat vero. Totam?</p>
+</body>
+</html>
