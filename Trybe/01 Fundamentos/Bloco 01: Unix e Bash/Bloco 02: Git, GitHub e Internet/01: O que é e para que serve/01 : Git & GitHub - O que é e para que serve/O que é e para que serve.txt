@@ -1,0 +1,109 @@
+Git é um repositório local na sua máquina, que é usado no dia a dia por desenvolvedores com a função de versionar os seus códigos. 
+
+Também dá a possibilidade de trabalhar com seu time de forma assíncrona com uma boa qualidade 
+
+Criado por linus troval durante a criação do linux
+
+Ele guarda um conjunto de alterações dos seus arquivos através dos (Comits), você pode ir e voltar em diversas versões salvas
+
+Github / Gitlab / Bitbucket São repósitórios online onde você pode deixar seus projetos visíveis e distribuir para outras pessoas
+
+O Github tem o git dentro dele, e é ele que interage com o gi que está instalado na sua máquina 
+
+Ramificação (Branching);
+Mesclagem (Merge);
+Resolução de conflitos.
+
+Branch é uma versão independente e editável do seu código
+Branch master é a branch principal do seu código (é aonde você deixa o código que você vai dar deploi, que você vai colocar no ar)
+Eu vou criando comits e agregando eles à branch master
+
+para criar a branch de uma branch temos que cirar uma branch feature.
+Se eu quiser criar um comit somente para a branch feature eu posso
+
+Se eu quiser juntar as duas branchs temos que fazer um Merge, onde pegamos a alteração feita em uma branch e passamos para outra branch
+
+Você pode acessar o github pelo SSH (Security shell) e pelo HTTPS (Hypertext Transfer Protocol Secure)
+
+SSH - é um protocolo de criptografia de rede que serve para transferir dados de forma segura mesmo em redes inseguras. Usando o protocolo SSH, você pode se conectar ao GitHub sem precisar digitar seu nome e chave de acesso pessoal a cada comando executado.
+
+HTTPS - é uma extensão do protocolo de internet HTTP ( você verá mais sobre esse protocolo no dia de conteúdo que trata sobre internet! ) que utiliza certificados digitais para autenticar os dados e permitir que eles sejam cripografados de forma segura.
+
+Agora você vai aprender a iniciar um repositório Git , fazer seu primeiro commit e subi-lo para um repositório no GitHub .
+
+Antes de criar um repositório local, precisamos criar uma pasta para ele usando o mkdir, dentro dessa pasta vamos usar o comando GIT INIT, QUE VAI CRIAR UM REPOSITÓRIO.
+
+O Git Status vai verificar o status do repositório que você iniciou
+
+Para que possamos versionar alterações feitas no código é preciso sempre seguir a seguinte sequência:
+Adicionar ( add )
+Comitar ( commit -m "mensagem" )
+
+# Adicionar todos os arquivos modificados
+git add .
+
+# Ou você também pode adicionar arquivos específicos
+git add meu_arquivo.txt
+
+# Então você comita a alteração
+# Ao comitar você deve adicionar também uma mensagem que descreve o que aquela alteração faz
+
+git commit -m "Mensagem sobre a alteração feita"
+
+
+Para conectar os dois repositórios você deverá abrir o seu terminal, acessar o diretório do seu repositório e então executar o seguinte comando:
+git remote add origin git@github.com:user-github/repo-name.git
+
+Sendo origin um apelido para o seu repositório, poderia ser qualquer outro. E no lugar da URL git@github.com:user-github/repo-name.git deve ir a gerada pelo seu repositório (aquela que acabamos de copiar no passo acima).
+Para verificar que tudo funcionou corretamente, execute o comando git remote -v , você obterá um resultado semelhante a esse:
+origin  git@github.com:user-github/repo-name.git (fetch)
+origin  git@github.com:user-github/repo-name.git (push)
+
+Verifique usando o git status
+
+Com tudo comitado é hora de enviar essas alterações para o respositório remoto utilizando o seguinte comando:
+git push origin master
+
+A Chave SSH é usava para conexão entre seu repositório local e o seu repositório Git
+
+
+
+
+Analogia do pintor
+Um começa sozinho e chama outros para ajudar ele.
+O primeiro desenho a cabeça, o outro o nariz, o outro os olhos, etc
+ Assim terminamos mais rápido e temos mais criatividade no meio do caminho 
+
+ quando cada um termina sua parte ele salva e continua desenhando, aí desenha a sobrancelha e salvou de novo
+
+ o outro desenhou mais partes do rosto
+
+ o segundo entregou para o pintor principal e fez o Merge
+
+
+ Git status vamos usar frequentemente, todo código inicial começa na branch master ou main, e temos que usar para saber em qual aera de trabalho estamos, se é na principal, na secundária, etc
+
+ git add arquivo ou git add .
+ Depois desse comando eles serão trackeados
+ e põe um git status novamente
+
+ git init startou a branch master
+ criamos dois arquivos
+ adicionamos eles ao stage, trackeamos
+ comit coloca as mudanças na branch atual que é a branch master  
+ - git comit -m "meu primeiro comit"
+
+ push - Faz entrar no Github
+
+ iniciar>trackear>comitar>push
+
+ nunca faça um comit na branch master, nunca mexa na branch master. Pega e faz uma outra branch só sua
+
+ Como criar uma nova branch
+ git checkout dentro da branch que você quer copiar ou git branch nomeDaBranch
+ virifica com git status
+ gitcheckout nomeDaBranch Você vai para a branch nova
+ A branch só é atualizada no comit
+
+ git log mostrar o seu histórico de comits
+ git branch mostra todas as branchs q existe e qual você está

@@ -1,0 +1,178 @@
+Serei  capaz de:
+
+Copiar um repositório já existente no GitHub para o seu computador;
+Abrir Pull Requests ;
+Trabalhar em um mesmo projeto, com mais de uma pessoa, de forma assíncrona e distribuída.
+
+Utilizaremos Git e Github constantemente no curso para aprender a mexer nesses softwares
+
+Gitvlone - Copiar um repositório já existente
+
+
+Parte 2 - Do git log ao Pull Request
+
+mkdir pizzaria
+cd pizzaria
+git init dentro de pizzaria
+Automaticamente estaremos na nossa branch master
+touch pizzas.txt
+cat >> pizzas.txt 1- (Frango com catupiry)
+touch bebidas.txt
+cat >> bebidas.txt(1- Coca-cola)
+Crtl + L ou Clear limpa o terminal
+
+Se dermos um Git log agora vai aparecer a mensagem: Nenhum commit na branch master
+
+Git status - Mostrará dois arquivos que sofreram alterações e que não foram comitados
+Git add . - Para adicionar todos de uma vez
+Git status - Esses dois arquivos já estarão verdes e comitados
+Git commit -m "Adiciona pizzas e bebidas"
+ 
+ Git Status - Mostrará que não tem mais nada para ser comitado
+ Git Log - Nome do commit, local onde está, autor, data, ano, etc
+
+ Modificando arquivos
+ cat >> pizzas.txt (2 - Marguerita 3 - Palmito)
+ cat >> bebidas.txt (2 - Suco de uva 3 - Água )
+
+ Git status - Mostrará que esses dois arquivos sofreram alterações e que precisam ser comitados 
+ git add .
+ Git commit -m "Adiciona novos sabores de pizzas e bebidas"
+ Crtl + L
+ Git log
+
+
+ 2.3 Git Remove    Remover e Recussitar arquivos
+ pwd - home/pizzaria
+ touch sobremesas.txt
+ cat >> sobremesas (1 - Bolo de chocolate)
+ git status - 1 arquivo para ser comitado
+ git add .
+ git commit -m "Adiciona sobremesas"
+ ls - mostrará 3 arquivos
+
+ Para apagar sobremesas
+ git rm sobremesas.txt - Removeu o arquivo
+ git commit -m "Apaga sobremesas"
+ ls - Não mostrará ele
+
+ E se eu apaguei sem querer??
+ Clear
+ Git log - Todas as ações que a gente fez através dos nossos commits
+ git log --diff-filter=D --sumary (Vou ver o que tem de diferente e vou filtrar esses meus logs que sejam iguais aos status D de deletados e quero que seja exibido em forma de sumário)
+ Vai mostrar todos os logs deletados 
+ Pega o nome / código do arquivo - OS 4 primeiros caracteres
+
+ git checkout 4caracteres~1 sobremesas.txt (Ele vai voltar a ser um commit válido)
+
+ ls - Vai voltar a exibir o arquivo dentro do diretório de pizzarias
+ Git status - veremos que  vai precisar ser commitado novamente com git add
+ Git commit -m "Arquivo sobremesas recuperado "
+ Git log mostra o histórico
+
+
+Git ignore    ignorar arquivos que você não quer adicionar no seu git
+pwd - home/pizzaria
+ls -  estoque.json     gestao_de_qualidade.xls     pessoas_funcionárias.txt   produtos.xls     <relatórios> 
+touch .gitignore - O Ponto indica que ele é um arquivo oculto, não o veremos  utlizando o comando ls, só o ls -la
+
+git status - Nenhum desses foi commitado
+cat >> .gitignore - Suponhamos que eu não queira nenhum arquivo .txt
+*.txt - Todos os arquivos .txt
+Crtl + D
+ 
+Git status - Vai ter ignorado todos os .txt e podemos dar o git add . tranquilamente
+Git add .gitignore
+git commit -m "Remove arquivo .txt no gitignore"
+git status - Não aparece o git ignore porque eu já adicionei ele no meu git 
+
+clear 
+cat >> .gitignore
+produtos.xls
+Crtl + D
+git status - Não temos mais produtos , significa que podemos ignorar arquivos específicos
+
+cat >> .gitignore
+relatorios/ - A barra significa para o git que estamos ignorando um diretório
+Crtl + D
+git status - Também não vai mais aparecer
+
+cat .gitignore
+*.txt
+produtos.xlx
+relatorios/ 
+Vai ignorar tudo isso 
+
+
+2.4 - Git push, pull, fetch
+Criar um novo repositório no GitHub - projetoX
+ou por linha de comando
+/projetoX
+git init
+git remote add origin LinkDoSSH - Criando vínculo com diretório remoto
+touch projeto_secreto.html
+git status - temos uma modificação dentro do nosso projetoX
+git add projeto_secreto.html
+git commit -m "adiciona arquivo projeto_secreto"
+git push -u origin master - Eu vou empurrar todas essas informações para o meu repositório remoto
+
+Simulação de duas pessoas trabalhando no mesmo repositório
+
+/pink                                               
+git clone                                           
+ls - ProjetoX                                    
+cd projeto x                                     
+ls - projeto_secreto.html                
+Abrir o projeto secreto no VS code dos dois
+"Vamos dominar o mundo"             
+git add projeto_secreto.html
+git commit -m "Adiciona vamos 
+dominar o mundo"
+git push
+
+--
+Git pull - Para fazer o git fetch e o merge automaticamente 
+e já aparecerá a frase de "Vamos sim" do usuário cérebro
+
+
+/cerebro
+git clone
+ls - ProjetoX
+cd projeto x 
+ls - projeto_secreto.html
+O pink fez a alteração, mas ele ainda não recebeu essas alterações em momento real, então temos que usar o comando :
+git fetch - Ele verifica se existe alguma alteração na minha branch que está lá no meu repositório remoto comparada a essa que eu estou aberta no meu VS Code
+git status - Vai falar que sua branch está atrás por 1 commit 
+git pull - Verifica se tem alguma diferença também, porém ele faz um "git merge"
+E automaticamente vai aparecer na tela do usuário cérebro "Vamos dominar...."
+
+Adicionando infromações
+"Vamos sim pink haha"
+git add projeto_secreto.html
+git commit -m "adiciona vamos sim"
+git push - Para enviar lá para o repositório
+
+git pull - "Me deixa igual o remoto"
+
+2.5 - Pull Request no GitHub
+Ele é feito porque nas empresas nós não podemos fazer o merge direto na main 
+pull request é pelo git GitHub
+vai na branch que você subiu, vai ter um aviso que tem commits para sincronizar com main 
+crontibuit
+opne pull request 
+nome para o seu pull request, pode ser o nome da funcionalidade que você fezcreate pull request
+Vai trocar para a aba pull request
+Nesse momento, a pessoa que é responsãvel pela main, ela vai ter que aceitar o "Merge pull request"
+Na aba "code" vá em main  e veja se ela recebeu as novas informações
+
+Esse processo é importante para você realizar sugestões e contribuir com alterações em um repositório, basta ter a permissão para leitura.
+A vantagem de se realizar o Pull Request é que você garante que a branch-padrão terá todo seu trabalho concluído e aprovado, realizando todas as novas alterações em uma branch separada.
+Vamos observar o processo a baixo:
+1 - Navegue até a página principal do repositório no GitHub;
+2 - No menu "Branch" , você pode digitar o nome da sua nova branch e clicar em Create new branch ;
+3 - Acima da lista de arquivos, clique em Pull request ;
+4 - Use o menu suspenso da branch base para selecionar a branch em que deseja fazer merge de suas alterações. Em seguida, use o menu suspenso da branch de comparação para escolher a branch de tópico no qual você fez as alterações;
+obs: Para seguir para o passo 5 é preciso ter o primeiro commit realizado, caso tenha dificuldades em realizar pelo GitHub, siga a dica Extra realizando pelo seu terminal.
+5 - Digite um título e uma descrição para o Pull Request;
+6 - Para criar um Pull Request que está pronto para revisão, clique em Criar Pull Request . Para criar um rascunho de Pull Request, use o menu suspenso e selecione Criar rascunho de pull request e, em seguida, clique em Rascunho de Pull Request .
+Extra: Você também pode criar o Pull Request, após fazer o git push na sua máquina local. Aparecendo logo após o push o botão Comparar e Pull Request :

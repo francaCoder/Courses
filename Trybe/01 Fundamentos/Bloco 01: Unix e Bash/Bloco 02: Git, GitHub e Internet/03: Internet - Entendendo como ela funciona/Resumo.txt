@@ -1,0 +1,59 @@
+1969 e se chamava arpha net, com o objetivo de ligar laboratórios de pesquisas
+www - World wide web
+
+serei capaz de:
+Explicar de forma simples como a internet funciona;
+Entender o modelo Cliente & Servidor e identificar suas partes;
+Compreender como funcionam os protocolos HTTP e HTTPS;
+Identificar quais os tipos de requisição podem ser feitos através desses protocolos.
+mportante ter uma noção de como a rede da internet é estruturada, pois quando você for pensar no design de uma aplicação web, por exemplo, terá que considerar fatores como a latência da rede, a geolocalização dos servidores, a velocidade e/ou disponibilidade de conexão dos usuários, enfim.
+
+O cliente é uma aplicação que está conectada à Internet. A sua principal função é receber a interação do usuário e traduzi-la em uma requisição para outro computador chamado Servidor Web. Todo computador tem um número único, como o seu CPF, chamado endereço IP. É através desse endereço que computadores, celulares e tablets são identificados.
+
+Servidor: Como vimos no exemplo acima, nossa busca por www.google.com será enviada para um Servidor . O Servidor é um super computador conectado à Internet. Ele também tem o seu próprio endereço IP, assim como o seu computador. O Servidor espera por requisições de outras máquinas (clientes). Diferente do seu computador, um Servidor tem um software específico em execução que irá dizer como ele deve responder a uma requisição do seu navegador. A principal função do Servidor é armazenar, processar e entregar páginas web para os Clientes. Há diversos tipos de servidores, como Web Servers, Database Servers, File Servers, Application Servers . O servidor que usamos para fazer a busca por www.google.com é um Web Server .
+
+Endereço IP: A sigla IP refere-se a Internet Protocol . O endereço IP é um identificador numérico para um dispositivo (computador, celular, tablet, impressora, roteador, servidor...) conectado à rede TCP/IP. Todo dispositivo conectado à Internet tem um endereço IP único que irá identificá-lo, e será usado para comunicar com outros dispositivos. Os endereços IP tem quatro campos de dígitos separados por pontos (exemplo: 244.155.65.2). Esses números são chamados de endereço lógico. 
+
+TCP/IP: Essa sigla refere-se à Transmission Control Protocol/Internet Protocol . Um protocolo é um conjunto de regras, e o protocolo TCP/IP é utilizado para transmitir dados na rede. Ele também é o protocolo de comunicação mais utilizado no mundo Web.
+
+ISP: ISP ou Internet Service Provider é o seu provedor de Internet. É qualquer empresa que nos fornece acesso ao maravilhoso mundo Web. 
+
+DNS: DNS ou Domain Name System é um dispositivo com uma base de dados distribuída que gerencia os nomes de serviços, computadores ou qualquer dispositivo conectado à Internet. Ele é usado para relacionar o endereço nominal (google.com) com o endereço IP. Os servidores DNS são responsáveis por localizar e traduzir para números (um endereço IP) as buscas por sites que digitamos no navegador.
+
+Port Number: O número de porta é um número de 16 bits utilizado para identificar uma porta específica no servidor, e está sempre associado ao endereço IP. O Port number é uma forma de identificar um processo específico encaminhado para o servidor.
+Host: O Host é qualquer computador conectado à rede, seja como cliente, servidor ou qualquer outro tipo de dispositivo. Cada host tem um endereço IP único. Para o site que estamos buscando, www.google.com , o host é o servidor web que hospeda a página na web. É comum confundir o host com o servidor. Lembre-se que eles são coisas diferentes! O Servidor é um tipo de host - uma máquina específica com endereço IP. Por outro lado, o host pode ser também uma organização inteira que fornece um serviço de hospedagem para manter inúmeros servidores web.
+HTTP: Hyper-text Transfer Protocol é o protocolo utilizado para a comunicação entre navegadores e servidores na Internet.
+URL: O URL é a sigla para Uniform Resource Locators e identifica um recurso web específico. Podemos, como exemplo, mudar a nossa busca para https://www.google.com/travel/flights para pesquisar por preços de passagens aéreas. O URL identifica o protocolo que será utilizado para comunicarmos com o servidor (https), o nome do host (google.com) e o recurso que queremos acessar (travel/flights).
+
+
+Protocolo HTTP E HTTPS
+requisições
+get
+post
+PUT pede atualização de arquivo dentro do servidor
+delete
+
+A resposta é feita com
+Header (satus, remote adress, content type)
+Body (json, html, imagem, som, video)
+
+POST
+O método POST é utilizado para criar um novo recurso, como um formulário para login. Você usará o método POST para criar um recurso subordinado (ex: novo usuário) para a aplicação pai (ex: http://exemplo.com/usuario). Ao contrário do método GET, o método POST não é nem seguro e nem idempotente. Fazer duas ou mais requisições POSTS resultará em novos recursos criados (mesmo que idênticos). Requisições POST são retornadas com o status code 201 (CREATED) e um novo caminho no header com o Link do recurso criado.
+PUT
+O método PUT é utilizado para atualizar o recurso identificado pelo URL. Esse método também pode ser utilizado para criar um novo recurso. Requisições PUT não são consideradas operações seguras, pois o estado da aplicação é modificado no servidor. No entanto, o método PUT é idempotente porque múltiplas requisições PUT para atualizar um recurso têm o mesmo efeito que uma única requisição.
+A resposta a requisição é o status code 200 (OK) se o recurso foi atualizado com sucesso, ou 404 (NOT FOUND) se ele não for encontrado.
+DELETE
+DELETE é utilizado para deletar um recurso identificado pelo URL. As requisições DELETE são idempotentes, pois quando deletamos um recurso ele será deletado. Você pode fazer milhares de requisições com o método DELETE que no fim o resultado será o mesmo: um recurso deletado.
+A resposta requisição é o status code 200 (OK) se o recurso for deletado com sucesso, ou 404 (NOT FOUND) se o recurso que será deletado não existir.
+REST
+Você pode já ter ouvido falar do termo RESTful para descrever uma aplicação. REST é a sigla para Representational State Transfer . É um estilo de arquitetura utilizado no design de aplicações Web. O estado da aplicação são os dados necessários para que o servidor possa atender a uma determinada requisição. As regras do REST nos guiam a desenvolver sistemas mais performáticos, escaláveis, simples, de fácil manutenção e modificação, portátil e confiável. Dentre elas, podemos destacar:
+Interface uniforme: define a interface entre cliente e servidor de forma a desacoplar a arquitetura da aplicação. Os verbos que vimos acima descrevem a grande maioria das regras para interface uniforme. Dentre as definições previstas pelo REST, as mais importantes são:
+Recursos, como dados de um banco de dados, devem ser identificados na requisição e o cliente terá acesso apenas a representação do recurso (ex: JSON, HTML)
+O cliente deve ter informações suficientes para manipular recursos no servidor utilizando representações
+As mensagens trocadas entre cliente e servidor devem ser auto-descritivas
+Stateless: Essa regra define que todos os dados do estado da aplicação que precisam ser manipulados em uma requisição devem estar contidos na própria requisição (URL, HTTP body, HTTP header) e o servidor deve encaminhar para o cliente todos os dados referentes ao estado na resposta (HTTP headers, status code, HTTP response body).
+O protocolo HTTP é uma peça chave na comunicação entre cliente-servidor. Para construir aplicações RESTFul é necessário compreender o básico de HTTP. Assim, você será capaz de criar páginas performáticas e escaláveis que farão a diferença na vida de muitos usuários!
+Agora responda ao quiz, lembrando que ele serve para fixação dos conteúdos e não tem caráter avaliativo , não se preocupe! 😉
+Quiz - Protocolo HTTP & REST
+Curl
+Por fim, você vai aprender sobre o comando curl , abreviação para Client URL . Ele é um comando disponível na maioria dos sistemas baseados em Unix que serve para verificar conectividade, além transferir dados via terminal.
