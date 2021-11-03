@@ -1,0 +1,22 @@
+Ps =( Lista os processos)
+Os processos podem estar em execução, em background  ou suspensos, unix é multi processos
+
+Sleep (Para o terminal durante determinado tempo)
+Sleep 5 (vai parar por 5 segundos)
+
+Sleep10 & (O & Deixa o sleep10 em background, depois de 10 segundos se der certo, vai retornar com o done na frente)
+
+sleep 100 (Sem background)
+crtl + z (Suspende o processo)
+se eu quiser que ele continue em background é só digitar "BG"
+Vai aparecer "Continued", e podemos confirmar usando o ps
+ou eu posso colocar o "FG% e o numero da lista" de forground 
+
+Todos os processos em todos os estados ficam em uma lista chamada jobs
+Jobs
+
+Se eu quiser matar um processo em forground eu coloco crtl + c e em Background eu uso o Kill%numero da lista
+
+Também posso matar o processo pelo PID dele
+
+Em algumas ocasiões os processos não poderão ser mortos tão facilmente, teremos então que usar o Kill -9 Para "forçar parada" 
