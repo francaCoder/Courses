@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Voce pode acessar o meu canal no youtube <a href="https://www.youtube.com/" target="_blank" rel="external" > Canal do youtube </a></p>
+    <!-- Coloca o link e o nome que voce quer que fique como ancora. 
+        O Target _blank abre o link em uma nova guia e o rel externo indica para o navegador que é um link externo-->
+
+    <h1>Usando links internos</h1>
+    <p>Essa é a primeira página do meu site, se voce quiser, voce pode acessar a segunda página 
+        clicando no link <a href="ex010b Segunda página do exercício.html" rel="next" > Segunda pagina</a> </p>
+        <!-- Rel next = Coversar com o google que aquela é a sua próxima página, isso ajuda no SEO-->
+    
+    <h1>Links patrocinados</h1>
+    <p>Podemos usar o rel nofollow, diz para o gooogle que voce não necessariamente dá o aval daquele conteúdo</p>
+    <p><a href="https://www.youtube.com/" target="_blank" rel="nofollow" >youtubin</a></p>
+
+    <h1>Pastas externas</h1>
+    <p>Voce aperta crtl + space dentro da tag »a«, escolhe a pasta e depois escolhe o arquivo que voce deseja colocar como.
+        Ou coloque o nome da pasta, depois / e depois o nome do arquivo. »pasta/arquivo«
+    </p>
+
+    <h1>Voltar de uma pasta externa</h1>
+    <p>./ significa a própria pasta ../ Volta uma pasta </p>
+    <a href="../Exercícios/"> Exemplo</a>
+
+    <br>
+    <p>Target _self deixa a navegaçao na própria página</p>
+
+    <h1>Links para download</h1>        
+    <ul> <!-- Unordered list -->
+        <li> <a href="#">Baixar livro em PDF</a></li>
+        <li> <a href="#">Baixar livro em formato .zip</a></li>
+        <!-- # Dentro do href significam links vazios-->
+    </ul>
+    
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas / Dinamic images</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimina o tamanho do seu navegador</p>
+    <p>Try open this website in several dispositives or simply zoom in nd zoom out the size of your navegator</p>
+
+    <p>
+        <picture> <!-- Ela permite várias fontes de imagens, tipo um  if-->
+            <source media="(max-width: 750px)" srcset="Foto p" type="image/foto-p.png">
+            <source media="(max-width: 1050px)" srcset="Foto m" type="image/foto-m.png">
+            <img src="Imagem-g.png" alt="Imagem-g.png">
+            <!-- Temos que usar diferetes ntamanhos de imagens para dispositivos, se um usuário for embora o google n gosta = bounce rate -->
+            <!--
+                if(tela <= 750){
+                    mostre a imagem p
+                } else if (tela <= 1050) {
+                    mostre a imagem m
+                } else {
+                    mostre a imagem grande 
+                }
+            -->
+        </picture>
+    </p>
+        <h1>Reproduzindo áudios</h1>
+
+        <p>Vamos aprender a reproduizr áudios em HTML5</p>
+
+        <audio src="/Courses/Curso em vídeo 2.0/HTML5 e CSS3/Challenges/Happy Mistake - RKVC.mp3" controls autoplay ></audio>
+
+        <audio preload="auto" autoplay controls>
+
+            <source src="/Courses/Curso em vídeo 2.0/HTML5 e CSS3/Challenges/guanacast-33.mp3" type="audio/mpeg">
+            
+            <source src="" type="audio/ogg">
+            <source src="audio/wav" type="">
+            <p>Infelizmente o seu navegador nao suporta p áudio, clique no link para baixa-lo 
+                <a href="/Courses/Curso em vídeo 2.0/HTML5 e CSS3/Challenges/guanacast-33.mp3"></a> Baixar o arquivo mp3</p>
+            
+        
+        </audio>
+   
+
+    
+</body>
+</html>

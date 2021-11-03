@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags Semânticas</title>
+    <style>
+        body {
+            /* Cord do fundo, fonte de todos os etxtos e espaço entro o conteúdo e a borda do site */
+            font-family: 'Courier New', Courier, monospace;
+            background-color: darkgray;
+            margin: 5px
+        }
+
+        header {/* Dentro dele eu tenho meu H1 e a Tag nav com os links */
+            background-color: white;
+            padding: 10px;
+            margin: 10px;/* Margem igual na folha A4 */
+            
+        }
+
+        h1 {/* "Meu site" */
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(184, 184, 184);
+        }
+
+        nav {/* É aquele bloco, não os links */
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.486); /* Da para criar pelo dev tools mas eu não consegui achar */
+            text-align: center;
+            background-color: rgb(112, 112, 112);
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+
+        nav>a {/* Aqui são os links dentro do bloco */
+            text-decoration: none;/* Tirar o sublinhado */
+            color: white;
+            font-weight: bold;
+            margin-right: 30px; /* Dar uma distância de 30px de um link para o outro */
+           
+        }
+
+        nav>a:hover {/* Quando eu passar em cima vai ficar sublinhado */
+            text-decoration: underline;
+        }
+
+        main {/* Código principal, denro de "Main" eu tenho a section assuntos, um article, h2, p, um aside com outro p*/
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        section#assuntos {
+            text-align: center;
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(184, 184, 184);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article>aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 5px;
+            padding: 5px;
+        }
+
+        div#bola{
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Div -->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+
+    </header>
+    <main>
+        <!-- Div -->
+        <section id="assuntos">
+            <p>Assuntos - Esportes, política e tecnologia</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Artigo sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur blanditiis quis minima
+                    pariatur! Nobis, dolores earum quas cumque ipsa maiores nostrum? Quaerat quo saepe voluptas nihil
+                    eum. Corrupti, accusamus?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate ab, sunt eos
+                    blanditiis, ratione labore mollitia adipisci omnis necessitatibus enim quis alias id eum quae
+                    nostrum cumque cum incidunt.</p>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <!--  -->
+        <p>Desenvolvido por França</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+
+
+</body>
+
+</html>
