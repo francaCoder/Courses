@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif; /* Se não mostrar uma vai mostrar a outra */
+            /*
+            Medidas absolutas: cm, mm, in(polegadas), px, pt, pc(payca)
+            medidas relativas: en, ex, rem, vw, vh, %
+
+            recomendável usar pt e em
+            */
+            font-size: 1em;
+            /* ligther, normal, bolder */
+        }
+
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder; /* Peso da fonte. Posso apertar Crtl + Sapce para ver todas as opções */
+            font-size: 3em;
+            font-style: italic;
+            /* Usamos muito essas configurações, então vamos usar um atalho chamado de shorthand font, nessa sequência:
+            fonte style, font wheight, font size, font family
+            s-w-s-f
+            */
+            font:italic bolder 3em 'Times New Roman', Times, serif;
+            /* Propriedade shorthand */
+        }
+
+        h2{
+            font:italic bold 2em 'Times New Roman', Times, serif
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eius saepe quo iste nulla architecto pariatur nemo consectetur facilis dolores? Corrupti illum, atque hic nemo ut sit aut voluptate quibusdam!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora doloremque reprehenderit accusantium, quae odio deleniti officia repellat assumenda quia corporis ipsa, eius iusto enim cupiditate sequi necessitatibus quam vel id.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequuntur dicta delectus quaerat distinctio accusamus est dignissimos aspernatur facilis, sit odio quisquam, asperiores ratione cupiditate rerum. Fugiat harum doloremque inventore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aut? Blanditiis autem molestias possimus. Culpa nihil quas at quia? Alias doloribus quam sed quae eum et reiciendis accusantium, minima recusandae?</p>
+    
+</body>
+</html>
