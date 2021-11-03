@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo vídeos / Inserting Videos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos com hospedagem local</h1>
+    <h1>Inserting videos whith local hosting</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <p>This video be hosting in my server</p>
+    
+    <video src="video.m4v" width="500" controls></video>
+
+    <p>Não se esqueça dos outros formatos de video de acordo para cada navegador</p>
+    <p>Dont't forget the anothers formats videos for each navigator</p>
+
+    <video poster="nome do arquivo" controls autoplay loop> 
+        <!-- A tag poster permite que você coloque uma thumb no seu vídeo-->
+        <!-- Começa a tocar sozinho com autoplay e repete por causa do loop-->
+        <source src="video.m4v" type="viedo/m4v">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+        <!-- Ele tenta mostrar o vídeo na ordem. Caso nenhum for compatível ele mostra o parágrafo-->
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos</p>
+        <p>Your navigator dont have compatibility whith reprodution of videos</p>
+    </video>
+    
+    <h1>Inserindo vídeos do youtube</h1>
+    <h1>Inserting videos by youtube</h1>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Youtube-Video-Compartilhar-Incorporar-Copiar -->
+</body>
+</html>
