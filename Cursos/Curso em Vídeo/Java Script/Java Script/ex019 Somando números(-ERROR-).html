@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);  
+        }
+        input {
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="msg"> Somando valores </h1>
+    <input type="number" name="txtn1" id="txtn1"> <!-- Botão de número-->
+    <input type="number" name="txtn2" id="txtn2"> <!-- Botão de número-->
+    <input type="button" value="Somar" onclick="somar()"> <!-- Botão de somar, o nome muda no "value"-->
+    <div id="res">Resultado</div>
+    
+    <script>
+        let a = window.document.getElementById("msg")
+        a.style.color = "blue"
+        let b = window.document.getElementById("res")
+        b.style.color = "blue"
+        function somar() {
+            let tn1 = window.document.getElementById("txtn1") // o valor é um texto 
+            let tn2 = window.document.getElementById("txtn2") // o valor é um texto
+            let res = window.document.getElementById("res")
+            let n1 = number(tn1.value)
+            let n2 = number(tn2.value)
+            let s = m1 + n2
+            res.innerHTML = s
+            res.innerHTML = `A Soma entre ${n1} e ${n2} é de <strong> ${s}.`
+        }
+    </script>
+    
+</body>
+</html>
