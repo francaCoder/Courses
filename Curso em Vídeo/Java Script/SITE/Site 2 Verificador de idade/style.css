@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(97, 97, 255);
+    font: normal 15pt arial;
+}
+
+header{
+    color: white; /* Fonte branca*/
+    text-align: center; /* Alinhar o texto no meio*/
+
+}
+
+section{
+    background-color: white;
+    border-radius: 10px; /*Raio da borda, borda arredondada*/
+    padding: 15px; /* Espaço em cima/embaixo */
+    width: 500px; /* Largura */
+    margin: auto; /* Alinhou no meio*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507); /* Horizontal,Vertical, desfoque*/
+    
+
+}
+
+div#res{
+    text-align: center;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic; /* Estilo de fonte */
+
+}
