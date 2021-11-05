@@ -29,3 +29,12 @@ Quando o usuário digita seu ano de nascimento, o código faz o cálculo e devol
 - [x] CSS.
 - [x] JavaScript.
 
+<br>
+
+### Autor
+<br>
+
+<p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b0961a222/">Matheus França & 
+  <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Gustavo Guanabara</a>
+
+
