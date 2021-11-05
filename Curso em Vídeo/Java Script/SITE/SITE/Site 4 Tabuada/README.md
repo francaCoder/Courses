@@ -1,7 +1,7 @@
 # Tabuada
 
 <p> Ah se eu soubesse dessa pra colar na prova... Imagina escolher qualquer número e aparecer a tabuada completa, na calculadora é 
-mais fácil, mas no código é mais legal. O algorítimo te mostra a tabuada do número que você escolher multiplicado em até 10 vezes
+mais fácil, mas no código é mais legal. O algorítimo te mostra a tabuada do número que você escolher multiplicado em até 10 vezes.
   
 ---
 
