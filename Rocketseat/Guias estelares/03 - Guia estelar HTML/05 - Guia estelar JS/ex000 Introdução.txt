@@ -1,0 +1,30 @@
+JavaScript Core
+ - É uma linguagem de programação que roda no lado do usuário
+ - Qualquer interação de abrir janelas, pop ups, etc , é  JavaScript
+
+ Também roda no backend junto com outras aplicações
+
+ O que podemos criar com JS?
+ Aplicações web, mobile (React Native), desktop (Eletron)
+
+ Comentários são feitos com 
+ // ou /**/
+
+ Empresas que usam:
+ Face
+ Youtube
+ Netflix
+ Google, etc
+
+ Veremos:
+ - Tipos de dados 
+ - Variáveis
+ - Funções
+ - Condicionais
+ - Estruturas de repetição
+ etc
+
+ Podemos rodar ele:
+ - Dev tools
+ - Code pen
+ - Browser
