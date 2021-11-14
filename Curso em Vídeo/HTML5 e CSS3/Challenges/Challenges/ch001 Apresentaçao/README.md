@@ -6,5 +6,5 @@
 </p>
 <br>
 <div align="center">
-<img width="834" height="811px" src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/HTML5%20e%20CSS3/Challenges/Challenges/ch001%20Apresenta%C3%A7ao/apresenta%C3%A7ao.gif"/>
+<img width="734" height="711px" src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/HTML5%20e%20CSS3/Challenges/Challenges/ch001%20Apresenta%C3%A7ao/apresenta%C3%A7ao.gif"/>
 </div>
