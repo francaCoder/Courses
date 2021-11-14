@@ -5,13 +5,13 @@ caixa de texto ao lado da respectiva frase mostrando qual é a TAG que você dev
 <br>
 <div align="center"> 
 <img src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/HTML5%20e%20CSS3/Challenges/Challenges/ch002%20Tags/Tags.gif" />
-<div>
+</div>
   
 <br>
   
  ## Características
- 
- + HTML
- + Tittle
- + &lt;UL&gt; e &lt;Li&gt;
- 
+ <ul>
+ <li> HTML
+ <li> Tittle
+ <li> &lt;UL&gt; e &lt;Li&gt;
+ </ul>
