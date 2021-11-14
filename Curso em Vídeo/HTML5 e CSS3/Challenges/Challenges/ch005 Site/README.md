@@ -32,7 +32,7 @@
 
 <br><br>
 
-<p align="center" style="font-weight: bold">Desktop </p>
+<h2 align="center">Desktop</h2>
 
 <p align="center">
    
@@ -40,7 +40,7 @@
 
 <br><br>
 
-<p align="center" style="font-weight: bold">Tablet</p>
+<h2 align="center">Tablet</h2>
 
 <p align="center">
 
@@ -48,7 +48,7 @@
 
 <br><br>
 
-<p align="center" style="font-weight: bold">Mobile</p>
+<h2 align="center">Mobile</h2>
 
 <p align="center">
     
