@@ -15,3 +15,10 @@ caixa de texto ao lado da respectiva frase mostrando qual é a TAG que você dev
  <li> Tittle
  <li> &lt;UL&gt; e &lt;Li&gt;
  </ul>
+ 
+ <hr>
+
+#### Autor
+
+<p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b0961a222/">Matheus França & <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo"> Gustavo Guanabara</a>
+
