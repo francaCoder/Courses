@@ -3,7 +3,7 @@
 ---
 
 <p> 
-  Nesse site aproveitamos a interatividade para nos comunicarmos com o usuário, ele escolhe o número inicial e final e em seguida 
+  Nesse site aproveitamos a interatividade para nos comunicarmos com o usuário, ele escolhe o número inicial e o número final, em seguida ele 
   escolhe de quantas em quantas "casas" ele que ir pulando, na div abaixo ele terá o resultado seguido de emojis.
 </p>
 
