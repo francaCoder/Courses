@@ -17,3 +17,9 @@ Principais ensinamentos são: front-end, back-end, ciência da computação, eng
 - [x] 2.1 - Git & GitHub  - O que é e para que serve
 - [x] 2.2 - Git & GitHub - Entendendo os comandos
 - [x] 2.3 - Internet - Entendendo como ela funciona
+
+<br>
+
+# Fim
+
+<p> No começo eu confesso, parecia ser muito atrativo. Mesmo sem saber nada de programação eu consegui entrar na Trybe com ajuda do meu amigo Thalysson, e obviamente fiquei muito feliz. Durante as etapas de aprovação eu continuei fazendo outros cursos por fora, e foi aí que eu realmente peguei gosto pela coisa, vi que eu realmente gostava de programação. Mas logo nos primeiros dias dentro da trybe eu perdi o "encanto", percebi claramente que quando eu estava estudando sozinho eu estava evoluindo muito mais, foi aí então que eu aproveitei o período de teste para fazer o cancelamento, apresentei os pontos negativos na minha opinião e saí. Mas os estudos continuam como nunca, cada dia aprendendo mais do que o outro, e é só o começo. </p>
