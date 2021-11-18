@@ -50,3 +50,62 @@ Using the variable created above, show in console the name and the return of fun
 let nameOfFunc = showName.name
 let returnOfFunction = showName() // Run the function for get the return
 console.log(`The function ${nameOfFunc} return ${returnOfFunction}`)
+
+/* Create a literal function called "calculator", that work like this:
+- The function must receives a parameters that will say how mathematical operation she will use. ('+  -  *  /  %)
+- This function must return a second function that will make the following:
+- Must receives two parameters 
+- This two parameters will be the operators used in mathematical operation
+- The return of that second function is the complete operation, whith the phrase:
+"The result of operation: [number1] [operator] [number2] = [Result]"
+- If the operator don't be valid, return the phrase:
+"Invalid operation"
+*/
+
+function calculator(operator) {
+    return function(number1, number2){
+        let result 
+        switch (operator) {
+            case "+":
+                result = number1 + number2
+                break;
+            case "-":
+                result = number1 - number2
+                break;
+            case "*":
+                result = number1 * number2
+                break;
+            case "/":
+                result = number1 / number2
+                break;
+            case "%":
+                result = number1 % number2
+                break;
+                default:
+                return "Invalid operation"
+                break;
+        }
+        return `The result of operation: ${number1} ${operator} ${number2} = ${result}`
+    }
+}
+
+/* Declare a variable called "sum", that will receives the function above, passing how parameter the operatos of sum*/
+
+let sum = calculator("+")
+
+// Now, sum is a function. Show in console the sum of two numbers using she.
+
+console.log(sum(7,8))
+
+/* Now, declare same variables whith the names: "subtraction", "Multiplication", "division" and "mod", and assign to her the function "calculator", passing the correct operator per parameter for each one them*/
+
+let subtraction = calculator("-")
+let multiplication = calculator("*")
+let division = calculator("/")
+let module = calculator("%")
+
+// Make an operation whith each of the functions created above, showing the result in console
+console.log(subtraction(5, 2))
+console.log(multiplication(20, 5))
+console.log(division(15, 3))
+console.log(module(50, 10))
