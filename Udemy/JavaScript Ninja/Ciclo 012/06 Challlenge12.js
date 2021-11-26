@@ -66,3 +66,22 @@ for (let index = 0; index < Object.keys(books).length; index++) { // Sweep array
 }
 
 })()
+
+
+/* 
+Create an array called 'myName'. Each element of array must be one letter of your name. Add your full name in array
+*/
+
+let myName = ["m", "a", "t", "h", "e", "u" ,"s"]
+
+// Joining all elements of array, show in console your name
+
+console.log(myName.join(""))
+
+// Show in console your name on the contrary
+
+console.log(myName.reverse().join(""))
+
+// Show all elements of array in alphabetical order
+
+console.log(myName.sort().join(""))
