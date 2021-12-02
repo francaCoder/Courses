@@ -128,3 +128,13 @@ let map = newBrazil.map(function(element, index) {
 })
 
 console.log(map)
+
+/* 
+Filter the array created above, returning the states that have ID pair and after assign the value for a variable called 'filter'
+*/
+
+let filter = map.filter(function(element, index) {
+    return element.ID % 2 === 0
+})
+
+console.log(filter)
