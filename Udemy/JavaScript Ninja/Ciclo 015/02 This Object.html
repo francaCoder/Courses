@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // This - Esse
+// Make a reference to main object
+
+(function() {
+
+    let myObject = {
+        myProperty: 1,
+        init: function init() {
+            return this
+        },
+    }
+    console.log(myObject.init())
+
+    // In functions
+
+    function myFunction() {
+        return this
+    }
+    console.log(myFunction())
+
+    // new objects
+
+    let newObject = new Object()
+    console.log("newObject", newObject)
+
+    function myConstructor() {
+        this.prop1 = "prop1"
+        this.pro2 = "prop2"
+        return "Any think"
+    }
+    console.log("myConstructor", new myConstructor())
+
+
+})()
+    </script>
+    
+</body>
+</html>
