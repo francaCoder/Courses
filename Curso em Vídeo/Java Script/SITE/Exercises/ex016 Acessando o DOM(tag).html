@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title> <!-- Document Object Model-->
+    <style>
+        body{
+            background-color: rgb(37, 50, 168);
+            color: white;
+            font: normal 18pt arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p> <!-- O Strong serve pra deixar em negrito-->
+    <div>Clique em mim</div>
+    <script>
+        window.document.write("Olá mundo <br/>") //Break roll
+        window.document.write(window.document.URL)
+        // Podemos selecionar por marca, id, nome, classe e seletor
+        //marca 
+        let corpo = window.document.body.style
+        let p1 = window.document.getElementsByTagName("p")[0] //Primeiro parágrafo
+        window.document.write("Está escrito assim:" + " " + p1.innerText)
+        p1.style.color = "red"
+        corpo.background = "black"
+        document.write(p1.innerHTML)
+
+    </script>
+</body>
+</html>
