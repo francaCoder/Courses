@@ -1,4 +1,4 @@
-# HTML e CSS3
+# HTML5 e CSS3
 
 <p> E quando você descobre que tudo que você viu na internet fazia parte do HTML? E ainda mais, se não fosse o CSS você nem teria visto, porque não teria beleza nenhuma. 
   Os dois se completam, e mais pra frente aparece o JavaScript para deixar tudo interativo. Um curso muito completo, detalhado e bem editado dessas linguagens fantásticas. Isso 
