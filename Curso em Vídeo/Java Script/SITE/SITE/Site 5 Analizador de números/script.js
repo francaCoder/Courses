@@ -29,12 +29,12 @@ function adicionar() {
     } else {
         window.alert("Valor inválido ou já encontrado na lista")
     }
-    num.value = ""
+    num.value = ''
     num.focus() // Localização do Cursor do mouse fica no lugar certo e já limpa o "num" 
 }
 
 function finalizar() {
-    if (valores.length == 0 ) {
+    if (valores.length === 0 ) {
         alert("Adicione valores antes de começar") 
     } else {
         let tot = valores.length
@@ -43,6 +43,7 @@ function finalizar() {
         let soma = 0
         let media = 0
         for (let pos in valores) {
+            soma += valores[pos]
             if (valores[pos] > maior)
             maior = valores[pos]
             if ( valores[pos < menor])
@@ -50,7 +51,7 @@ function finalizar() {
 
         }
         media = soma / tot
-        res.innerHTML = ''
+        res.innerHTML = " "
         res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
         res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
         res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
