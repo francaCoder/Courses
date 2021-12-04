@@ -1,7 +1,0 @@
-O que significa CSS?
-cascading style sheet - Folha de estilo em cascata para os mais chegados 
-Não é uma linguagem de programação e serve para deixar o HTML mais bonitão
-
-Comentários é com:
-/*     */
-Pode usar ele pra comentar seu código ou desbailitar algumas partes
