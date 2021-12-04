@@ -1,0 +1,8 @@
+A importância da sintaxe
+
+- Toda linguagem tem
+- Uma bvoa comunicação necessita de uma boa sintaxe
+- 82% dos erros dos iniciantes estão na sintaxe
+
+JS
+    console.log("Bem vindo ao curso")
