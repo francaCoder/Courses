@@ -1,4 +1,4 @@
-<img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Image/Curso.em.video.jpeg">
+<img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/%26%20-%20Image/Curso-em-video.jpeg">
 
 # Coisas que todo ser humano deveria fazer:
 + Cuidar da saúde
