@@ -1,3 +1,5 @@
+<img src="https://github.com/franssa01/Courses/blob/main/Trybe/%26%20-%20Image/Trybe.jpeg">
+
 # Trybe - Exercícios
 
 Repositório que engloba todos os exercícios elaborados por __[Matheus França](https://www.linkedin.com/in/matheus-fran%C3%A7a-b0961a222/)__ durante a estrada na [Trybe](https://www.betrybe.com/) :rocket:
