@@ -5,29 +5,30 @@ O último exercício deste curso, em tese o mais difícil. Foi muito legal conhe
 <hr>
 <br>
 
-
-<div align="center">
-<img width="460" align="left"
-src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%205%20Analizador%20de%20n%C3%BAmeros/Images/Analizador.gif">
-
-<img width="510" height="465" align="right"
-src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%205%20Analizador%20de%20n%C3%BAmeros/Images/Flowchart.png">  
+<div align="center"> 
+  <img width="470" height="430px" src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%205%20Analizador%20de%20n%C3%BAmeros/Images/Analizador.gif"/>
+  <img width="490" height="450px" src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%205%20Analizador%20de%20n%C3%BAmeros/Images/Flowchart.png">
 </div>
 
 <br>
 <br>
----
+
+<hr>
 
 ## Caracteristicas
 
 - [x] Site responsivo (Computador, tablet e celular)
 - [x] Botões
 - [x] lista
+- [x] Arrays
+- [x] Functions  
 
 ## Tecnologias
-- [x] HTML.
-- [x] CSS.
-- [x] JavaScript.
+- [x] HTML
+- [x] CSS
+- [x] JavaScript
+
+<br>
 
 ### Autor
 ---
