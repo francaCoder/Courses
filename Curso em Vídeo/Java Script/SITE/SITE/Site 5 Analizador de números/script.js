@@ -46,7 +46,7 @@ function finalizar() {
             soma += valores[pos]
             if (valores[pos] > maior)
             maior = valores[pos]
-            if ( valores[pos < menor])
+            if ( valores[pos] < menor)
             menor = valores[pos]
 
         }
