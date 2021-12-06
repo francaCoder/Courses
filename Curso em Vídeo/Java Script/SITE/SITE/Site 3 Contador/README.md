@@ -9,21 +9,18 @@
 <br>
 <div align="left">
 <img width="451" align="left" 
-     src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%203%20Contador/site3.gif"/>
+     src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%203%20Contador/site3.gif">
   </div>
+  
  <div align="right">
 <img width="476px" height="430px" align="right"
-     src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%203%20Contador/Flowchart.png"/>
+     src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%203%20Contador/Flowchart.png">
 </div>
 
 <br>
 <br>
 
-<div>
-  <h2>
-    Caracteristicas
-  </h2>
-  </div>
+## Caracteristicas
 
 - [x] Site responsivo (Computador, tablet e celular)
 - [x] Botões
@@ -42,6 +39,4 @@
 <br>
 
 <p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b0961a222/">Matheus França & <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo"> Gustavo Guanabara</a>
-
-
 
