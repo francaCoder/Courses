@@ -1,7 +1,5 @@
 # Contador
 
----
-
 <p> 
   Nesse site aproveitamos a interatividade para nos comunicarmos com o usuário, ele escolhe o número inicial e o número final, em seguida ele 
   escolhe de quantas em quantas "casas" ele que ir pulando, na div abaixo ele terá o resultado seguido de emojis.
@@ -15,13 +13,18 @@
 
 ---
 
-#### Caracteristicas
+## Caracteristicas
 
-- [x] Site responsivo (Computador, tablet e celular).
-- [x] HTML, CSS e JS.
-- [x] Divs.
-- [x] Funções.
-- [x] Emojis.
+- [x] Site responsivo (Computador, tablet e celular)
+- [x] Botões
+- [x] Divs
+- [x] Funções
+- [x] Emojis
+
+## Tecnologias
+- [x] HTML.
+- [x] CSS.
+- [x] JavaScript.
 
 ---
 
