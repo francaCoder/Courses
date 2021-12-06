@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*
+        Involve all code these challenge with an IIFE
+        Create a file .html and add the script to him
+        */
+
+            (function() {
+
+                /* 
+                Create a constructor function called 'person'. This cosntructor must have the following characteristics:
+                - 3 Parameters called 'name', 'lastname' and 'age'
+                - Must have 3 properties 
+                    - Name - That will receive the value of parameter name
+                    -lastName ......
+                    - Age .......
+                - Must have 3 methods:
+                    - getFullName - Must return the full name of object created
+                    - getAge...
+                    -addAge - This method shouldn't have nothing parameter, but when i run, we will pass an argument , that will be the amount of years that will be added to first age. This method must return the object the will be instantiated
+
+                */
+
+                // Constructor functions must initialize with a letter in Upercase
+                function Person(name, lastName, age) { 
+                    this.Name = name,
+                    this.LastName = lastName,
+                    this.Age = age
+                    this.getFullName = function getFullName() {
+                        return `${this.Name} ${this.LastName}`
+                    }
+                    this.getAge = function getAge() {
+                        return this.Age
+                    }
+                    this.addAge = function addAge() {
+                        this.Age += arguments[0]
+                        return this
+                    }
+                }
+
+                /* 
+                Create 3 new objects using the constructor above. The objects will be new persons. The variables will must be the first name of person. Pass the parameters for the constructor for create the new persons. Show the peoples in console. One console for each people
+                */
+
+                console.log("New persons createds from object Person")
+                let matheus = new Person("Matheus", "França", 19)
+                let joao = new Person("João", "Almeida", 14)
+                let caio = new Person("Caio", "Pereira", 25)
+                
+                console.log(matheus)
+                console.log(joao)
+                console.log(caio)
+
+                // Show in console the full name of each people
+
+                console.log("Name of peoples")
+                console.log(matheus.getFullName())
+                console.log(joao.getFullName())
+                console.log(caio.getFullName())
+
+                /* 
+                Show in console the ages of each people, with the phrase:
+                "[full name] have a [age] years."
+                */
+
+                console.log("Age of peoples")
+                console.log(`${matheus.getFullName()} 
+                have a ${matheus.getAge()} years`)
+                console.log(`${joao.getFullName()}
+                 have a ${joao.getAge()} years`)
+                console.log(`${caio. getFullName()} 
+                have a ${caio.getAge()} years`)
+                
+                /* 
+                Add some years for each people, and after show in console the new age. The phrase will must be:
+                "[Full name] now have a [new age] years."
+                */
+
+                console.log(`${matheus.getFullName()} now have a ${matheus.addAge(2).getAge()} years`)
+                console.log(`${joao.getFullName()} now have a ${joao.addAge(4).getAge()} years`)
+                console.log(`${caio.getFullName()} now have a ${caio.addAge(-3).getAge()} years`)
+
+
+
+
+
+            })()
+
+    </script>
+    
+</body>
+</html>
