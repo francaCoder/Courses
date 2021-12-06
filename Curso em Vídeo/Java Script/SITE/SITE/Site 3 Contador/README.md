@@ -7,12 +7,12 @@
 
 ---
 <br>
-<div align="center">
+<div>
 <img width="451" align="left" 
      src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%203%20Contador/site3.gif">
   </div>
   
- <div align="center">
+ <div>
 <img width="476px" height="430px" align="right"
      src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%203%20Contador/Flowchart.png">
 </div>
