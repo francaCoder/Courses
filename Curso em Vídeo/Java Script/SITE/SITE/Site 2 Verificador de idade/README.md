@@ -10,7 +10,10 @@ Quando o usuário digita seu ano de nascimento, o código faz o cálculo e devol
 <div align="center"> 
   <img width="451" height="400px" src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%202%20Verificador%20de%20idade/site2homem.gif"/>
   <img width="451" height="400px" src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%202%20Verificador%20de%20idade/site2mulher.gif"/>
+  <img width="940" height="500px"
+src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%202%20Verificador%20de%20idade/Images/Flowchart.png"/>
 </div>
+
 
 ---
 
@@ -30,6 +33,8 @@ Quando o usuário digita seu ano de nascimento, o código faz o cálculo e devol
 - [x] JavaScript.
 
 <br>
+
+<hr
 
 ### Autor
 <br>
