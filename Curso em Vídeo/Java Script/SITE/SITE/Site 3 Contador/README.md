@@ -7,10 +7,10 @@
 
 ---
 <br>
-<div>
-<img width="451" align="left" 
+<div align="center">
+<img width="451" 
      src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%203%20Contador/site3.gif">
-  <img width="476px" height="430px" align="right"
+  <img width="476px" height="435px" 
      src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%203%20Contador/Flowchart.png">
   </div>
 
