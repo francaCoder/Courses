@@ -8,18 +8,24 @@ mais fácil, mas no código é mais legal. O algorítimo te mostra a tabuada do 
 <br>
 <div align="center"> 
   <img width="451" height="400px" src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%204%20Tabuada/site4.gif"/>
+  <img width="451" height="420px" src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Java%20Script/SITE/SITE/Site%204%20Tabuada/image/Flowchart.png">
 </div>
 
 ---
+
+## Caracteristicas
+
+- [x] Site responsivo (Computador, tablet e celular)
+- [x] Botões
+- [x] lista
 
 ## Tecnologias
 - [x] HTML.
 - [x] CSS.
 - [x] JavaScript.
 
-<br>
-
 ### Autor
+---
 <br>
 
 <p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b0961a222/">Matheus França & 
