@@ -8,7 +8,7 @@ after print the name of championship in console
 let championship = "Euro League"
 
 /*
-Declare one variable called "Teams", that will recieves one array whith 5 elements. The elements will be names of teams of championship that you choiced, and the names must be in ordered according to table in moment of resulution this challenge
+Declare a variable called "Teams", that will recieves an array whith 5 elements. The elements will be names of teams of championship that you choiced, and the names must be in ordered according to table in moment of resulution this challenge
 */
 
 let teams = ["Napoli", "Lyon", "Mônaco", "Lazio", "Rangers"] 
