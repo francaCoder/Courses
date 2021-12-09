@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 016</title>
+</head>
+<body>
+
+    <script>
+        (function() {
+
+    /* 
+    1 - Add a reference for "Use strict"
+    2 - Create a file 'index.html' and after add a script to her
+    */
+   'use strict'
+
+   /* 
+   Declare a variable caleed name that will receive your first name. Show in console all letters separated, with the phrase:
+   "[LETTER] stay in position [POSITION]"
+   */
+
+   let myName = "Matheus"
+   console.log(`"${myName.charAt(0)}" is in ${myName.indexOf(myName.charAt(0 + 1))}º position`)
+   console.log(`"${myName.charAt(1)}" is in ${myName.indexOf("a")}º position`)
+
+   // OR
+
+   for (let index = 0, len = myName.length; index < len; index++) {
+       console.log(`"${myName[index]}" is in ${index + 1}º position`)
+   }
+
+   /* 
+   Declare a variable called "fullName", that will receive your name in format slug (lowercase and words separateds per - )
+   - Make the frist letter of each name stay in upper case and change the '  -  ' per '  space  '
+   */
+
+   /*
+   let fullName = "matheus-frança"
+   let replace = fullName.replace("-", " ")
+   console.log(replace)
+
+    let name = replace.slice(0,8)
+    console.log(name)
+    let surName = replace.slice(8)
+    console.log(surName)
+
+    fullName = name.charAt(0).toUpperCase() && surName.charAt(0).toUpperCase()
+
+    console.log(fullName)
+    */
+
+    let fullName = "matheus-frança"
+    let newFullName = fullName.split("-").map(function(name) {
+        return name[0].toUpperCase() + name.slice(1)
+    })
+    console.log(newFullName.join(" "))
+
+    /* 
+    Whe i use 'split', i have a new arrray, in this case with 2 elements, after i used 'map', the map sweep the array doing anything that you say
+    */
+
+    /* 
+    Create an array with 5 names. Reduce these names for just 1 String, separating each name per comma. Among the penultimate and last name, the separator must be an "and". In the end concat the phrase: "are my friends"      Exemple:
+    "[name], [name], [name], [name], [name] + are my friends"
+    */
+
+    let names = ["Toddy", "Pedrão", "Ruan", "Douglinha", "Mendes"]
+    let phrase = names.reduce(function(accumulated, current, index) {
+        let separator = names.length - 1 === index ? " e " : ", "
+        return accumulated + separator + current
+    }).concat(" are my friends")
+
+    console.log(phrase)
+
+    /* 
+    Using the replace(), make the sring "Roberto" change to "Roberta"
+    */
+
+    let name = "Roberto"
+    // console.log(name.replace("o", "a")) // Raberto
+    console.log(name.replace("to", "ta"))
+
+    /* 
+    Show in console the part "nando" of the string "Fernando". Use the method that does the sweep at end to beginning 
+    */
+
+    let fname = "Fernando"
+    // console.log(fname.lastIndexOf("nando"))
+    console.log(fname.substring(8, 3))
+
+    /* 
+    Declare a variable called 'myName', that receive your first name. Show in console this name, but interspersing the letters among Upper and Lower Case
+    */
+
+    let MYName = "Matheus"
+    let myNewName = []
+    for (let index = 0, len = MYName.length; index < len; index++) {
+        myNewName.push(index % 2 === 0 ? 
+        MYName[index].toUpperCase() :
+        MYName[index].toLowerCase())
+        
+    }
+    console.log(myNewName.join(""))
+
+
+
+
+
+
+
+
+
+
+
+
+})()
+    </script>
+    
+</body>
+</html>
+
+
+
+
