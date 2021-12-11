@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        (function(){
+
+    'use strict'
+    /* 
+    In all exercises this challenge, we will use the regular expressions. For this, we will use the text below. Assign her for a variable called 'text'.
+    */
+       
+    console.log("")
+    console.log("texto original")
+    let text = "Manuel Marques de Sousa, Conde de Porto Alegre (Rio Grande, 13 de junho de 1804 – Rio de Janeiro, 18 de julho de 1875), apelidado de 'O Centauro de Luvas', foi um militar, político, abolicionista e monarquista brasileiro."
+    console.log(text)
+
+    /* 
+    Let's start with some easy games  :D
+    Change the name 'Manuel Marques de Souza' per your name, and after show the result in console.
+    */
+      
+    console.log("")
+    console.log("trocando o nome dele")
+    console.log(text.replace(/Manuel Marques de Sousa/g, "Matheus França da Silva"))
+    // g - In this case: All names will change
+
+    /* 
+    Now, replace the word "brasileiro" per your christmas city. 
+    ( Where you was born )
+    */
+   
+    console.log("")
+    console.log("Trocando a naturalidade")
+    console.log(text.replace(/brasileiro/g, "paulista"))
+
+    /* 
+    Replace all numbers per '  -  ', each character must be a '  -  '
+    */
+   
+    console.log("")
+    console.log("Trocando todos os números de 0 - 9 por traço")
+    console.log(text.replace(/[0-9]/g, "-"))
+
+    /* 
+    Replace all letters ( Just letters ) of 'D' capital at 'h' tiny per "0" ( Number zero ).
+    */
+   
+    console.log("")
+    console.log("Trocando as letras de D-H d-h por 0")
+    console.log(text.replace(/[D-Hd-h]/g, 0))
+
+    /* 
+    Replace all letters "A" ( Capital or tiny ) per "4" .
+    */
+   
+    console.log("")
+    console.log("Trocando A ou a por 4")
+    console.log(text.replace(/A|a/g, 4))
+            /*     console.log(text.replace(/a/gi, 4))
+            i = Ignore case, whatever if is 'A' or 'a'
+
+    /* 
+    Replace the phrase "O Centauro de Luvas", leaving him in Upper Case, using the method 'toUpperCase()'
+    */
+   
+    console.log("")
+    console.log("Deixando a frase em maiúsculo")
+    console.log(text.replace(/O Centauro de Luvas/g, function(phrase) {
+        return phrase.toUpperCase()
+    }))
+
+    /* 
+    Now we will replace all dates in format "13 of june of 1804" for "13/06/1804". The first thing that we must do is create a function called "getMonthNumber", that will receive a parameter ( Name of month ) and will must return the number that make reference to this month.  For exemple:
+    "IF the user put 'March', our code must return "03" in String."
+    Numbers smaller that "10" must have the 0 at beginning.
+    "The month of [Name of month] is equal number [Number of month]"
+    */
+
+    let getMonthNumber = function(NOM) {
+        let months = {
+            January: "01",
+            February: "02",
+            March: "03",
+            April: "04",
+            May: "05",
+            junho: "06", // These two on text are write in portuguese
+            julho: "07", // These two on text are write in portuguese
+            August: "08",
+            September: "09",
+            October: "10",
+            November: "11",
+            December: "12",
+        }
+        return months[NOM]
+    }
+   
+    console.log("")
+    console.log("Mêses em números")
+    console.log(`The month June is equal number ${getMonthNumber("junho")}.`)
+
+    /* 
+    Now delcare a variable called 'regexDate' that will receive the regex that will do the match with dates. Create capture groups of the day,  month and year. For the months, you can do the match only with the months that are in text, don't need add alls 
+    */
+
+    let regexDate = /(\d\d) de (junho|julho) de (\d\d\d\d)/g
+    console.log(regexDate)
+        
+    /* 
+    Now create a function that will do the replace of datas. The function will be called of 'replaceDate'. She must return the date in format: [Day] [Month] [Year]
+    After create a function, do the replace of dates in text
+    */
+
+    console.log("")
+    console.log("Trocando o formato das datas")
+    function replaceDate(regex, day, month, year) {
+        return `${day}/${getMonthNumber(month)}/${year}` 
+    }
+
+    console.log(text.replace(regexDate, replaceDate))
+
+
+
+})()
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
