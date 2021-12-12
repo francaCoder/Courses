@@ -39,9 +39,9 @@
 
 <br>
 
-<hr
+<hr>
 
-### Autor
+###  Autor
 <br>
 
 <p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/matheus-fran%C3%A7a-b0961a222/">Matheus França & 
