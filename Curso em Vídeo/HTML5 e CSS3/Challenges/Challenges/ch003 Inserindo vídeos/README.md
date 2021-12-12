@@ -5,7 +5,7 @@ podemos importar direto do youtube, assim não precisamos baixar e consequenteme
 
 <br>
 
-<div align="center">
+<div align="left">
 <img src="https://github.com/franssa01/Cursos/blob/main/Curso%20em%20V%C3%ADdeo/HTML5%20e%20CSS3/Challenges/Challenges/ch003%20Inserindo%20v%C3%ADdeos/iserindovideo.gif" />
 </div>
 
