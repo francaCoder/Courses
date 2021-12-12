@@ -14,25 +14,14 @@
 
 <br><br>
 
-#### Caracteristicas
 
-- [x] Site responsivo (Computador, tablet e celular).
-- [x] HTML e CSS.
-- [x] Pseudo-classes.
-- [x] Links e ícones.
-- [x] Paleta de cores.
-
----
-
-<br>
-
-#### Rodando no navegador
+### Rodando no navegador
 
 <p> Você pode fazer o download do projeto aqui mesmo pelo github. Basta clilcar no botão verde "Code", em seguida, "Download ZIP". Extraia na pasta desejada e abra o arquivo index.html (seu navegador padrão deve abrir o site).</p>
 
 <br><br>
 
-<h2 align="center">Desktop</h2>
+<h2 align="center">Desktop 🖥</h2>
 
 <p align="center">
    
@@ -40,7 +29,7 @@
 
 <br><br>
 
-<h2 align="center">Tablet</h2>
+<h2 align="center">Tablet 💻</h2>
 
 <p align="center">
 
@@ -48,7 +37,7 @@
 
 <br><br>
 
-<h2 align="center">Mobile</h2>
+<h2 align="center">Mobile 📱</h2>
 
 <p align="center">
     
@@ -56,12 +45,24 @@
 
 <br><br>
 <br><br>
----
-#### Linguagens
+    
+<hr>
+
+### Caracteristicas
+
+- [x] Site responsivo (Computador, tablet e celular).
+- [x] HTML e CSS.
+- [x] Pseudo-classes.
+- [x] Links e ícones.
+- [x] Paleta de cores.
+
+<br>
+
+### Linguagens
 - HTML
 - CSS
 
-<br><br>
+<br>
 
 ---
 
