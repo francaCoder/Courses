@@ -7,7 +7,7 @@ if (x = 3) { // Se o x for igual a 3
     y = 8 // Isso vai acontecer
 }
 
-// Podemos criar caminhos/opções com if e else
+// Podemos criar caminhos/opções com if e else.
 
 console.log(y)
 
