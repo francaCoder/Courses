@@ -9,6 +9,8 @@
 
 // repeaters
 /*
+{4}
+{4, 6}
  .....   one point for each character
  \w\w\w
 \d\d\d
@@ -27,4 +29,6 @@
 "a"{2 = min, 4 = max} how much characters
 ? Optional
 + One or more character
+* Anyone character
 */
+
