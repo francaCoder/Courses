@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        (function(){
+
+            'use strict'
+
+            /* Verify if the URL is valid*/
+
+            let URL = "https://www.google.com.br"
+
+            console.log(URL.match(/https?:\/\/[^.]\w+\.\w+\.\w{3}\.\w{2}/g))
+
+
+            /* Verify if the e-mail is valid */
+
+            let email = "exemple@outlook.com"
+            
+            console.log(email.match(/[^.][\w+]+@\w{4,7}\.\w{3}(.br)?/g))
+
+            
+            /* Return the values of Query String*/ 
+
+            let queryString = "?s=lala&b=bebe&c=cce"
+
+            console.log(queryString.match(/[?&](\w+)=(\w+)/g))
+            // 3 Captures
+            // Now i need take the keys of my queryString
+
+            console.log(queryString.replace(/[?&](\w+)=(\w+)/g,
+            function(regex, key, value) {
+                console.log(key, value)
+            }))
+
+            /* 
+            Create a function called 'cleanCPF' that receive a CPF per parameter, and return this CPF clean (Just numbers)
+            Using the CPF's below, and after show in console
+            - "049-214 3421-1"
+            - "210.458.522-05"
+            - "735 500 794 - 22"
+            - "101.123-131x32"
+            */
+
+            function cleanCPF(CPF) {
+                return CPF.replace(/\D/g, "")
+            }
+            // d = numbers  D = Not a number
+
+            let CPF = [
+            "049-214 3421-1",
+            "210.458.522-05",
+            "735 500 794 - 22",
+            "101.123-131x32"
+            ]
+
+            CPF.forEach(element => {
+                console.log(cleanCPF(element))
+            });
+
+            /* 
+            Using the CPF's above, leave there them with the correct format of CPF
+            ex: "999.999.999-99"
+            */
+
+            /* 
+            CPF.forEach(element => {
+                console.log(cleanCPF(element)
+                .replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4" ))
+            });
+            */
+
+            // OR
+
+            CPF.forEach(element => {
+                console.log(cleanCPF(element).replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, function(regex, agr1, arg2, arg3, arg4) {
+                    return `${agr1}.${arg2}.${arg3}-${arg4}`
+                }))
+            });
+
+            /* 
+            Create a regular expression that do match with the phrases 'June' or 'July'.
+            For ensure that the regex are correct, run using the method  match. If  there is the match, the method returns an array with 'matches'. Else, he returns null.
+            Show the result of match for the phrase:
+            "The months of 'January', 'June' and 'July' begin from letter 'j' "
+            The result must be:
+            ["June" "July"]
+            */
+        
+
+            console.log("The months of 'june' or 'july' begin from lettrer 'j'.".match(/ju(ne|ly)/g))
+
+            /* 
+            Create a regular expression that do the match with the opening of any tag HTML
+            Ex: <div> <section> <blockquote>
+            Use the method match and make the test with the mark below :
+            "<div><section><blockquote>texto <img /></blockquote></section></div>"
+            The result must be:
+            ["<div>", "<section>", "<blockquote>"]
+            */
+
+            console.log("<div><section><blockquote>texto <img /></blockquote></section></div>".match(/<\w+>/g))
+
+            /* 
+            Create a regular expression that do the match with a empty tag HTML, matching with apenning and closure of tag
+            Use the method match and do the test with the mark below
+            "<div><ul><li></li><li></li><li><span></span></li><ul></div>"
+            The result must be:
+            ["<li></li>", "<li></li>", "<span></span>"]
+            */
+
+            console.log("<div><ul><li></li><li></li><li><span></span></li><ul></div>".match(/<\w+><\/\w+>/g))
+
+
+
+
+
+
+        })()
+
+
+    </script>
+    
+</body>
+</html>
