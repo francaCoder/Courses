@@ -118,6 +118,26 @@
 
             console.log("<div><ul><li></li><li></li><li><span></span></li><ul></div>".match(/<\w+><\/\w+>/g))
 
+            /* 
+            Now let's make it more difficult  :D
+            Create a regular expression that do the macth with a text inside of a tag HTML. The text must be captured and replaced per:
+            "The text inside of tag [Name of Tag] is [Text]."
+
+            Use the mark below for do the replace:
+            "<h1>Title of page</h1><p>This is a paragraph</p><footer>footer</footer>"
+
+            The changed must be just in texts inside of tags
+
+            The result must be so:
+            <h1>The text inside a tag "h1" is "Title of page"<h1>
+            */
+
+            console.log("<h1>Title of page</h1><p>This is a paragraph</p><footer>footer</footer>".replace(/<(\w+)>([^<]+)<\/\w+>/g,
+            "<$1>The text inside a tag '$1' is '$2'</$1>\n "
+            ))
+
+
+
 
 
 
