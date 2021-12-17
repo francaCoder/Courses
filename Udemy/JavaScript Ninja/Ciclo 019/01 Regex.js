@@ -29,3 +29,26 @@ When i want verify the beggining of much strings that are in multilines
 */
 
 (/^>/)
+
+/* 
+One or 0 Characters that are before him
+for exmeple:
+
+"abcd" /y?/ = 5 matches
+*/
+
+/* 
+(?:)
+Just grouping, not capture
+*/
+
+let months = "Junho and July"
+// console.log(months.match(/ju[nl]ho/))
+console.log(months.match(/ju(?:n|l)ho/))
+
+/* 
+ \1 and \2
+ Makes reference to first captures
+*/
+
+
