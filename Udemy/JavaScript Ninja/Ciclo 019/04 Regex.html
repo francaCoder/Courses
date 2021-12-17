@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 019</title>
+</head>
+<body>
+
+    <script>
+
+        (function(){
+
+            'use strict'
+
+            /* 
+            Some details that you must know:
+            1 - The object RegExp() can receive a second parameter, that are flags
+            let justNumbersAndLetters = new RegExp("[\\da-z]", "gi")
+            2 - As the regular expression passed for the object RegExp() is a String, she can be concatenated for create a new regex in real time of execution
+
+
+            Using the cosntructor 'RegExp()', create a regex that do match just with numbers in beggining of String. The match need to work in any String, same that the String have multilines.
+
+            - Assign this regex to a variable called 'justNumbersRegex' and show her in console
+            */
+
+            let justNumbersRegex = new RegExp("^\\d+", "gm")
+            console.log(justNumbersRegex)
+
+            /* 
+            Check if the regex above do match with the text in the variable 'text', showing the result in console.
+            The result must be: "[ "10", "50" ]"
+            */
+
+            let text = "10 years.\n50 discs sold.\nAnd not 10% of my friends know he."
+
+            console.log(text.match(justNumbersRegex))
+
+            /* 
+            Create a regex that match with numbers in the final of a String. Assing the regex to the variable called "numbersAtTheEnd"
+            - The regex must match with all Strings, same that the string have more lines, must ever match with numbers in the final line
+            */
+
+            let numbersAtTheEnd = new RegExp("\\d+$", "gm")
+            console.log(numbersAtTheEnd)
+
+            /* 
+            Check if the regex created above do match with the text in the variable 'otherText', showing the result in console.
+            The result must be:   [ "12", "6" ]
+            */
+
+            let otherText = "Silvio Santos, nome artístico de Senor Abravanel (Rio de Janeiro, 12\n de dezembro de 1930), é um famoso apresentador de televisão e empresário brasileiro.\n Proprietário do Grupo Silvio Santos, que inclui empresas como a Liderança\n Capitalização (administradora da loteria Tele Sena), a Jequiti Cosméticos e o\n Sistema Brasileiro de Televisão (mais conhecido como SBT), Silvio Santos possui\n um patrimônio avaliado em 6\n bilhões de reais."
+
+            console.log(otherText.match(numbersAtTheEnd))
+
+            /* 
+            Let's create a method that will do the test for check if exist a HTML mark.
+             - Create a function called 'hasClass'
+            - This function will receive 2 parameters: Markup and cssClass, the mark and the class that we will test
+             - The function must return 'true' if the class exist, else return 'false'
+             - The mark used for test must be the that be in the variable 'markup' below
+             - Make the test, showing in console the result for the following classes:
+             ["container", "text", "date", "excerpet" and "main"]
+             The console must return this phrase:
+             "[result] for this class is [class]"
+             Ex: "True for container class"
+            */
+
+            let markup = "<main>\n <div class='container'>\n <span class='text date'></span>\n   <p class=\ 'excerpt\'></p>\n   </div>\n</main>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        })()
+
+    </script>
+    
+</body>
+</html>
