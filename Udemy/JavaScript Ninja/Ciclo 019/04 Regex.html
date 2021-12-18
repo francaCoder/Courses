@@ -70,6 +70,15 @@
 
             let markup = "<main>\n <div class='container'>\n <span class='text date'></span>\n   <p class=\ 'excerpt\'></p>\n   </div>\n</main>"
 
+              function hasClass(markup, cssClass) {
+                let regex = new RegExp('class=["\'].*' + cssClass + '.*["\']')
+                    return regex.test(markup)
+            }
+
+           let classes = ['container', 'text', 'date', 'excerpt', 'main']
+           classes.forEach(function(cssClass) {
+               console.log(`${hasClass(markup, cssClass)} for the ${cssClass}`)
+           })
 
 
 
