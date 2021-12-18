@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/" method="get"> 
+        <input type="text" name="Username">
+        <input type="password" name="Password">
+        <button type="submit"> submit </button>
+    </form>
+
+    <script>
+        (function(win, doc) {
+            'use strict'
+
+            let $inputs = doc.getElementsByTagName("input")
+            console.log($inputs.length)
+
+            console.log($inputs = document.querySelector("input"))
+            console.log($inputs = document.querySelectorAll("input"))
+
+
+
+
+
+        })(window, document)
+    </script>
+    
+</body>
+</html>

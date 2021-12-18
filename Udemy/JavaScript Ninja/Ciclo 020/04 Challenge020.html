@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge020</title>
+</head>
+<body>
+    <form action="." method="get">
+        <div>
+            <label>Name:</label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label>E-mail:</label>
+            <input type="email">
+        </div>
+
+        <div>
+            <label>Message:</label>
+            <textarea cols="30" rows="10"></textarea>
+        </div>
+    </form>
+
+    <script>
+
+        (function(win, doc){
+            'use strict'
+
+            /* 
+            When creating the page, ask to the user "What's your name?". Assign the result to the variable called 'username'. If the user don't put nothing inside button, 'username' must receive 'unknown'
+            */
+
+            let username = prompt("What's your name?") || alert("[Unknown] Put your name")
+            console.log(`Welcome ${username}`)
+
+            /* 
+            Now ask to the usar "What's you E-mail ?" assigning the result to the variable called 'email'
+            */
+
+            let email = prompt("What's you E-mail ?")
+
+            /* 
+            Select the input of 'name', assigning to the variable called '$inputUsername'
+            */
+
+            let $inputUsername = doc.querySelector("input[type='text']")
+
+            /* 
+            Select the input of 'Email', assigning to the variable called '$inputEmail'
+            */
+
+            let $inputEmail = doc.querySelector("input[type='email']")
+
+            /* 
+            Select the field of  'Message', assigning to the variable called '$message'
+            */
+
+            let $message = doc.querySelector("textarea")
+
+            /* 
+            Select the button of 'submit' of form, assigning to the variable called '$button'
+            */
+
+            let $button = doc.querySelector("button")
+
+            /* 
+            Fill inthe fields of 'name' and 'E-mail' that be in document with the entered values by user
+            */
+
+            $inputUsername.value = username
+            $inputEmail.value = email
+
+            /* 
+            Add an event listiner of 'click' to button that do the following:
+            1. Check if all fields are filled
+            - Show an alert for each field aren't fill in
+            - For each field aren't fill in, show a new alert speaking for fill in this field
+            - Check if the field of 'E-mail' is valid, else be, show an alert
+
+            2. For verify if the E-mail is valid, use the function 'isValidEmail', passing the e-mail that was entered in field of 'E-mail' per parameter. The function 'isValidEmail' will be created below
+
+            3. If all be ok, ask to user:
+            - "Are you sure that you want send this form?"
+            If yes show an alert with 'Form sent' , else show 'Form not sent'
+
+            
+            */
+
+
+
+
+        })(window, document)
+
+    </script>
+    
+</body>
+</html>

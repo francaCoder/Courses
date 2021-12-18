@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms&Events</title>
+</head>
+<body>
+
+    <form action="/" method="get"> 
+        <input type="text" name="Username" class="input" 
+        id="username">
+        <input type="password" name="Password"class="input" id="password">
+        <button type="submit" class="button" id="button"> submit </button>
+    </form>
+
+    <script>
+        (function(win, doc) {
+            'use strict'
+            /*
+            .value  - Take it for us the value of input
+            */
+
+            let $inputUsername = doc.getElementById("username")
+            let $inputPassword = doc.getElementById("password")
+
+            console.log($inputUsername.value, $inputPassword.value)
+
+            // .addEventLitstener
+
+            // Click
+            let $button = doc.getElementById("button")
+            /* 
+            When i click in button, he will run this callback function and do what be inside her 
+            */
+            $button.addEventListener("click", function(event) {
+                event.preventDefault() // He don't send the informations
+                console.log("Click on button")
+            }, false)
+
+            $inputPassword.addEventListener("click", function() {
+                window.alert("Click on input")
+            }, false)
+
+
+
+
+
+
+
+
+
+
+
+        })(window, document)
+
+        
+    </script>
+    
+</body>
+</html>

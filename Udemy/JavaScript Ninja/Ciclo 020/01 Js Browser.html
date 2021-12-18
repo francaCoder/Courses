@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS in Browser</title>
+</head>
+<body>
+    <h1 id="test">Exemple</h1>
+
+    <a class="my-link" href="#">links</a>
+    <a class="my-link" href="#">links</a>
+    <a class="my-link" href="#">links</a>
+    <a class="my-link" href="#">links</a>
+
+    <script>
+        (function(win, doc) {
+            'use strict'
+            /* 
+            IIFE with parameters
+
+
+            Some methods
+            */
+
+            // Alert
+            window.alert("OK")
+        
+
+            // Prompt
+            if (window.prompt("OK?")) { // Message on screen
+                console.log("answered")
+            } else {
+                console.log("not answered")
+            }
+
+            let name = window.prompt("What's your name?")
+            if (name) {
+                console.log(`The name is ${name}`)
+            } else { 
+                console.log("Not answered")
+            }
+
+
+            // Confirm
+
+            let del = window.confirm("are you sure about that?")
+            if (del) {
+                console.log("Successfully deleted")
+            } else {
+                console.log("Action canceled")
+            }
+
+
+            // Tree DOM
+
+            // Select elements
+            // id
+            console.log(doc.getElementById("test"))
+
+            // class
+            console.log(doc.getElementsByClassName("my-link"))
+
+            // Tag
+            console.log(doc.getElementsByTagName("a"))
+
+
+
+
+
+
+        })(window, document)
+        
+    </script>
+    
+</body>
+</html>
+
+
