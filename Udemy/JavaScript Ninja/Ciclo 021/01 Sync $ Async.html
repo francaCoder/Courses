@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync & Async</title>
+</head>
+<body>
+    
+    <script>
+
+        (function(){
+            'use strict'
+
+
+            /* 
+            Sync - When your program execute codes in sequence  
+            For... (The user can't interact with tha page while the code doesn't process)
+             */
+
+            console.log(1)
+            console.log(2)
+            console.log(3)
+        })()
+
+        /* 
+        Async
+        When we need work with events, wait the action of user, put a stopwatch in screen....
+        */
+
+
+        /* Event Loop
+        Do with that the user can interact with the page while th system process your event in a second thread
+        */
+
+        console.log("Beginning")
+        document.addEventListener("click", function() {
+            console.log("Click on document")
+        }, false)
+        console.log("Final")
+    </script>
+
+</body>
+</html>

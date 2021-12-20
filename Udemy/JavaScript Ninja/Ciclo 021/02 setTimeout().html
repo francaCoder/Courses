@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        (function(win, doc){
+            'use strict'
+
+            /* 
+            setTimeout() - Will help us to create an events
+            receive two parameters - Callback function and seconds.
+            After of seconds according to parameter, he will execute the code that be inside function
+            */
+
+            console.log("Beginning")
+            setTimeout(function() {
+                console.log("Execute the 'setTimeout()' ")
+            }, 1000)
+            console.log("Final")
+
+
+            /*
+            setInterval() - He don't stop, and each time that time comes, he do the code
+            */
+
+            console.log("Beginning")
+            let counter = 0
+            setInterval(function() {
+                console.log(++counter)
+            }, 1000)
+            console.log("Final")
+
+            /*
+            Recursive function
+            Need of a condition for stop, run yourself
+            */
+
+            let newCounter = 0 
+            function timer() {
+                console.log('timer', newCounter++)
+                if (newCounter > 10) {
+                    return;
+                }
+                setTimeout(timer, 1000)
+            }
+
+        timer()
+
+        })(window, document)
+
+    </script>
+    
+</body>
+</html>

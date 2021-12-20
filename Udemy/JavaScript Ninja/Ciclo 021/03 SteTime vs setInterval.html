@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-js="button">stop</button>
+    <script>
+
+        (function(win, doc){
+            'use strict'
+            /*
+            setTimeout()   vs    seiInterval()   What's the difference ?
+            setTimeout() - Execute one time and wait for the next time he has the condition for execute again 
+            setInterval() - Execute infinty times independent of other codes
+            */
+
+/*            
+            let counter = 0
+            let $button = doc.querySelector("[data-js='button']")
+            let stopwatch
+            function timer() { // recursive
+                console.log("timer", ++counter)
+                if (counter > 10) {
+                    return
+                }
+                stopwatch = setTimeout(timer, 1000)
+            }
+            timer()
+
+            $button.addEventListener('click', function() {
+                clearTimeout(stopwatch)
+            }, false)
+            
+*/
+            let counter = 0
+            let $button = doc.querySelector("[data-js='button']")
+            let stopwatch
+            function timer() {
+                console.log("timer", ++counter)
+            }   
+                stopwatch = setInterval(timer, 1000)
+            
+                $button.addEventListener('click', function() {
+                clearInterval(stopwatch)
+            }, false)
+
+            /* 
+            Too have some methods that we can use to stop the interval
+            clearTimout(id)
+            clearnterval(id)
+            */
+
+
+            
+
+
+
+
+
+
+
+
+
+
+        })(window, document)
+
+        
+
+    </script>
+    
+</body>
+</html>
