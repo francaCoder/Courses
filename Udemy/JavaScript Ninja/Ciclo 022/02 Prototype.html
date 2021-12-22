@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        (function(){
+            'use strict'
+            /* 
+            All main objects of JS have the property .PROTOTYPE.
+            In PROTOTYPE there is all methods of our main object that we will inherit when create a new object
+            */
+
+            let array = [1, 2, 3]
+            console.log(Array.prototype)
+            console.log(Object.prototype)
+
+            function MyFunction(name, lastName) {
+                this.name = name
+                this.lastName = lastName
+            }
+
+            MyFunction.prototype.fullName = function() {
+                return this.name + " " + this.lastName
+            }
+
+            let matheus = new MyFunction("Matheus", "França")
+
+            // I can create properties after of instantiate my object
+            MyFunction.prototype.age = 18
+            // I could do console.log(matheus.age) here.
+
+            // I also can overwrite this proptotype, and the same console.log will log the new age. Same that the prototype above were on top of 'let matheus...'
+            MyFunction.prototype.age = 19
+
+            console.log(matheus.fullName)
+
+            /* 
+            The properties of object are read before that the properties of PROTOTYPE            
+            */
+
+
+
+
+
+
+        })()
+
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
