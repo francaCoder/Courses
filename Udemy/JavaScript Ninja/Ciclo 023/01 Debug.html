@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        (function() {
+            'use strict'
+
+            /* 
+            We need learn to debug. When you are creating ant project, leave your console open, if it appears some error, you will see using:
+
+            The file and line showed by console in the right
+            */
+
+
+            function sum() {
+                return Array.prototype.reduce.call(arguments, function(accumulated, current) {
+                    return accumulated + current
+                }
+                )}
+
+            console.log(sum(1, 12, 34))
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        })()
+
+    </script>
+    
+</body>
+</html>
