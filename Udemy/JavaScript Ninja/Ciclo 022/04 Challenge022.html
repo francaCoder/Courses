@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        (function() {
+            'use strict'
+
+            /* 
+            Create two abjects, that will be two peoples. Each one must have the properties 'name' and 'lastName', fill in with the name and last name of people.
+            */
+
+            let people1 = {
+                name: "Matheus",
+                surName: "França"
+            }
+
+            let people2 = {
+                name: "Josh",
+                surName: "Miller"
+            }
+
+            /* 
+            Now create a function called 'getFullName' that return the properties 'name' and 'surName' of objects above, forming the full name.
+            This function shouldn't receive parameters, because the access to properties must be dinamic.
+            The same function must serves to both.
+            After this, run this function, showing in console the full name of peoples that was created, passing the peoples above as content of function. Use one console.log() for each.
+            */
+
+            function gettFullName() {
+                console.log(`${this.name} ${this.surName}`) 
+            }
+
+            gettFullName.call(people1)
+            gettFullName.call(people2)
+
+            /* 
+            Create a function called 'sum'. Thist functions can receive a list of variables parameters, and will must return the sum of their.
+            Don't use repition structures for sum the arguments.
+            In the first line, inside function, leave a console.log() for see all parameters passeds to dis function
+            */
+
+            function sum() {
+                console.log(arguments)
+                return Array.prototype.reduce.call(arguments, function(accumulated, currentItem) {
+                    return Number(accumulated) + Number(currentItem)
+                } )
+            }
+
+            /*
+            Show in console that our function works, running her in 3 console.log's, with different numbers per parameters. 
+            */
+
+            console.log(sum(5, 6, 7, 8, 9, 10))
+            console.log(sum(10, 100))
+            console.log(sum(5, 10, 15))
+
+
+            /* 
+            Delacre a variable called 'userEntry', that will receive some values sent by user. Show in console the following phrase:
+            "Enter with some values that will be added"
+            */
+
+            let userEntry = prompt("Enter with some values that will be added")
+
+            // Show in console the values placed by user
+            
+            console.log(userEntry)
+
+            /* 
+            Create a function called 'justNumbers', that receive per parameters a string that filter the message, returning an array with just numbers. After assign the result to variable called numbers
+            */
+
+            function justNumbers(entry) {
+                return entry.replace(/\D+/g, ", ").split(",")
+            }
+
+            console.log(justNumbers("1f5dsvxd35f4 5, 8"))
+
+            let numbers = justNumbers(userEntry)
+            console.log(numbers)
+
+            /* 
+            Now with the array , use the function 'sum' to sum all numbers, and show the result in console
+            */
+
+            console.log(sum.apply(sum, numbers))
+
+
+
+
+
+
+
+
+
+
+
+        })()
+
+    </script>
+    
+</body>
+</html>
