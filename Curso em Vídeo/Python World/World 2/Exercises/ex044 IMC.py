@@ -11,15 +11,18 @@ weight = float(input("Put your weight: "))
 height = float(input("Put your height: "))
 IMC = weight / (height ** 2)
 
+print("The person's IMC is {:.1f}".format(IMC))
 if IMC < 18.5:
     print("Under weight")
-elif 18.5 <= IMC <= 25:
+elif 18.5 <= IMC < 25:
     print("Ideal weight")
-elif IMC > 25 or IMC <= 30:
+elif 25 <= IMC < 30:
     print("Overweight")
-elif IMC > 30 or IMC <= 40:
+elif 30 <= IMC < 40:
     print("Obese")
-elif IMC > 40:
+elif IMC >= 40:
+    print("Morbid obesity")
+
     print("Morbid obesity")
 
 
