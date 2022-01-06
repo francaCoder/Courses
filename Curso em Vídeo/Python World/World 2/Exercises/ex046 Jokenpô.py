@@ -2,41 +2,51 @@
 Make the computer play 'jokenpô' with you.
 """
 
-from random import choice
+from random import randint
 from time import sleep
 import emoji
 
-choices = ["ROCK", "PAPER", "SCISSOR"]
+choices = ("Rock", "Paper", "Scissor")
 
-computer = choice(choices)
-print(computer)
+computer = randint(0, 2)
 
 print("Try to beat computer")
-user = str(input("'Rock' / 'Paper' / 'Scissor' ? ")).strip().upper()
+print("""Make your choice
+[ 0 ] Rock
+[ 1 ] Paper
+[ 2 ] Scissor """)
+user = int(input("What's your move? "))
+
 sleep(0.7)
 print("Jo...")
 sleep(0.7)
 print("ken...")
 sleep(0.7)
-print("PÔ")
+print("PÔ!!")
 
-if computer == "ROCK" and user == "SCISSOR":
+if computer == 0 and user == 2:
     print("Computer won and User lost, Rock breaks Scissor")
-elif computer == "PAPER" and user == "ROCK":
+elif computer == 1 and user == 0:
     print("Computer won and User lost, Paper wraps Rock")
-elif computer == "SCISSOR" and user == "PAPER":
+elif computer == 2 and user == 1:
     print("Computer won and User lost, Scissor cut Paper")
 
-if user == "ROCK" and computer == "SCISSOR":
+if user == 0 and computer == 2:
     print("User won and Computer lost, Rock breaks Scissor")
-elif user == "PAPER" and computer == "ROCK":
+elif user == 1 and computer == 0:
     print("User won and Computer lost, Paper wraps Rock")
-elif user == "SCISSOR" and computer == "PAPER":
+elif user == 2 and computer == 1:
     print("User won and Computer lost, Scissor cut Paper")
 
-if user != "ROCK" and user != "SCISSOR" and user != "PAPER":
-    print("Invalid move, which 'Rock', 'Paper or 'Scissor'")
+if user != 0 and user != 1 and user != 2:
+    print(""" Invalid move, which: 
+    [ 0 ] Rock 
+    [ 1 ] Paper
+    [ 2 ] Scissor
+    """)
+
 elif user == computer:
     print("The game was a draw, play again")
+
 
 
