@@ -13,5 +13,11 @@ s3 = float(input("Third Straight: "))
 
 if s1 < s2 + s3 and s2 < s1 + s3 and s3 < s1 + s2:
     print("The straights above can form a triangle.")
+    if s1 == s2 == s3:
+        print("Can be formed an Equilateral Triangle.")
+    elif s1 != s2 != s3 != s1:
+        print("Can be formed a Scalene Triangle.")
+    else:
+        print("Can be formed an Isosceles Triangle")
 else:
     print("The straights below can't form a triangle.")
