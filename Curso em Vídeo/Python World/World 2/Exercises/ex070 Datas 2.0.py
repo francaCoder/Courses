@@ -5,12 +5,11 @@ _ How many men were registered
 - How many women are under 20 years old
 """
 
-condition = "Y"
 counter = 1
 
-personsRegistereds = men = women = over18 = womenUnder20 = 0
+personsRegistereds = men = over18 = womenUnder20 = 0
 
-while condition == "Y":
+while True:
     print("---- {}º Person ----".format(counter))
     name = str(input("Name: "))
     age = int(input("Age: "))
@@ -36,8 +35,10 @@ while condition == "Y":
         wantRegister = str(input("Do you want register more peoples? [Y/N] ")).strip().upper()
 
     if wantRegister == "N":
-        condition = "N"
+        break
 
+print(" ")
+print("↓ ↓ ↓ Finish ↓ ↓ ↓")
 print("We have {} persons registereds.".format(personsRegistereds))
 print("{} men was registereds.".format(men))
 print("{} persons has over 18 years old".format(over18))
