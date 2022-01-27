@@ -6,3 +6,7 @@ cm = meters * 100
 mm = meters * 1000
 
 print("{} meters is equal to {:.0f} cm and {:.0f} mm".format(meters, cm, mm))
+
+# OR
+
+print(f"{meters} meters is equal to {cm:.0f} cm and {mm:.0f} mm")
