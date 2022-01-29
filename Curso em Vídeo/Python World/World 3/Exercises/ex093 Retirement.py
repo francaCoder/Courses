@@ -11,7 +11,9 @@ data['Work Card'] = int(input("Work Card: (0 = Don't Have) "))
 if data['Work Card'] != 0:
     data['Year of hired'] = int(input("Year of hired: "))
     data['Wage'] = float(input("Wage: $"))
-    data['Retirement'] = data['Age'] + (data['Year of hired'] + 35) - datetime.now().year # Something to man and woman
+    # data['Retirement'] = data['Age'] + (data['Year of hired'] + 35) - datetime.now().year # Something to man and woman
+    data['Retirement'] = (data['Year of hired'] - wasBornIn) + 35
 for k, v in data.items():
     print(f"{k} → {v}")
 print(data)
+

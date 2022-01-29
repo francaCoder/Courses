@@ -22,3 +22,12 @@ else:
     student['Status'] = "Disapproved"
 for k, v in student.items():
     print(f"{k} → {v}")
+
+# OR
+
+student = {}
+student['Name'] = str(input("Name: "))
+student['Average'] = float(input(f"{student['Name']}'s Average: "))
+student['Status'] = "Approved" if student['Average'] >= 6 else "Disapproved"
+for k, v in student.items():
+    print(f"{k} → {v}")
