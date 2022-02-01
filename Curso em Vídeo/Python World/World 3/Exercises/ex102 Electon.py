@@ -12,15 +12,13 @@ def vote(yearOfBirth):
     from datetime import datetime
     age = datetime.now().year - yearOfBirth
     print(f"You has {age} years old.")
-
     if age < 16:
         print("Can't vote.")
-    elif age < 18:
+    elif age < 18 or age > 65:
         print("Optional vote.")
-    elif age < 65:
-        print("Mandatory vote.")
     else:
-        print("Optional vote")
+        print("Mandatory vote.")
+
 
 
 vote(yearOfBirth=int(input("When you was born? ")))

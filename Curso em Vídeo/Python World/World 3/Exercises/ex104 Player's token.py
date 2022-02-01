@@ -1,6 +1,6 @@
 """
 Make a program that has a function called token(), that receive two option parameters:
-- The football player's name
+- The football player'shortcut name
 - How many goals he scored
 
 working even if any parameter isn't fill in.
