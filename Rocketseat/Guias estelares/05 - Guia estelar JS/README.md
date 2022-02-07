@@ -8,4 +8,4 @@
   Muitas aulas e muitos exercícios de JS, curti muito esse Guia, e foi por ele que eu decidi entrar e por ele que eu comecei, e após ver a qualidade das aulas e de ensinamento foi que eu continuei vendo os outros.
   <p> Não sei o nome daquele professor para deixar os créditos, mas ensina meuito bem, parabéns pelo trabalho.</p>
   
- `Só não entendi como se usa funções, por isso decidi comprar o curso de JS Ninja da udemy`
+ `Só não entendi como se usa funções, por isso decidi comprar o curso de JS Ninja da udemy`.
