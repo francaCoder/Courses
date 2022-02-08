@@ -16,4 +16,22 @@ print("{} x 9 = {}".format(number, number * 9))
 print("{} x 10 = {}".format(number, number * 10))
 print("-"*12)
 
+# Or
+
+
+def line(word):
+    print(f"-=-=-=-= << {word} >> =-=-=-=-")
+
+
+def times_table(number=1, times=10):
+    line("Times Table")
+    for c in range(0, times+1):
+        print(f"{number} x {c} = {number * c}")
+    line("Finish")
+
+
+times_table(5, 20)
+
+
+
 
