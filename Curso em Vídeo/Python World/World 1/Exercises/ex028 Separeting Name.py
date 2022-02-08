@@ -1,5 +1,5 @@
 """
-Make a code that reads person's full name and then displays the first on the console name
+Make a code that read person's full name and then displays the first on the console name
 and then the second name
 
 """

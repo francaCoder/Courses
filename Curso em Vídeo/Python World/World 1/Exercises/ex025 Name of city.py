@@ -11,5 +11,8 @@ print("SANTO" in separateName[0])
 """
 
 nameOfCity = str(input("What's the name of city? ")).strip().upper()
-print(nameOfCity[:5] == "SANTO")
+if nameOfCity[:5] == "SANTO":
+    print("This city starts with 'Santo'.")
+else:
+    print("This city doesn't starts with 'Santo'.")
 

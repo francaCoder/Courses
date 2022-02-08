@@ -11,3 +11,16 @@ n4 = str(input("Fourth name: "))
 nameList = [n1, n2, n3, n4]
 
 print("The name chosen was {}".format(choice(nameList)))
+
+
+# Or
+
+names = []
+
+def choose_name(max):
+    for c in range(0, max):
+        names.append(str(input(f"{c+1}º Name: ")))
+    print(f"The name chosen was {choice(names)}")
+
+
+choose_name(5)
