@@ -1,0 +1,28 @@
+DEBUG - a
+INFO - b
+WARNING - c
+ERROR - D
+CRITICAL - Logging critical level
+DEBUG - a
+INFO - b
+WARNING - c
+ERROR - D
+CRITICAL - Logging critical level
+DEBUG - a
+INFO - b
+WARNING - c
+ERROR - D
+CRITICAL - Logging critical level
+INFO - m@hotmail.com entered your bank account
+DEBUG - a
+INFO - b
+WARNING - c
+ERROR - D
+CRITICAL - Logging critical level
+INFO - invalid literal for int() with base 10: 'dadas'
+DEBUG - a - 2022-02-07 19:14:46,915
+INFO - b - 2022-02-07 19:14:46,915
+WARNING - c - 2022-02-07 19:14:46,915
+ERROR - D - 2022-02-07 19:14:46,915
+CRITICAL - Logging critical level - 2022-02-07 19:14:46,915
+INFO - invalid literal for int() with base 10: 'fsako' - 2022-02-07 19:15:00,728
