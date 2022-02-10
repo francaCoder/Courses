@@ -23,3 +23,82 @@
 <hr>
 <br>
 
+## Ex014 → Cash or Installments
+<div>
+  <img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Python%20World/World%201/%26%20-%20Image/ex014.jpeg">
+</div>
+
+* Trocando os diversos comandos (com baixíssima eficácia) de `print()` por uma versão usando o `for .. in range()`, que conseguiria resolver esse exercício e uma tabuada muito mais complexa mesmo com poucas linhas. E ainda sim incrementei esse `for .. in range()` dentro de uma função `def times_table`, que ao ser chamada, dá a possibilidade do usuário escolher o número que quer ver a tabuada e até quantas vezes deseja que aquele número seja multiplicado.
+
+<hr>
+<br>
+
+## Ex015 → Converter Temperature
+<div>
+  <img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Python%20World/World%201/%26%20-%20Image/ex015.jpeg">
+</div>
+
+* Trocando os diversos comandos (com baixíssima eficácia) de `print()` por uma versão usando o `for .. in range()`, que conseguiria resolver esse exercício e uma tabuada muito mais complexa mesmo com poucas linhas. E ainda sim incrementei esse `for .. in range()` dentro de uma função `def times_table`, que ao ser chamada, dá a possibilidade do usuário escolher o número que quer ver a tabuada e até quantas vezes deseja que aquele número seja multiplicado.
+
+<hr>
+<br>
+
+## Ex016 → Car Rent
+<div>
+  <img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Python%20World/World%201/%26%20-%20Image/ex016.jpeg">
+</div>
+
+* Trocando os diversos comandos (com baixíssima eficácia) de `print()` por uma versão usando o `for .. in range()`, que conseguiria resolver esse exercício e uma tabuada muito mais complexa mesmo com poucas linhas. E ainda sim incrementei esse `for .. in range()` dentro de uma função `def times_table`, que ao ser chamada, dá a possibilidade do usuário escolher o número que quer ver a tabuada e até quantas vezes deseja que aquele número seja multiplicado.
+
+<hr>
+<br>
+
+## Ex020 → Prize Draw
+<div>
+  <img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Python%20World/World%201/%26%20-%20Image/ex020.jpeg">
+</div>
+
+* Trocando os diversos comandos (com baixíssima eficácia) de `print()` por uma versão usando o `for .. in range()`, que conseguiria resolver esse exercício e uma tabuada muito mais complexa mesmo com poucas linhas. E ainda sim incrementei esse `for .. in range()` dentro de uma função `def times_table`, que ao ser chamada, dá a possibilidade do usuário escolher o número que quer ver a tabuada e até quantas vezes deseja que aquele número seja multiplicado.
+
+<hr>
+<br>
+
+## Ex021 → Prize Draw Presentation
+<div>
+  <img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Python%20World/World%201/%26%20-%20Image/ex021.jpeg">
+</div>
+
+* Trocando os diversos comandos (com baixíssima eficácia) de `print()` por uma versão usando o `for .. in range()`, que conseguiria resolver esse exercício e uma tabuada muito mais complexa mesmo com poucas linhas. E ainda sim incrementei esse `for .. in range()` dentro de uma função `def times_table`, que ao ser chamada, dá a possibilidade do usuário escolher o número que quer ver a tabuada e até quantas vezes deseja que aquele número seja multiplicado.
+
+<hr>
+<br>
+
+## Ex025 → Name of the city
+<div>
+  <img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Python%20World/World%201/%26%20-%20Image/ex025.jpeg">
+</div>
+
+* Trocando os diversos comandos (com baixíssima eficácia) de `print()` por uma versão usando o `for .. in range()`, que conseguiria resolver esse exercício e uma tabuada muito mais complexa mesmo com poucas linhas. E ainda sim incrementei esse `for .. in range()` dentro de uma função `def times_table`, que ao ser chamada, dá a possibilidade do usuário escolher o número que quer ver a tabuada e até quantas vezes deseja que aquele número seja multiplicado.
+
+<hr>
+<br>
+
+## Ex029 → IA
+<div>
+  <img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Python%20World/World%201/%26%20-%20Image/ex029.jpeg">
+</div>
+
+* Trocando os diversos comandos (com baixíssima eficácia) de `print()` por uma versão usando o `for .. in range()`, que conseguiria resolver esse exercício e uma tabuada muito mais complexa mesmo com poucas linhas. E ainda sim incrementei esse `for .. in range()` dentro de uma função `def times_table`, que ao ser chamada, dá a possibilidade do usuário escolher o número que quer ver a tabuada e até quantas vezes deseja que aquele número seja multiplicado.
+
+<hr>
+<br>
+
+## Ex034 → Higher / Smaller Number
+<div>
+  <img src="https://github.com/franssa01/Courses/blob/main/Curso%20em%20V%C3%ADdeo/Python%20World/World%201/%26%20-%20Image/ex034.jpeg">
+</div>
+
+* Trocando os diversos comandos (com baixíssima eficácia) de `print()` por uma versão usando o `for .. in range()`, que conseguiria resolver esse exercício e uma tabuada muito mais complexa mesmo com poucas linhas. E ainda sim incrementei esse `for .. in range()` dentro de uma função `def times_table`, que ao ser chamada, dá a possibilidade do usuário escolher o número que quer ver a tabuada e até quantas vezes deseja que aquele número seja multiplicado.
+
+<hr>
+<br>
