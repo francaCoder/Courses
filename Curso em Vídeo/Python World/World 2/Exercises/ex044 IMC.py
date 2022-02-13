@@ -23,8 +23,6 @@ elif 30 <= IMC < 40:
 elif IMC >= 40:
     print("Morbid obesity")
 
-    print("Morbid obesity")
-
 
 
 

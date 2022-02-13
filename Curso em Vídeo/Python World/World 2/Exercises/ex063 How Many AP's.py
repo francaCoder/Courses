@@ -14,5 +14,5 @@ while more != 0:
         counter += 1
     print("PAUSE")
 
-    more = int(input("How many AP's you still wants to see? "))
+    more = int(input("How many AP'shortcut you still wants to see? "))
 print("AP finished with {} progressions.".format(total))

@@ -11,9 +11,9 @@ userWins = 0
 computerWins = 0
 
 while True:
-    userChoice = str(input("What's your choice - Even or Odd? [E/O] ")).strip().upper()[0]
+    userChoice = str(input("What'shortcut your choice - Even or Odd? [E/O] ")).strip().upper()[0]
     while userChoice not in "EO":
-        userChoice = str(input("What's your choice - Even or Odd? [E/O] ")).strip().upper()[0]
+        userChoice = str(input("What'shortcut your choice - Even or Odd? [E/O] ")).strip().upper()[0]
     computerNumber = randint(0, 10)
     if userChoice == "E":
         userNumber = int(input("Choice a Number: "))
@@ -76,5 +76,5 @@ while True:
             print("You won!")
         else:
             print("You lost!")
-    print("Let's play again...")
+    print("Let'shortcut play again...")
 print("GAME OVER! You won {} times.".format(userWins))

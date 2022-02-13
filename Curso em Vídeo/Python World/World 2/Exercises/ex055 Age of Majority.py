@@ -17,8 +17,7 @@ for c in range(0, 7):
 
 
 currentYear = date.today().year
-totalBiggest = 0
-totalSmallest = 0
+totalBiggest = totalSmallest = 0
 for person in range(1, 8):
     wasBorn = int(input("In which year the {}ª people was born? ".format(person)))
     age = currentYear - wasBorn

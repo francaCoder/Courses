@@ -8,7 +8,7 @@ R$1 R$10 R$20 R$50
 """
 
 print("=" * 30)
-print("{:^30}".format("França's Bank"))
+print("{:^30}".format("França'shortcut Bank"))
 print(("=" * 30))
 
 value = int(input("How much money do you want to withdraw? "))
@@ -33,14 +33,14 @@ while True:
 
             break
 print("=" * 30)
-print("Always come back to França's Bank. Have a good day!")
+print("Always come back to França'shortcut Bank. Have a good day!")
 
 
 # OR
 
 
 print("=" * 30)
-print("{:^30}".format("França's Bank"))
+print("{:^30}".format("França'shortcut Bank"))
 print(("=" * 30))
 
 value = int(input('How much money do you want to withdraw? R$'))
@@ -51,13 +51,13 @@ for banknotes in [50, 20, 10, 1]:
         print(f'{totalBanknotes} Banknotes of R${banknotes}')
 
 print("=" * 30)
-print("Always come back to França's Bank. Have a good day!")
+print("Always come back to França'shortcut Bank. Have a good day!")
 
 
 # OR
 
 print("=" * 30)
-print("{:^30}".format("França's Bank"))
+print("{:^30}".format("França'shortcut Bank"))
 print(("=" * 30))
 
 value = int(input("How much money do you want to withdraw? R$"))
@@ -77,4 +77,4 @@ print(f"Banknotes of R$10 = {banknotes10}")
 print(f"Banknotes of R$1 = {banknotes1}")
 print(" ")
 print("=" * 30)
-print("Always come back to França's Bank. Have a good day!")
+print("Always come back to França'shortcut Bank. Have a good day!")

@@ -20,7 +20,7 @@ while option != 5:
     [ 4 ] New numbers
     [ 5 ] Exit
     """)
-    option = int(input("→ What's your choice? "))
+    option = int(input("→ What'shortcut your choice? "))
     if option == 1:
         r = n1 + n2
         print("The sum between {} + {} is {}".format(n1, n2, r))

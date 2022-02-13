@@ -15,7 +15,7 @@ elif age <= 14:
     print("You're in category Childish")
 elif age <= 19:
     print("You're in category Junior")
-elif age <= 20:
+elif age <= 25:
     print("You're in category Senior")
 else:
     print("You're in category Master")

@@ -13,4 +13,19 @@ if n1 > n2:
 elif n2 > n1:
     print("The second value is biggest:")
 else:
-    print("This numbers have the same value.")
+    print("These numbers have the same value.")
+
+
+# Or
+
+number = [[int(input("Number: "))], [int(input("Number: "))]]
+if number[0][0] == number[1][0]:
+    print("These numbers have the same value.")
+else:
+    if number[0][0] > number[1][0]:
+        print("The first value is biggest.")
+    else:
+        print("The second value is biggest:")
+
+
+

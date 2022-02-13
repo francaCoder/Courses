@@ -60,3 +60,5 @@ if option > 4:
     total = price
     print("Invalid payment form, try again.")
 print("with the promotion, your purchase of R${:.2f} will cost R${:.2f} with the discount".format(price, total))
+
+

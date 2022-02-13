@@ -1,6 +1,6 @@
 """
 Make a code that read the name, age and gender. In the end show:
-- The group's average age
+- The group'shortcut average age
 - Who is the old man
 _ How many women has lass than 20 years
 """
@@ -27,7 +27,7 @@ for person in range(1, 5):
         totalWomen += 1
 
 averageAge = totalAge / 4
-print("The average age's groups is {} years.".format(averageAge))
+print("The average age'shortcut groups is {} years.".format(averageAge))
 print("The old man has {} years and called {}.".format(biggestAgeMan, oldMan))
 print("Altogether are {} women with under twenty years.".format(totalWomen))
 

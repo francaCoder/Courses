@@ -17,3 +17,19 @@ while yes == "Y":
 print(" ")
 print("The sum between this numbers was {}".format(sum))
 print("You typed {} numbers".format(numbers))
+
+# OR
+
+"""
+num = 0
+counter = 0
+sum = 0
+"""
+num = counter = sum = 0
+num = int(input("Type a number. (999 to stop) "))
+while num != 999:
+    sum += num
+    counter += 1
+    num = int(input("Type a number. (999 to stop) "))
+print("You typed {} numbers and the sum between these was {}.".format(counter, sum))
+# .format(counter - 1, sum - 999) or sum = sum - 999
