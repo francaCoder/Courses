@@ -25,3 +25,22 @@ new_thread = threading.Thread(target=extract_data, args=("https:www.devaprender.
 new_thread.start()
 download_files()
 new_thread.join()
+
+# Or
+
+def comment(site):
+    print(f"Entering the site: {site}")
+    sleep(5)
+    print(f"Data processed on the website: {site}")
+
+
+threads = []
+for site in range(100): # 100 Websites
+    new_thread = threading.Thread(target=comment, args=(site,))
+    threads.append(new_thread)
+
+for thread in threads:
+    thread.start()
+
+for thread in threads:
+    thread.join()
