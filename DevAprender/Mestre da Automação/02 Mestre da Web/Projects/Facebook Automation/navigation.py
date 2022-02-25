@@ -26,19 +26,18 @@ class AutomateCourse:
                 ElementNotSelectableException
             ]
         )
-        self.facebookLink = "https://www.facebook.com/"
+        # self.facebookLink = "https://www.facebook.com"
         self.email = str(input("Email: "))
         self.password = str(input("Password: "))
+        self.text = "Welcome to me! My name's Matheus."
 
     def Start(self):
         self.Login()
         self.Post(
             "https://www.facebook.com/groups/657344725501925",
-            "Welcome to me! My name's Matheus.",
         )
 
     def Login(self):
-        self.driver.get(self.facebookLink)
         email_field = self.wait.until(
             expected_conditions.element_to_be_clickable(
                 (By.XPATH, "//input[@name='email']")
@@ -51,10 +50,10 @@ class AutomateCourse:
         )
         email_field.click()
         self.type_like_person(self.email, email_field)
-        sleep(5)
+        sleep(2)
         password_field.click()
         self.type_like_person(self.password, password_field)
-        sleep(5)
+        sleep(2)
         password_field.send_keys(Keys.ENTER)
         try:
             sleep(5)
@@ -68,29 +67,17 @@ class AutomateCourse:
             print("Mão foi necessário fazer o segundo login")
             pass
 
-    def Post(self, group_link, send_message):
+    def Post(self, group_link):
         self.driver.get(group_link)
-        post_field = self.wait.until(
+        comment_field = self.wait.until(
             expected_conditions.element_to_be_clickable(
-                (By.XPATH, "//span[text()='Escrever publicação']")
-            )
-        )
-        post_field.click()
-        post_text = self.wait.until(
-            expected_conditions.element_to_be_clickable(
-                By.XPATH, "//textarea[@placeholder='Escreva algo...']"
-            )
-        )
-        post_text.send_keys(send_message)
-        sleep(5)
-        send_post = self.wait.until(
-            expected_conditions.element_to_be_clickable(
-                (By.XPATH, "//span[text()='Publicar']")
+                (By.XPATH, "//p[@class='hcukyx3x oygrvhab cxmmr5t8 kvgmc6g5']")
             )
         )
         sleep(3)
-        send_post.click()
-
+        self.type_like_person(self.text, comment_field)
+        sleep(1)
+        comment_field.send_keys(Keys.ENTER)
 
     def type_like_person(self, txt, element):
         for letter in txt:
