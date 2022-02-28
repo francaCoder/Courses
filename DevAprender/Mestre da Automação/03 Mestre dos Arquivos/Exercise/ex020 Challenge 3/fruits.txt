@@ -1,0 +1,12 @@
+Apple
+Banana
+Watermelon
+Strawberry
+Pineapple
+
+Colors:
+Red
+Balck
+White
+Gray
+Brown
