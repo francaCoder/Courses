@@ -60,4 +60,28 @@
 <img src="">
 
 ## Módulo 6 
-
+<p>
+   A parte mais avançada do curso, fiquei um pouco perdido por ainda nesse momento não saber lidar muito bem com classes e também pela curta duração das aulas, as vezes o vídeo começava já com o código pronto e mostrava rodando e debugando somente, e eu tinha que copiar as vezes sem entender muita coisa.
+</p>
+<p>
+   Mas ainda sim deu pra ver muitas coisas:
+   <ul>
+      <li>Selenium</li>
+         <p>Deu pra sentir o gostinho da Automação Web, o que me deixou com mais vontade de fazer o curso próprio de automação.</p>
+         <img src="">
+      <li>Flask</li>
+         <p>Não entendi como mexer e para que serve.</p>
+      <li>Pyinstaller</li>
+         <p>Usando executáveis conseguimos fazer com que mais pessoas usem o nosso código na máquina delas, dando utilidade as nossas automações por exemplo.</p>
+         <img src="">
+      <li>Compreheension</li>
+         <p>Uma forma muito legal de simpleficar o for em listas ou dicionários que eu até usei no meu primeiro projeto no repositório do Python Projects.</p>
+         <img src="">
+      <li>Threads</li>
+         <p>Uma forma de rodar partes diferentes do seu código simultâneamente.</p>
+         <img src="">
+      <li>API's</li>
+         <p>Senti bastante dificuldade em mexer nelas também, mas pelo que eu entendi é um conjunto de informações que fica hospedado e que tem relação com o banco de dados no qual também tivemos uma introdução, e de acordo com a vontade do usuário é possível fazer alterações, posts, deletar algo, etc.</p>
+         <img src="">
+   </ul>
+</p>
