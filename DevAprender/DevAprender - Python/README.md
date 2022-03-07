@@ -12,7 +12,7 @@
   Após isso é retornado ao usuário/funcinário uma mensagem de boas vindas e o dia em que ele foi registrado no programa. E por final usando o método <b>choices</b> importado da biblioteca <b>random</b> para sortear um vale compras em um determinado valor.
 </p>
 
-<img src="">
+<img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo1.gif">
 
 ## Módulo 2
 
@@ -20,7 +20,7 @@
   Até então nenhuma novidade que eu não tivesse visto, estruturas de repetição e de condição. Mas sem dúvidas foi o módulo que mais me empolguei, post na pasta de projetos fizemos um joguinho da biblioteca <b>Turtle</b>, usando alguns <b>If's</b> e <b>inputs</b> para fazer com que a setinha se movesse de acordo com os parâmetros passados pelo usuário. E para finalizar implementeis algumas validações usando o while para previnir que o programa não funcionasse corretamente por erros do usuário.
 </p>
 
-<img src="">
+<img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo2.gif">
 
 ## Módulo 3
 <p>
@@ -37,7 +37,7 @@
  usando funções conseguimos deixar ele muito menos e bem menos repetitivo, só não consegui fazer funções para os loops que eu usei como forma de validação, mas mesmo assim funcionou muito bem.
 </p>
 
-<img src="">
+<img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo3.gif">
 
 ## Módulo 4
 <p>
@@ -47,7 +47,7 @@
   O diferencial foi trabalhar com um tipo de aruivo diferente (JSON), fazendo algumas manipulações tinhamos que encontrar determinada habilidade de um pokemno de acordo com o nome dele.
 </p>
 
-<img src="">
+<img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo4.gif">
 
 ## Módulo 5
 <p>
@@ -57,7 +57,7 @@
   Mas o destaque nesse módulo foi a criação e a manipulação de um arquivo Word que fizemos somente com Python.
 </p>
 
-<img src="">
+<img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo5.gif">
 
 ## Módulo 6 
 <p>
@@ -68,24 +68,24 @@
    <ul>
       <li>Selenium</li>
          <p>Deu pra sentir o gostinho da Automação Web, o que me deixou com mais vontade de fazer o curso próprio de automação.</p>
-         <img src="">
+         <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Selenium.gif">
       <li>Flask</li>
          <p>Não entendi como mexer e para que serve.</p>
       <li>Pyinstaller</li>
          <p>Usando executáveis conseguimos fazer com que mais pessoas usem o nosso código na máquina delas, dando utilidade as nossas automações por exemplo.</p>
-         <img src="">
+         <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Pyinstaller.gif">
       <li>Compreheension</li>
          <p>Uma forma muito legal de simpleficar o for em listas ou dicionários que eu até usei no meu primeiro projeto no repositório do Python Projects.</p>
-         <img src="">
+         <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20List%20Compreheension.gif">
       <li>Threads</li>
          <p>Uma forma de rodar partes diferentes do seu código simultâneamente.</p>
-         <img src="">
+         <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Threads.gif">
       <li>API's</li>
          <p>Senti bastante dificuldade em mexer nelas também, mas pelo que eu entendi é um conjunto de informações que fica hospedado e que tem relação com o banco de dados no qual também tivemos uma introdução, e de acordo com a vontade do usuário é possível fazer alterações, posts, deletar algo, etc.</p>
-         <img src="">
+         <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20API's.gif">
       <li>Regex</li>
          <p>
-         Expressões regulares → Foi uma explicação excelente de como funcionava, já tinha visto em JavaScript mas dessa vez ficou bem mais claro. Apenas senti falta de                    aprender a realmente usar ela no código, dentro de condições por exemplo, tive bastante dificuldade de fazer validações no meu primeiro projeto e sabia que usando regex          seria fácil de ser resolvido.
+         Expressões regulares → Foi uma explicação excelente de como funcionava, já tinha visto em JavaScript mas dessa vez ficou bem mais claro. Apenas senti falta de aprender a realmente usar ela no código, dentro de condições por exemplo, tive bastante dificuldade de fazer validações no meu primeiro projeto e sabia que usando regex seria fácil de ser resolvido.
          </p>
          <img src="">
    </ul>
