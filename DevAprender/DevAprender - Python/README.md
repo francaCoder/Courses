@@ -80,18 +80,23 @@
          <p>Deu pra sentir o gostinho da Automação Web, o que me deixou com mais vontade de fazer o curso próprio de automação.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Selenium.gif">
          <p>Usando o Webdriver e seus métodos, conseguimos encontrar determinados elementos em uma página através de várias formas, a que eu prefiro é o <b>'XPATH'</b>, que           insere o email e a senha nos seus respectivos campos, após isso ele encontra o botão de enviar e manda os nossos dados, tudo de forma automática.</p>
+<hr>
       <li>Pyinstaller</li>
          <p>Usando executáveis conseguimos fazer com que mais pessoas usem o nosso código na máquina delas, dando utilidade as nossas automações por exemplo.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Pyinstaller.gif">
+<hr>
       <li>Compreheension</li>
          <p>Uma forma muito legal de simpleficar o for em listas ou dicionários que eu até usei no meu primeiro projeto no repositório do Python Projects.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20List%20Compreheension.gif">
+<hr>
       <li>Threads</li>
          <p>Uma forma de rodar partes diferentes do seu código simultâneamente.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Threads.gif">
+<hr>
       <li>API's</li>
          <p>Senti bastante dificuldade em mexer nelas também, mas pelo que eu entendi é um conjunto de informações que fica hospedado e que tem relação com o banco de dados no qual também tivemos uma introdução, e de acordo com a vontade do usuário é possível fazer alterações, posts, deletar algo, etc.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20API's.gif">
+<hr>
       <li>Regex</li>
          <p>
          Expressões regulares → Foi uma explicação excelente de como funcionava, já tinha visto em JavaScript mas dessa vez ficou bem mais claro. Apenas senti falta de aprender a realmente usar ela no código, dentro de condições por exemplo, tive bastante dificuldade de fazer validações no meu primeiro projeto e sabia que usando regex seria fácil de ser resolvido.
