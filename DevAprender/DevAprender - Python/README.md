@@ -54,7 +54,7 @@
   Classes e programação orientada a objetos (POO) deixam nosso código ainda mais organizado do que as funções, durante o curso todo senti falta de aulas mais longas e com explicação mais detalhada de cada coisa (Guanabara deixa a gente mal acostumado), mas estou aprendendo a lidar melhor com elas no curso de automação que estou fazendo também do DevAprender, e pelo que eu entendi elas servem para separar cada parte do seu sistema em uma Class, um bloco de código, que terá todas as características e todo o trabalho que acontecerá com cada elemento dentro dessa Class. E por cada parte estar separada dentro de uma Class correspondente, facilita ainda mais uma futura manutenção e também deixa seu código mais legível.
 </p>
 <p>
-  Lembrando que, como eu disse, ainda falta muita prática para eu pegar familiaridade com classes.
+  Mas o destaque nesse módulo foi a criação e a manipulação de um arquivo Word que fizemos somente com Python.
 </p>
 
 <img src="">
@@ -82,6 +82,11 @@
          <img src="">
       <li>API's</li>
          <p>Senti bastante dificuldade em mexer nelas também, mas pelo que eu entendi é um conjunto de informações que fica hospedado e que tem relação com o banco de dados no qual também tivemos uma introdução, e de acordo com a vontade do usuário é possível fazer alterações, posts, deletar algo, etc.</p>
+         <img src="">
+      <li>Regex</li>
+         <p>
+         Expressões regulares → Foi uma explicação excelente de como funcionava, já tinha visto em JavaScript mas dessa vez ficou bem mais claro. Apenas senti falta de                    aprender a realmente usar ela no código, dentro de condições por exemplo, tive bastante dificuldade de fazer validações no meu primeiro projeto e sabia que usando regex          seria fácil de ser resolvido.
+         </p>
          <img src="">
    </ul>
 </p>
