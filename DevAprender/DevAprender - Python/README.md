@@ -84,23 +84,34 @@
       <li>Pyinstaller</li>
          <p>Usando executáveis conseguimos fazer com que mais pessoas usem o nosso código na máquina delas, dando utilidade as nossas automações por exemplo.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Pyinstaller.gif">
+         <p>Um exemplo de que poderíamos fazer um simples executável de um contador, ou um programa que gerasse números aleatórios, etc.</p>
 <hr>
       <li>Compreheension</li>
          <p>Uma forma muito legal de simpleficar o for em listas ou dicionários que eu até usei no meu primeiro projeto no repositório do Python Projects.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20List%20Compreheension.gif">
+         <p>
+            Esse método foi usado no meu projeto, a primeira lista com 6 linhas que gera 4 números aleatórios entre 1 - 9, e a linha abaixo faz exatamente a mesma coisa só que               em apenas uma linha de forma mais compacta e inteligente, afinal podemos alterar o intervalo de números aleatórios, quantos serão gerados e também a quantidade de               linhas, que por sinal, na lista anterior teria que ser adicionado um de cada vez.
+         </p>
 <hr>
       <li>Threads</li>
          <p>Uma forma de rodar partes diferentes do seu código simultâneamente.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Threads.gif">
+         <p>No exemplo, extração, downloads e dados de arquivos de um site são processados simultâneamente.</p>
 <hr>
       <li>API's</li>
          <p>Senti bastante dificuldade em mexer nelas também, mas pelo que eu entendi é um conjunto de informações que fica hospedado e que tem relação com o banco de dados no qual também tivemos uma introdução, e de acordo com a vontade do usuário é possível fazer alterações, posts, deletar algo, etc.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20API's.gif">
+         <p>
+            Através do <b>Postman</b> fizemos os nossos testes de post, deletar, alterar ou mostrar alguma informação específica dentro das nossas API's de músicas, livros,                 carros, etc.
+         </p>
 <hr>
       <li>Regex</li>
          <p>
-         Expressões regulares → Foi uma explicação excelente de como funcionava, já tinha visto em JavaScript mas dessa vez ficou bem mais claro. Apenas senti falta de aprender a realmente usar ela no código, dentro de condições por exemplo, tive bastante dificuldade de fazer validações no meu primeiro projeto e sabia que usando regex seria fácil de ser resolvido.
+            Expressões regulares → Foi uma explicação excelente de como funcionava, já tinha visto em JavaScript mas dessa vez ficou bem mais claro. Apenas senti falta de                   aprender a realmente usar ela no código, dentro de condições por exemplo, tive bastante dificuldade de fazer validações no meu primeiro projeto e sabia que usando               regex seria fácil de ser resolvido.
          </p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Regex.gif">
+         <p>
+            Podemos entrar coisas específica no nosso código como palavras, sequências numéricas ou fazer validações de dados como número de telefone, e-mail, CPF, etc.
+         </p>
    </ul>
 </p>
