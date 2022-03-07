@@ -14,6 +14,8 @@
 
 <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo1.gif">
 
+<hr>
+
 ## Módulo 2
 
 <p>
@@ -21,6 +23,8 @@
 </p>
 
 <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo2.gif">
+
+<hr>
 
 ## Módulo 3
 <p>
@@ -39,6 +43,8 @@
 
 <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo3.gif">
 
+<hr>
+
 ## Módulo 4
 <p>
   Não tivemos projetos nesse módulo mas ainda sim foi um conteúdo bem extenso de manipulação de listas, tuplas e dicionários. Vendo a diferença entre eles usando métodos da biblioteca random, map(), set(), range(), ennumerate(), itemgetter() dentre outros.
@@ -48,6 +54,8 @@
 </p>
 
 <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo4.gif">
+
+<hr>
 
 ## Módulo 5
 <p>
@@ -59,6 +67,8 @@
 
 <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo5.gif">
 
+<hr>
+
 ## Módulo 6 
 <p>
    A parte mais avançada do curso, fiquei um pouco perdido por ainda nesse momento não saber lidar muito bem com classes e também pela curta duração das aulas, as vezes o vídeo começava já com o código pronto e mostrava rodando e debugando somente, e eu tinha que copiar as vezes sem entender muita coisa.
@@ -69,8 +79,7 @@
       <li>Selenium</li>
          <p>Deu pra sentir o gostinho da Automação Web, o que me deixou com mais vontade de fazer o curso próprio de automação.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Selenium.gif">
-      <li>Flask</li>
-         <p>Não entendi como mexer e para que serve.</p>
+         <p>Usando o Webdriver e seus métodos, conseguimos encontrar determinados elementos em uma página através de várias formas, a que eu prefiro é o <b>'XPATH'</b>, que           insere o email e a senha nos seus respectivos campos, após isso ele encontra o botão de enviar e manda os nossos dados, tudo de forma automática.</p>
       <li>Pyinstaller</li>
          <p>Usando executáveis conseguimos fazer com que mais pessoas usem o nosso código na máquina delas, dando utilidade as nossas automações por exemplo.</p>
          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Pyinstaller.gif">
