@@ -87,6 +87,6 @@
          <p>
          Expressões regulares → Foi uma explicação excelente de como funcionava, já tinha visto em JavaScript mas dessa vez ficou bem mais claro. Apenas senti falta de aprender a realmente usar ela no código, dentro de condições por exemplo, tive bastante dificuldade de fazer validações no meu primeiro projeto e sabia que usando regex seria fácil de ser resolvido.
          </p>
-         <img src="">
+         <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/DevAprender%20-%20Python/%26%20-%20Image/modulo6%20Regex.gif">
    </ul>
 </p>
