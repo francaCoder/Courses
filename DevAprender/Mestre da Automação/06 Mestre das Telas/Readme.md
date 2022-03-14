@@ -132,29 +132,24 @@
       </p>
     </li>
     <li>
-      <p>
-        <h3>Multiple Windows</h3>
-        Abrindo uma nova janela ou navegando entre elas, são ações possíveis graças à algumas condições e identificações que demos aos         botões de <b>'Abrir segunda janela', 'Back' ou 'next'</b>
-        <p align="left">
-          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL061%20Multiple%20Windows.gif" align=left width=400 height="180">
-        </p>
-        <p align="right">
-          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL062%20Multiple%20Windows.gif" align=right width=430>
-        </p>
-      </p>
-    </li>
-  </ul>
-  <div>
-    <ul>
-       <li>
-        <p>
+          <p>
         <h3>Login & License</h3>
         Semelhante ao nosso prójeto desse módulo, fizemos um sistema de Login de Licença, que para cada um é verificado em um dicionári         se de fato existe, caso não exista é exibido um texto de ação inválida para cada um. Se for válido o usuário será encaminhado           para uma nova janela simulando que agora ele teria acesso à automatizar alguma tarefa.
         <p>
           <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL063%20Login%20%26%20License.gif">
         </p>
-      </p>
+          </p>
        </li>
+    <li>
+      <p>
+        <h3>Multiple Windows</h3>
+        Abrindo uma nova janela ou navegando entre elas, são ações possíveis graças à algumas condições e identificações que demos aos         botões de <b>'Abrir segunda janela', 'Back' ou 'next'</b>
+        <p>
+          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL061%20Multiple%20Windows.gif" align=left width=400 height="180">
+          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL062%20Multiple%20Windows.gif" align=right width=430>
+        </p>
+      </p>
+    </li>
     </ul>
   </div>
 </div>
