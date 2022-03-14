@@ -141,7 +141,10 @@
         </p>
       </p>
     </li>
-    <li>
+  </ul>
+  <div>
+    <ul>
+       <li>
         <p>
         <h3>Login & License</h3>
         Semelhante ao nosso prójeto desse módulo, fizemos um sistema de Login de Licença, que para cada um é verificado em um dicionári         se de fato existe, caso não exista é exibido um texto de ação inválida para cada um. Se for válido o usuário será encaminhado           para uma nova janela simulando que agora ele teria acesso à automatizar alguma tarefa.
@@ -149,6 +152,7 @@
           <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL063%20Login%20%26%20License.gif">
         </p>
       </p>
-    </li>
-  </ul>
+       </li>
+    </ul>
+  </div>
 </div>
