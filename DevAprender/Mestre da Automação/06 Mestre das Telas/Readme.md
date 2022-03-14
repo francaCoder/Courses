@@ -145,7 +145,7 @@
         <h3>Multiple Windows</h3>
         Abrindo uma nova janela ou navegando entre elas, são ações possíveis graças à algumas condições e identificações que demos aos         botões de <b>'Abrir segunda janela', 'Back' ou 'next'</b>
         <p>
-          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL061%20Multiple%20Windows.gif" align=left width=390 height="180">
+          <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL061%20Multiple%20Windows.gif" align=left width=380 height="180">
           <img src="https://github.com/franssa01/Courses/blob/main/DevAprender/Mestre%20da%20Automa%C3%A7%C3%A3o/%26%20-%20Image/CL062%20Multiple%20Windows.gif" align=right width=430>
         </p>
       </p>
