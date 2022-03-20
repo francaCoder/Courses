@@ -6,7 +6,7 @@
 
 ## Módulo 1
 <p>
-  Aqui começamos vendo todo conteúdo básico do python, variáveis, funções, algumas manipulações de strings, bibliotecas, funções de datas e por final fizemos um projeto simples de cadastro de funcionários, onde perguntava a data de aniversário usando <b>"%Y/%m/%d"</b> após o input como forma de manipulação para salvar cada número de forma correspondente ao ano, mês e dia. 
+  Aqui começamos vendo todo conteúdo básico do python, variáveis, funções, algumas manipulações de strings, bibliotecas, funções de datas e por final fizemos um projeto simples de cadastro de funcionários, onde perguntava a data de aniversário usando <b>"%Y/%m/%d"</b> após o input() como forma de manipulação para salvar cada número de forma correspondente ao ano, mês e dia. 
 </p>
 <p>
   Após isso é retornado ao usuário/funcinário uma mensagem de boas vindas e o dia em que ele foi registrado no programa. E por final usando o método <b>choices</b> importado da biblioteca <b>random</b> para sortear um vale compras em um determinado valor.
