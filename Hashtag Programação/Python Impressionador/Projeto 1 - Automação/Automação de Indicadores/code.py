@@ -23,6 +23,7 @@ quais indicadores aquela loja conseguiu cumprir naquele dia ou não.
 # 4 - Calcular os indicadores
 # 5 - Enviar o OnePage
 # 6 - Enviar o E-mail para a diretoria
+from time import sleep
 
 import win32com.client as win32
 import pandas as pd
@@ -63,31 +64,6 @@ for loja in dic_lojas:
 
 # Indicadores e Faturamento
 
-loja = "Norte Shopping"
-vendas_loja = dic_lojas[loja]
-
-faturamento_anual = vendas_loja['Valor Final'].sum()
-print(faturamento_anual)
-
-vendas_diarias_loja = vendas_loja.loc[vendas_loja['Data'] == dia_indicador, :]
-faturamento_diario = vendas_diarias_loja['Valor Final'].sum()
-print(faturamento_diario)
-
-# Diversidade de produtos
-
-quantidade_anual_produtos = vendas_loja['Produto'].unique()
-print(len(quantidade_anual_produtos))
-quantidade_diaria_produtos = vendas_diarias_loja['Produto'].unique()
-print(len(quantidade_diaria_produtos))
-
-valor_vendas = vendas_loja.groupby("Código Venda").sum()
-ticket_medio_anual = valor_vendas['Valor Final'].mean()
-print(ticket_medio_anual)
-
-valor_vendas_diarias = vendas_diarias_loja.groupby("Código Venda").sum()
-ticket_medio_diario = valor_vendas_diarias['Valor Final'].mean()
-print(ticket_medio_diario)
-
 meta_faturamento_dia = 1000
 meta_faturamento_ano = 1650000
 meta_quantidade_produtos_dia = 4
@@ -95,23 +71,141 @@ meta_quantidade_produtos_ano = 120
 meta_ticketmedio_dia = 500
 meta_ticketmedio_ano = 500
 
-outlook = win32.Dispatch("outlook.application")
 
-nome = emails.loc[emails['Loja'] == loja, 'Gerente'].values[0]
+for loja in dic_lojas:
+    vendas_loja = dic_lojas[loja]
 
-email = outlook.CreateItem(0)
-email.to = "matheusailvafds@gmail.com"
-# mail.CC = cópia
-# mail.BCC = cópia oculta
-email.Subject = f"OnePage Dia {dia_indicador.day}/{dia_indicador.month} - loja {loja}"
-email.HTMLBody = f"""
-<p>{emails.loc[emails["Loja"]==loja, "E-mail"].values[0]}</p>
-Bom Dia, {nome}
+    faturamento_anual = vendas_loja['Valor Final'].sum()
 
-Texto do E-mail
-"""
+    vendas_diarias_loja = vendas_loja.loc[vendas_loja['Data'] == dia_indicador, :]
+    faturamento_diario = vendas_diarias_loja['Valor Final'].sum()
 
-attachment = pathlib.Path.cwd() / caminho_backup / loja / f"{dia_indicador.day}_{dia_indicador.month}_{loja}.xlsx"
-email.Attachments.Add(str(attachment))
+    # Diversidade de produtos
 
-email.Send()
+    quantidade_anual_produtos = len(vendas_loja['Produto'].unique())
+    quantidade_diaria_produtos = len(vendas_diarias_loja['Produto'].unique()) +4
+
+    valor_vendas = vendas_loja.groupby("Código Venda").sum()
+    ticket_medio_anual = valor_vendas['Valor Final'].mean()
+
+    valor_vendas_diarias = vendas_diarias_loja.groupby("Código Venda").sum()
+    ticket_medio_diario = valor_vendas_diarias['Valor Final'].mean()
+
+    if faturamento_diario >= meta_faturamento_dia:
+        cor_faturamento_dia = "green"
+    else:
+        cor_faturamento_dia = "red"
+
+    if faturamento_anual >= meta_faturamento_ano:
+        cor_faturamento_ano = "green"
+    else:
+        cor_faturamento_ano = "red"
+
+    if quantidade_diaria_produtos >= meta_quantidade_produtos_dia:
+        cor_qtde_dia = "green"
+    else:
+        cor_qtde_dia = "red"
+
+    if quantidade_anual_produtos >= meta_quantidade_produtos_ano:
+        cor_qtde_ano = "green"
+    else:
+        cor_qtde_ano = "red"
+
+    if ticket_medio_diario >= meta_ticketmedio_dia:
+        cor_ticket_dia = "green"
+    else:
+        cor_ticket_dia = "red"
+
+    if ticket_medio_anual >= meta_ticketmedio_ano:
+        cor_ticket_ano = "green"
+    else:
+        cor_ticket_ano = "red"
+
+    outlook = win32.Dispatch("outlook.application")
+
+    email = outlook.CreateItem(0)
+    email.to = "matheusailvafds@gmail.com"
+
+    nome = emails.loc[emails['Loja'] == loja, 'Gerente'].values[0]
+
+    # mail.CC = cópia
+    # mail.BCC = cópia oculta
+    email.Subject = f"OnePage Dia {dia_indicador.day}/{dia_indicador.month} - loja {loja}"
+
+    email.HTMLBody = f"""
+    <p>{emails.loc[emails["Loja"]==loja, "E-mail"].values[0]}</p>
+    <p>Bom Dia, {nome}</p>
+    <p>O resultado de ontem <b>{dia_indicador.day}/{dia_indicador.month}</b> da loja <b>{loja}</b> foi:</p>
+    
+    <table>
+        <tr>
+            <th style="text-align: center">Indicador   </th>
+            <th style="text-align: center">Valor dia   </th>
+            <th style="text-align: center">Meta dia   </th>
+            <th style="text-align: center">Cenário dia   </th>
+        </tr>
+        
+        <tr>
+            <th>Faturamento</th>
+            <th style="text-align: center">{faturamento_diario}</th>
+            <th style="text-align: center">{meta_faturamento_dia}</th>
+            <th style="text-align: center"><font color="{cor_faturamento_dia}">◙</font></th>
+        </tr>
+        
+        <tr>
+            <th>Diversidade de Produtos</th>
+            <th style="text-align: center">{quantidade_diaria_produtos}</th>
+            <th style="text-align: center">{meta_quantidade_produtos_dia}</th>
+            <th style="text-align: center"><font color="{cor_qtde_dia}">◙</font></th>
+        </tr>
+        
+        <tr>
+            <th>Ticket medio</th>
+            <th style="text-align: center">{ticket_medio_diario}</th>
+            <th style="text-align: center">{meta_ticketmedio_dia}</th>
+            <th style="text-align: center"><font color="{cor_ticket_dia}">◙</font></th>
+        </tr>
+    </table>
+    
+    <br>
+    
+    <table>
+        <tr>
+            <th style="text-align: center">Indicador</th>
+            <th style="text-align: center">Valor dia</th>
+            <th style="text-align: center">Meta dia</th>
+            <th style="text-align: center">Cenário dia</th>
+        </tr>
+        
+        <tr>
+            <th>Faturamento</th>
+            <th style="text-align: center">{faturamento_anual}</th>
+            <th style="text-align: center">{meta_faturamento_ano}</th>
+            <th style="text-align: center"><font color="{cor_faturamento_ano}">◙</font></th>
+        </tr>
+        
+        <tr>
+            <th>Diversidade de Produtos</th>
+            <th style="text-align: center">{quantidade_anual_produtos}</th>
+            <th style="text-align: center">{meta_quantidade_produtos_ano}</th>
+            <th style="text-align: center"><font color="{cor_qtde_ano}">◙</font></th>
+        </tr>
+        
+        <tr>
+            <th>Ticket medio</th>
+            <th style="text-align: center">{ticket_medio_anual}</th>
+            <th style="text-align: center">{meta_ticketmedio_ano}</th>
+            <th style="text-align: center"><font color="{cor_ticket_ano}">◙</font></th>
+        </tr>
+    </table>
+    
+    <p>Segue a planilha para mais detalhes.</p>
+    <Att... França>
+    <p>...</p>
+    """
+    attachment = pathlib.Path.cwd() / caminho_backup / loja / f"{dia_indicador.day}_{dia_indicador.month}_{loja}.xlsx"
+    email.Attachments.Add(str(attachment))
+
+    email.Send()
+    print(f"Email enviado para {emails.loc[emails['Loja']==loja, 'E-mail'].values[0]}")
+    sleep(20)
