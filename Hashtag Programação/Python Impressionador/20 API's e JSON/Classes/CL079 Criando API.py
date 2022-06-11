@@ -1,3 +1,5 @@
+from pprint import pprint
+
 import requests
 from flask import Flask
 
@@ -18,14 +20,20 @@ def lira(): # Function
 def mentolira(): # Function
     return {"Lira": "Teste3", "Turma": "Python Impressionador"}
 
-app.run() # turn on the website
+app.run() # coloca o site no ar
 
-# website = requests.get("http://127.0.0.1:5000/liramaroto")
-#
-# site = website.json()
-# print(site)
+website = requests.get("http://127.0.0.1:5000/liramaroto")
+
+site = website.json()
+print(site)
 
 # website = requests.get("https://Teste.lirahashtag.repl.co")
 #
 # site = website.json()
 # print(site['faturamento'])
+
+
+# website = requests.get("https://teste.lirahashtag.repl.co/vendas/produtos")
+#
+# produtos = website.json()
+# pprint(produtos)

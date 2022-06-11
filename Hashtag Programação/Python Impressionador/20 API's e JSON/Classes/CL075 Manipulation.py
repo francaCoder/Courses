@@ -16,12 +16,19 @@ print(quotes_dic['USD']['bid'])
 print(quotes_dic['EUR']['bid'])
 print(quotes_dic['BTC']['bid'])
 
-last_days = requests.get("https://economia.awesomeapi.com.br/json/daily/USD-BRL/30")
+# Cotação dos últimos 30 dias
 
-quotes_days_dic = last_days.json()
+cotacoes_dolar30d = requests.get("https://economia.awesomeapi.com.br/json/daily/USD-BRL/30")
 
+cotacoes_dolar_dic = cotacoes_dolar30d.json()
+
+print(cotacoes_dolar_dic)
 # for day in quotes_days_dic:
 #     print(day['bid'])
 
-list_dollar_quotes = [day['bid'] for day in quotes_days_dic]
+# list_dollar_quotes = [day['bid'] for day in quotes_days_dic]
+# print(list_dollar_quotes)
+
+list_dollar_quotes = [day['bid'] for day in cotacoes_dolar_dic]
 print(list_dollar_quotes)
+print(len(list_dollar_quotes))
