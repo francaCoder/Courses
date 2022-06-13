@@ -23,6 +23,7 @@ quais indicadores aquela loja conseguiu cumprir naquele dia ou não.
 # 4 - Calcular os indicadores
 # 5 - Enviar o OnePage
 # 6 - Enviar o E-mail para a diretoria
+
 from time import sleep
 
 import win32com.client as win32
