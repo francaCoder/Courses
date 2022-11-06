@@ -1,0 +1,21 @@
+const express = require("express") // Vai criar um servidor para mostrar tudo o que a gente ta construindo dentro do navegador
+
+// instanciar o express 
+const app = express()
+
+// falando para o express que vamos usar o ejs
+// Estamos falando para o express que a nossa view engine (ferramenta que vamos usar para renderizar o html) vamos usar o ejs para isso
+app.set("view engine", "ejs")
+
+// vamos criar uma rota
+app.get("/", function(req, res) {
+    res.render("index")
+})
+
+app.get("/sobre", function(req, res) {
+    res.render("about")
+})
+
+app.listen(8080)
+
+console.log("Rodando")

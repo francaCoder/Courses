@@ -1,0 +1,14 @@
+{
+  "name": "qualquer-nome",
+  "version": "1.0.0",
+  "description": "Aprendendo Node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "França",
+  "license": "ISC",
+  "dependencies": {
+    "cfonts": "^3.1.1"
+  }
+}

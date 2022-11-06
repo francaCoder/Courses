@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %>
+<!-- Dentro do head temos o link do bootstrap, então onde incluirmos ele automaticamente podemos usar as classes também -->
+
+<body class="container">
+    
+    <%- include("../partials/header") %>
+
+    <main>
+        <div class="jumbotron">
+            <h1>Sobre mim</h1>
+            <p>Oi sou Matheus França aluno de programação na Rocketseat!</p>
+        </div>
+    </main>
+
+    <%- include("../partials/footer") %>
+
+</body>
+</html>
+
+<!-- Agora para rodar esse aruivo basta irmos na url do localhost e colocar /sobre no final, por no arquivo server.js determinamos que essa seria a rota -->

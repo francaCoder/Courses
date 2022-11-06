@@ -1,0 +1,32 @@
+<!-- Vamos primeiro criá-lo em html e depois passar para ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Vamos usar o bootstrap, onde temos templates de CSS pré prontos para usarmos -->
+<%- include("../partials/head") %>
+
+<body class="container">
+
+    <%- include("../partials/header") %>
+
+    <main>
+        <div class="jumbotron">
+            <h1>Node com EJS</h1>
+            <p>Vamos aprender a trabalhar com arquivos EJS</p>
+            <p><%= subtitle %></p>
+        </div>
+        <ul>
+            <!-- Criamos o loop porém temos que separar as partes HTML e as partes EJS, e as partes EJS sempre temos que colocar dentro das tags EJS -->
+            <% qualitys.forEach(function(quality){ %>
+                <li>
+                    <strong><%= quality.tittle%></strong> <%= quality.message%>
+                </li>
+            <% }) %>
+
+        </ul>
+    </main>
+
+    <%- include("../partials/footer") %>
+    
+</body>
+</html>

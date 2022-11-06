@@ -1,0 +1,1 @@
+o EJS é uma linguagem de modelagem para a criação de paginas HTML usando JS. O EJS vai permitir que a gente crie o nosso front com HTML dentro do node, e tudo isso vai ser renderizado pelo JS
