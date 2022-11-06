@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    display: flex;
+    gap: 35px;
+    margin: 15px;
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin: 2px solid red;
+    flex-basis: 25%;
+    height: 100vh;
+    gap: 15px;
+}
+
+img {
+    color: rgb(42, 3, 48);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin: 2px solid blue;
+    flex: 1;
+    height: 100vh;
+    gap: 15px;
+}
+
+aside .profile {
+    background-color: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+aside .profile .foto {
+    width: 120px;
+    height: 120px;
+    background-color: var(--text-color);
+    /* margin-top: 10px; */
+    border: 5px solid rgb(42, 3, 48);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 30px;
+}
+
+aside .profile h4, p {
+    position: relative;
+    top: 60px;  
+}
+
+aside .info {
+    background-color: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+aside .info ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 8px;
+    font-size: 12pt;
+    position: absolute;
+    left: 30px;
+}
+
+aside .info ul li:hover {
+    color: rgb(42, 3, 48);
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+aside .techs {
+    background-color: var(--bg-cards);
+    /* display: flex; */
+    /* flex-direction: column; */
+    height: 150px;
+    border-radius: 25px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+aside .techs h3 {
+    font-weight: bolder;
+    position: relative;
+    left: 30px;
+    top: 5px;
+}
+
+aside .techs #techs {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 8px;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    row-gap: 5px;
+}
+
+aside .techs #techs div {
+    display: flex;
+    width: 90px;
+    height: 30px;
+    background-color: #3a3850;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
+    align-items: center;
+    justify-content: center;
+}
+
+aside .techs #techs div:hover {
+    width: 95px;
+    background-color: rgb(42, 3, 48);
+    transition: 0.2s;
+    cursor: pointer;
+    border: 2px solid rgb(60, 2, 94);
+}
+
+main .projects {
+    font-weight: bolder;
+    position: relative;
+    height: 55px;
+    border-radius: 15px;
+    background-color: var(--bg-cards);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .projects p {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+main .container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+    height: 150px;
+    border-radius: 15px;
+}
+
+main .container>div {
+    flex-basis: 50%;
+    height: 130px;
+    border-radius: 15px;
+    position: relative;
+    background-color: var(--bg-cards);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .container .my-onix1 p:first-child {
+    display: flex;
+    background-color: var(--bg-cards);
+    top: 10px;
+    left: 10px;
+    gap: 8px;
+    align-items: center;
+}
+
+main .container .my-onix1 p:nth-child(2) {
+    display: flex;
+    background-color: var(--bg-cards);
+    top: 35px;
+    left: 10px;
+    gap: 8px;
+    align-items: center;
+}
+
+main .container .my-onix1 .ft1 {
+    display: flex;
+    background-color: var(--bg-cards);
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+main .container .my-onix1 .ft1 span:nth-child(2) {
+    position: absolute;
+    right: -340px;
+}
+
+main .container .my-onix2 .ft2 span:nth-child(2) {
+    position: absolute;
+    right: -340px;
+}
+
+main .container .my-onix2 p:first-child {
+    display: flex;
+    /* background-color: rgb(0, 17, 255); */
+    top: 10px;
+    left: 10px;
+    gap: 8px;
+    align-items: center;
+}
+
+main .container .my-onix2 p:nth-child(2) {
+    display: flex;
+    /* background-color: rgb(47, 0, 255); */
+    top: 35px;
+    left: 10px;
+    gap: 8px;
+    align-items: center;
+}
+
+main .container .my-onix2 .ft2 {
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+
+main .recent-projects {
+    font-weight: bolder;
+    position: relative;
+    height: 55px;
+    border-radius: 15px;
+    background-color: var(--bg-cards);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .recent-projects p {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+main .description {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid rgb(0, 255, 13); */
+    height: 130px;
+    border-radius: 15px;
+    position: relative;
+    background-color: var(--bg-cards);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .description .container2 {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left: 15px;
+}
+
+main .description #foto {
+    width: 100px;
+    height: 100px;
+    background-color: var(--text-color);
+    border: 5px solid rgb(42, 3, 48);
+    border-radius: 6px;
+}
+
+main .description .add-info {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -55px;
+}
+
+main .description .add-info p:nth-child(2) {
+    font-size: 10px;
+}

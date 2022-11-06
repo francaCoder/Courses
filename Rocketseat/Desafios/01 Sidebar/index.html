@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*
+        :root { /*Não sei pq seleciona vários elementos diferentes
+        --body-bg-color: #d11717;
+        --green: #18c29c;
+        --light-green: #8ed7c6;
+            --light-grey: #dde4dc;
+        --text-color: #084236;
+        }
+        */
+
+        body {
+            height: 100vh;
+            display: flex;
+            background-color: lightgray;
+        }
+
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 6vw;
+            background-color: rgb(68, 197, 158);
+        }
+
+        .menu-nav{ /*Os primeiros 7 botões*/
+            width: 100%;
+            margin: 26px 0px;
+
+        }
+
+        .header-nav { /*Ícone menu e logo*/
+            display: flex;
+            justify-content: space-between;
+            margin: 0 15px 30px 30px;
+        }
+
+        .img-icone {
+            display: none;
+            margin-right: 60px;
+        }
+
+        .header-nav button {
+            background-color: transparent;
+            border: transparent;
+        }
+
+        .header-nav img, .content-menu, .footer-nav img {
+            cursor: pointer;
+        }
+
+        .content-menu {
+            margin: 0 15px 8px 15px;
+        }
+
+        .content-menu {
+            display: flex;
+            align-items: center;
+            padding: 14px 12px;
+            border-radius: 12px;
+        }
+
+        .active {
+            background-color: lightgreen;
+        }
+
+        .text-p { /*Textos que aparecem depois de cada ícone quando o dashboard é aberto*/
+            display: none;
+            margin-left: 10px;
+            font-size: .9rem;
+            color: black;
+        }
+
+        .footer-nav { /*Parte de baixo do nav*/
+            padding: 0 15px 0 30px;
+            display: flex; /*Pro ícone ficar do lado da fotinha*/
+            justify-content: space-between; /*Separar os elementos por extremidade*/
+            /*É aplicado entre a ft e o ícone de sair*/
+            align-items: center;
+            height: 10vh;
+            width: 100%;
+            background-color: lightgreen;
+        }
+
+        .info-user { /*Informções do usuário, campo de baixo do nav também*/
+            display: none; /*Deixa a foto e o texto escondidos inicialmente*/
+            line-height: 15px; /*Espaço de linhas entre o nome e a profissão*/
+            color: black;
+        }
+
+        .info-user p:first-child { /*Nome*/
+            font-size: .9rem;
+        }
+
+        .info-user p:last-child { /*Profissão*/
+            font-size: .7rem;
+        }
+
+        .info-user img {
+            width: 48px;
+            height: 48px;
+            object-fit: cover; /*Ajustar a imagem dentro dos limites*/ 
+            object-position: -3px 0; /*Posicionar um pouquinho mais pro lado*/
+            border-radius: 12px;
+        }
+
+        .text-user { /*Ocupando todo o espaço disponível*/
+            min-width: 100%;
+        }
+
+        main {
+            padding: 20px;
+            width: 100%;
+            background-color: lightgray;
+        }
+
+        main h1 {
+            font-size: 15pt;
+            color: black;
+            font-weight: 500;
+        }
+
+        .add-nav { 
+          /*Eu crio um seletor para o bloco que eu vou adicionar posteriormete com a função de JS*/
+            width: 22vw;
+            overflow-x:hidden;
+            overflow-y:auto;
+            transition: all ease 0.5s;
+        }
+
+        .add-block {
+            display: block;
+        }
+
+        .add-flex {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .padding {
+            padding: 0 15px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+      <div class="menu-nav">
+        <div class="header-nav">
+          <img class="img-icone" src="Images/logo.svg" alt="Icone da Vet.">
+          <button onclick="clicou()"><img src="Images/menu.svg" alt="Icone do Menu"></button>
+        </div>
+        <div class="content-menu active">
+          <img src="Images/search.svg" alt="Icone de Pesquisa">
+          <p class="text-p">Buscar</p>
+        </div>
+        <div class="content-menu">
+          <img src="Images/grid.svg" alt="Icone de Dashboard">
+          <p class="text-p">Dashboard</p>
+        </div>
+        <div class="content-menu">
+          <img src="Images/pet.svg" alt="Icone de Pets">
+          <p class="text-p">Pets</p>
+        </div>
+        <div class="content-menu">
+          <img src="Images/user.svg" alt="Icone de Clientes">
+          <p class="text-p">Clientes</p>
+        </div>
+        <div class="content-menu">
+          <img src="Images/vet.svg" alt="Icone de Veterinário">
+          <p class="text-p">Vets</p>
+        </div>
+        <div class="content-menu">
+          <img src="Images/settings.svg" alt="Icone de Ajustes">
+          <p class="text-p">Ajustes</p>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <div class="info-user">
+          <img src="Images/photo.jpg" alt="Foto do Usuário">
+          <div class="text-user">
+            <p>Eleanor Pena</p>
+            <p>Veterinária</p>
+          </div>
+        </div>
+        <img src="Images/log-out.svg" alt="Icone de Sair">
+      </div>
+    </nav>
+  
+    <main>
+      <h1>Dashboard</h1>
+    </main>
+
+    <script>
+        function clicou() {
+          const menu = document.querySelector('nav')
+          const imgLogo = document.querySelector('.img-icone')
+          const infoUser = document.querySelector('.info-user')
+          const footerNav = document.querySelector('.footer-nav')
+
+          document.querySelectorAll('.text-p').forEach(function(element){
+          element.classList.toggle('add-block')
+  })
+
+    menu.classList.toggle('add-nav');
+    imgLogo.classList.toggle('add-block');
+    infoUser.classList.toggle('add-flex');
+    footerNav.classList.toggle('padding');
+}
+    </script>
+
+
+</body>
+</html>
