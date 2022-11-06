@@ -1,0 +1,59 @@
+<!--
+    como posicionar os elementos dentro da caixa com o grid. Diferentemente do flex, o grid faz o posicionamento vertical e horizontal ao mesmo tempo, pode ser fixo ou flexivel e cria espaços para os elementos filhos habitarem
+-->
+
+<style>
+
+    body {
+        display: grid;
+        margin: 0%;
+        height: 100vh;
+
+        /*Definir as áreas*/
+        /*Após isso eu tenho que ir em cada tag e avisar qual é o nome dela para que o grid consiga fazer a ligação*/
+        grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+
+        grid-template-rows: 50px 1fr 40px;
+        grid-template-columns: 1fr 150px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: green;
+        font: 20px bold;
+    }
+
+    main {
+        grid-area: main;
+        background-color: red;
+        font: 20px bold;
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: blue;
+        font: 20px bold;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: gray;
+        font: 20px bold;
+    }
+
+</style>
+
+<body> <!-- O grid será aplicado ao body (pai) pois vai trabalhar com os filhos-->
+    
+    <header>Topo</header>
+
+    <main>Conteúdo</main>
+
+    <aside>Infos adicionais</aside>
+
+    <footer>Rodapé</footer>
+
+</body>

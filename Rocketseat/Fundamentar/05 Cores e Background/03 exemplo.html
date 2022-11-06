@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0px;
+        }
+        header {
+            border: 7px dashed red;
+            height: 100px;
+            background-color: rgb(55, 100, 50);
+            
+            /*background-image: url();
+            Aqui posso colocar a url da imagem que eu quero
+            
+            background-repeat: no-repeat; não vai deixar que a imagem se repita, ou podemos permitir que ela se repita apenas no eixo x ou no eixo y
+
+            background-position: left/center/right
+
+            background-size: contain (fica dentro dos limites) cover (ela se estica e cobre toda a área de background) e também podemos usar porcentagem, que é aplicada por shorthands, um parâmetro só é a porcentagem da largura e a outra porcentagem é a altura
+
+            background-origin: ; podemos fazer com que a imagem comece a partir do padding no elemento (padding-box), content box
+
+            backround-clip: content-box, diminui o background e deixa no limite da imagem ou padding box 
+            ;*/
+            background-clip: content-box;
+
+            /*background-attachment: por padrão é scroll mas eu posso deixar ele fixo com o fixed*/
+
+            /* e posso usar todas as propriedades acima como shorthand no background*/
+
+            background: rgb(55, 100, 50), url() no-repeat right top / 50px border-box content-box fixed;
+
+            /*gradiente*/
+
+            background: linear-gradient(red, yellow); /*Posso colocar mais do que 2 cores e posso ir mudando dos graus, para alterar o sentido/direção das cores*/
+           
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Evolua rápido como atecnologia</h1>
+        <p>junte-se a milhares de devs e acelere na direçã dos seus objetivos</p>
+    </main>
+</body>
+</html>

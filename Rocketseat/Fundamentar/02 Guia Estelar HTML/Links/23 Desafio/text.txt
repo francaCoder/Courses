@@ -1,0 +1,31 @@
+Exercício
+
+Criando uma navegação entre arquivos
+ - 2 arquivos no diretório principal 
+ (index.html e contact.html)
+
+ - 1 diretório de nome files
+    - Dentro desse diretório adicione 2 imagens de sua preferência e 1 arquivo de nome images.html, que irá listar as imagens
+
+Dentro de cada arquivo .html, você deverá colocar:
+1 - Menu de navegação com uma lista <li></li> não ordenada
+2 - Título da página
+3 - Um ou mais parágrafos <p> com informações das páginas
+
+A navegação
+Para o menu de navegação, use a tag <nav> e coloca a lista não ordenada como conteúdo da tag
+
+o conteúdo de cada item da lista <li> deverá conter um link <a href="">
+o conteúdo do link deverá ser o nome da página .html que existe no projeto, sendo que para cada página iremos ter um link
+
+e ao clicar no link deveremos ser direcionados para a página
+
+Página images.html
+adicionar também:
+ - As duas imagens que você tem na pasta
+ - Use a tag p para colocar a tag img
+
+Página contact html
+Adicionar também:
+ - Informações de contato (Email/Telefone)
+ - Cada informação deverá estar dentro de um link que quando clocado, irá abrir a respectiva informação de contato

@@ -1,0 +1,55 @@
+<!--
+    Para posicionar basta usarmos a propriedade position
+
+    - name: Position
+
+    O padrão desses elementos são 'static'
+
+    Então vem a ideia do 'relative', com as propriedades:
+        top, right, bottom, left, z-index
+
+    - Absolute
+        é como se criasse uma outra camada 3d em nossa tela e o nosso elemento que está em 'absolute' fosse para essa camada
+
+    - Fixed
+        Faz com que nosso elemento fique fixo na página e ele não se move. Geralmente é ultilizado nos menus dos sites
+
+    - Element stacking (ou z-index)
+        temos o eixo x / y / z, que é o horizontal, vertical e profundidade, o z vai mexer nas camadas, é só eu colocar z-index: e escolher a camada do meu elemento
+
+    Alinhamento
+        flexbox - muitas coisas ficam mais fáceis com ele, nos permite posicionar os elementos dentro de uma caixa, que dentro dela teremos caixas menores e podemos mexer na horizontal e na vertical, alinhamento, direcionamento, ordenar e tamanhos.
+
+        fazendo por exemplo que a nossa div seja do 'display: flex', os elementos dentro dela podem receber algumas propriedades.
+
+
+-->
+
+<style>
+
+    div {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .box1 {
+        background-color: red;
+        position: absolute;
+        left: 150px; /*Agora com essas propriedades eu tenho mais outonomia para movimentar ele*/
+        top: 80px;
+    }
+
+    .box2 {
+        background-color: green;
+    }
+
+    .box3 {
+        background-color: blue;
+    }
+
+</style>
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>

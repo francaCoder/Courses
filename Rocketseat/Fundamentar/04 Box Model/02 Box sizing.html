@@ -1,0 +1,29 @@
+<!--
+    Box Sizing
+
+
+-->
+
+<style>
+
+    * { /* Isso é comum no início da estilização para evitar futuras confusões*/
+        box-sizing: border-box;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        margin: 10%;
+        padding:0 20px; /* Ao fazermos isso ele não respeita mais o tamanho original da caixa, pois a largura de 100px acima é para o conteúdo de dentro da caixa, e não para ela. Então colocando 20px de padding nas laterias, esses pixels são somados e a caixa totaliza 140px*/
+
+        box-sizing: border-box; /*Agora eu mantenho os 20px de padding mas a caixa retorna ao seu tamanho original de 100px*/
+    }
+
+</style>
+
+<body>
+    <div>
+        CSS é mt incrível!
+    </div>
+</body>

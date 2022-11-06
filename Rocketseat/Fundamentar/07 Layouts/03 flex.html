@@ -1,0 +1,51 @@
+<!--
+    flexbox - muitas coisas ficam mais fáceis com ele, nos permite posicionar os elementos dentro de uma caixa, que dentro dela teremos caixas menores e podemos mexer na horizontal e na vertical, alinhamento, direcionamento, ordenar e tamanhos.
+
+        fazendo por exemplo que a nossa div seja do 'display: flex', os elementos dentro dela podem receber algumas propriedades.
+-->
+
+<style>
+
+    body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .bblue {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+    }
+
+    .bred {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .bgreen {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        width: 100vh;
+        display: flex; /*se eu mudar o flex direction para column ele volta da forma original*/
+        justify-content: center;
+        
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="bblue"></div>
+        <div class="bred"></div>
+        <div class="bgreen"></div>
+    </div>
+
+</body>

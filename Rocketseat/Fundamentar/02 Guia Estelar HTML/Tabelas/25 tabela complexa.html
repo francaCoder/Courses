@@ -1,0 +1,50 @@
+<!--
+    2 Lojas
+        Quantos produtos foram produzidos, quantos vendidos e agrupados por nome dos produtos
+-->
+
+<table>
+
+    <caption>
+        Produzidos x vendidos por loja</caption>
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: blue;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2"></th> 
+            <!-- 
+                Ocupe 2 linhas
+                Ocupe 2 colunas
+            -->
+            <th colspan="2" scope="colgroup">Afonso pena</th>
+            <th colspan="2" scope="colgroup">Antonia pereira</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">vendidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Vassoura</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+
+        <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+    </tbody>
+</table>

@@ -1,0 +1,64 @@
+<!--
+    podemos apliar o grid e o flex juntos, só não no mesmo elemento
+-->
+
+<style>
+
+    body {
+        display: grid;
+        margin: 0%;
+        height: 100vh;
+
+        grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+
+        grid-template-rows: 50px 1fr 40px;
+        grid-template-columns: 1fr 150px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: header;
+        background-color: green;
+        font: 20px bold;
+        padding: 0px 8px;
+    }
+
+    main {
+        grid-area: main;
+        background-color: red;
+        font: 20px bold;
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: blue;
+        font: 20px bold;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: gray;
+        font: 20px bold;
+    }
+
+</style>
+
+<body> 
+    
+    <header>
+        <div>logo</div>
+        <div>Menu</div>
+    </header>
+
+    <main>Conteúdo</main>
+
+    <aside>Infos adicionais</aside>
+
+    <footer>Rodapé</footer>
+
+</body>
