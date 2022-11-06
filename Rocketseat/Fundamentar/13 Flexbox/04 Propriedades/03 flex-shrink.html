@@ -1,0 +1,38 @@
+<!--
+    flex-shrink
+
+    - Encolher o item dentro do container
+-->
+
+<style>
+
+    .box {
+        display: flex;
+        border: 1px dashed red;
+
+        width: 160px;
+    }
+
+    .box div {
+        border: 1px solid;
+        flex-basis: 100%;
+        /*cada elemento não ocupa a caixa toda porque por padrão eles já possuem o flex-shrink como 1*/
+    }
+
+    .box div:nth-child(2) {
+        /* 
+            0 - significa para não encurtar mais 
+        
+            2 ou + - Divide todos os outros e o B mantém pelo menos o conteúdo dele
+        */
+        flex-shrink: 2;
+    }
+
+</style>
+
+<div class="box">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+</div>

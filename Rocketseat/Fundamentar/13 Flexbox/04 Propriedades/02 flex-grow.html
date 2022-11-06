@@ -1,0 +1,43 @@
+<!--
+    flex-grow
+
+    - Atribui aos elementos quantas frações do espaço ele deve ocupar
+
+    - O crescimento do item dentro do ontainer em relação aos espaços vazios
+-->
+
+<style>
+
+    .box {
+        display: flex;
+        border: 1px dashed red;
+    }
+
+    .box div {
+        border: 1px solid;
+    }
+
+    /*Se eu quiser que o C ocupe todo o espaço vazio*/
+    .box div:nth-child(2), .box div:nth-child(3) {
+        flex-grow: 1;
+        /*
+            1 - Pegue o espaço que tem disponível como 1
+
+            se eu aplicar o 1 para mais de um elemento, eles vão dividir o espaço vazio proporcionalmente para a quantidade de eleementos
+        */
+
+    }
+
+    /*Agora eu fiz o A ocupar 2 partes do espaço fazio, o B e C dividem 50 50 e o D ficou no tamanho normal*/
+    .box div:nth-child(1) {
+        flex-grow: 2;
+    }
+
+</style>
+
+<div class="box">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+</div>

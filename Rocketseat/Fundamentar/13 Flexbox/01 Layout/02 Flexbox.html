@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .flexbox {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .item:nth-child(1) {
+            order: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- É uma caixa que se torna flex fazendo com quem seus elementos possam receber melhor:
+
+    - Alinhamento
+    - Ordenação
+    - Tamanhos flexíveis -->
+
+    <div class="flexbox">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>

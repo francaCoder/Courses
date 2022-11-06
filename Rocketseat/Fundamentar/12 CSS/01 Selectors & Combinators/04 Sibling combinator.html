@@ -1,0 +1,43 @@
+<!--
+    Sibling combinator  + e ~
+
+    - Identificado pelo sinal de + entre dois seletores
+    - Seleciona somente o elemento do lado direito que é irmão direto na hierarquia
+
+    h1 + p adiciona o primeiro p irmão de h1
+
+    h1 ~ p adicionaria todos os p's que são irmãos de h1
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1 + p {
+            color: red;
+        }
+
+        button + button {
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Título</h1>
+
+    <p>Primeiro parárafo</p>
+
+    <p>Segundo parágrafo</p>
+
+    <button>Botão 1</button>
+    <button>Botão 2</button>
+    
+</body>
+</html>

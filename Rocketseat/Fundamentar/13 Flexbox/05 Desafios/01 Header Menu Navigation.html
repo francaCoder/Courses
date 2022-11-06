@@ -1,0 +1,143 @@
+<!--
+    - Crie o header que contenha um logo e um menu
+    - Um elemento deverá ficar ao lado do outro
+    - O Logo na extrema esquerda e menu na extrema direita
+    - Os itens do menu ficarão um ao lado do outro, com um espaço de 8rem entre eles
+    - O último elemento do menu se´ra um botão de contato que você poderá utilizar o seletor :last-child para estilizar
+
+-->
+
+<style>
+
+    body {
+        background-color: lightgray;
+    }
+
+    /*
+    header {
+        margin-top: 25px;
+        background-color: white;
+        width: 100%;
+        height: 120px;
+        border-radius: 6px 30px 2px 2px;
+    }
+
+    div#gray {
+        background-color: gray;
+        height: 25px;
+        border-radius: 6px 40px 0px 0px;
+    }
+
+    div#logo {
+        margin-top: 35px;
+        margin-left: 20px;
+        float: left;
+        font-size: 11pt;
+        font-weight: 800;
+    }
+
+    div#buttons {
+        margin-top: 35px;
+        margin-right: 20px;
+        float: right;
+        margin-left: 10px;
+    } 
+
+    div button {
+        background: white;
+        border: 0px;
+        font-weight: 550;
+    }
+
+    div button:last-child {
+        color: white;
+        font-weight: normal;
+        margin-left: 10px;
+        padding: 6px;
+        border: 0px;
+        border-radius: 2px;
+        background-color: rgb(75, 75, 189);
+    }
+    
+
+    */
+
+    header {
+        margin-top: 25px;
+        padding: 4rem;
+        background-color: white;
+        height: 80px;
+    }
+
+    nav a {
+        color: black;
+        font-size: 14pt;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        /*Colocou cada um em suas extremidades*/
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: .8rem;
+        align-items: center;
+    }
+
+    nav ul li:last-child {
+        padding: 6px;
+        color: white;
+        background-color: blue;
+    }
+
+
+</style>
+
+
+<body>
+    
+    <!-- <header>
+        <div id="gray">
+
+        </div>
+
+        <div id="container">
+            <div id="logo">
+                Logo
+            </div>
+    
+            <div id="buttons">
+                <button>Home</button>
+                <button>About</button>
+                <button>Services</button>
+                <button>Testimonials</button>
+                <button>Contact</button>
+            </div>
+        </div>
+        
+    </header> -->
+
+    <header>
+        <div id="gray">
+
+        </div>
+
+        <nav>
+            <a href="">Logo</a>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Testimonials</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+</body>

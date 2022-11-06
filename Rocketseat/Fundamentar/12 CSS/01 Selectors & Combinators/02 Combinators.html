@@ -1,0 +1,37 @@
+<!--
+    Combinators
+
+        Trabalham para buscar e ombinar seletores a fim de aplicar uma estilização
+
+    Descendant combinator
+    - Identificação por um espaço entre seletores
+    - Busca um elemento dentro de outro
+
+    body article h2
+    Buscou o h2 que está dentro do article que está no body, como se fosse fazer um xpath no dev tools procurando um elemento especídifco
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body article h2 {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <article>
+        <h1>Primeiro título</h1>
+        <h2>Segundo título</h2>
+    </article>
+    
+</body>
+</html>

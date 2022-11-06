@@ -1,0 +1,54 @@
+<style>
+
+    .page { /*Vai ser meu container flex*/
+        border: 2px solid;
+        min-height: 100vh;
+        display: flex;
+    }
+
+    aside {
+        background-color: lightgreen;
+        /*
+            Quero que o Aside ocupe 1/3 da tela
+        */
+
+        flex-grow: 1;
+    }
+
+    main {
+        background-color: lightblue;
+        /*Main vai ocupar 2 terços da tela*/
+        flex-grow: 2;
+
+        /*Vamos deixa-lo flex para mudar o tamanho das sections*/
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section:nth-child(1) {
+        background-color: lightgoldenrodyellow;
+
+        flex-grow: 2;
+    }
+
+    main section:nth-child(2) {
+        background-color: lightcoral;
+        flex: 0 80px;
+    }
+
+    main section:nth-child(3) {
+        background-color: lightpink;
+        flex-grow: 1;
+    }
+
+</style>
+
+<div class="page">
+    <aside>Aside</aside>
+    <main>
+        Main
+        <section>Content 1</section>
+        <section>Content 2</section>
+        <section>Content 3</section>
+    </main>
+</div>

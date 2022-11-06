@@ -1,0 +1,32 @@
+<!--
+    flex-basis
+
+    É relativo inicialmente ao eixo principal
+-->
+
+
+<style>
+
+    .box {
+        display: flex;
+
+        border: 1px dashed red;
+    }
+
+    .box div { /*Aplicando nos filhos*/
+        border: 1px solid;
+
+        flex-basis: 15%;
+    }
+
+    .box div:nth-child(1) {
+        width: 25px;
+    }
+
+</style>
+
+<div class="box">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+</div>

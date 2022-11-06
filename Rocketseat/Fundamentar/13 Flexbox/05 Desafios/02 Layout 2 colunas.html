@@ -1,0 +1,41 @@
+<!--
+    Crie um layout com duas colunas, uma ao lado da outra.
+    - A coluna da esquerda deverá ter 25% do tamanho, e a  coluna da direita deve preencher o resto
+    - Faça a separação de 1rem entre os elementos
+
+-->
+
+<style>
+
+    .container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    aside {
+        margin-top: 15px;
+        border: 2px solid rgba(46, 30, 30, 0.308);
+        border-radius: 4px;
+        height: 100vh;
+        flex-basis: 25%;
+        background-color: rgba(211, 211, 211, 0.63);
+    }
+
+    main {
+        margin-top: 15px;
+        border: 2px solid rgba(46, 30, 30, 0.308);
+        border-radius: 4px;
+        height: 100vh;
+        flex-basis: 75%;
+    }
+
+</style>
+
+<body>
+    
+    <div class="container">
+        <aside></aside>
+        <main></main>
+    </div>
+
+</body>

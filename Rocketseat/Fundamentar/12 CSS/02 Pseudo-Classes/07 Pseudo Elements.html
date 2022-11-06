@@ -1,0 +1,44 @@
+<!--
+    Com pseudo-elements nós podemos adicionar elementos HTML pelo próprio CSS
+
+    ex:
+        ::before
+        ::after
+        ::first-line
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        li::before {
+            /*Antes de cada um deles será colocado:*/
+            content: "→ ";
+        }
+
+        li::after {
+            content: " ←";
+        }
+
+        li:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li>Gratidão</li>
+        <li>Esperança</li>
+        <li>Fé</li>
+        <li>Liberdade</li>
+    </ul>
+
+</body>
+</html>

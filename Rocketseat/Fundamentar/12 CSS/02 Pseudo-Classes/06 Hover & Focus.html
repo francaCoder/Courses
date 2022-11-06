@@ -1,0 +1,38 @@
+<!--
+    O usuário pode fazer ações com pseudo classes
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        a:hover { /*Quando ficar em cima quero que:*/
+            color: red;
+        }
+
+        input:focus {
+            border: blue;
+            outline: none;
+        }
+
+        input:disabled {
+            background-color: green;
+        }
+
+        input:required {
+            background-color: rgb(196, 40, 40);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a href="">Clique aqui</a>
+    <input type="text" required>
+</body>
+</html>
