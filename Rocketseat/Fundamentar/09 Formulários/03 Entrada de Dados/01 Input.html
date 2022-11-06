@@ -1,0 +1,67 @@
+<!--
+    Input
+
+    - uma das tags mais usadas em forms
+    - aceita diversos tipos de dados
+    - tem muitas combinações
+
+    atributos
+    - type
+        text
+        date
+        number
+        password
+        email
+        file
+    - name
+    - id
+    
+-->
+
+<!-- autocomplete 
+
+    Vai buscar no seu navegador algum tipo de dado que você já usou com frequência
+-->
+
+<input type="email" autocomplete="email">
+<!-- então ele vai sugerir conforme eu for digitando alguma coisa -->
+
+<!-- autofocus 
+
+    - É só um por página inteira
+    - É como se fosse um boolean
+-->
+
+<input type="text" autofocus>
+<!-- Quando minha página for carregada, automaticamente o meu cursor vai vir para esse elemento por causa do autofocus -->
+
+
+<!-- disable -->
+
+<input type="text" disabled>
+<!-- É um atributo que vai deixar o nosso elemento desabilitado -->
+
+<!-- readoly -->
+<input type="text" value="Texto" readonly>
+
+<!-- não fica opaco mas também não podemos mexer, é como se ele tivesse desabilitado -->
+
+
+<!-- form -->
+
+<form id="meu-form"></form>
+<input name="email" type="email" form="meu-form">
+
+<!-- o input está fora do formulário mas está linkado através do 'meu form', e com isso conseguimos obter as informações dentro dele mesmo depois de submeter o form -->
+
+
+<!-- required (quase todos) -->
+
+<input type="text" required>
+<!-- significa que quanto eu tentar enviar meu formulário, esse input é obrigatório. Posso colocar em vários campos -->
+
+
+<!-- placeholder (password, search, tel, text, url)-->
+
+<input type="email" placeholder="Digite sua senha">
+<!-- não substitui o label, pois o label ele é muito importânte para acessibilidade e para o leitor de tela, já o placeholder só deixa sua aplicação mais bonita em alguns casos, pois o texto já fica meio opaco dentro do campo de texto. -->

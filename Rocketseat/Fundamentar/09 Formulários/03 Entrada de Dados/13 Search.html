@@ -1,0 +1,31 @@
+<!--
+    input type="search"
+
+    - para campos de busca
+    - É igual ao campo do tipo 'text' mas poderá ser um pouco diferente dependendo do user agent
+    
+    Atributos
+
+    - list / <datalist>
+    - Pattern
+    - Aria-label - O leitor de tela vai ler mesmo sem estar escrito, como se ele lesse o place holder
+-->
+
+<datalist id="searchterms">
+    <option>Mac</option>
+    <option>Linux</option>
+    <option>Windows</option>
+</datalist>
+
+
+<form action="">
+    <input type="search" 
+    name="q" 
+    list="searchterms"
+    placeholder="Digite seu termo de busca"
+    size="24"
+    aria-label="Campo de pesquisa: Digite seu termo de busca">
+
+<button>Pesquisar</button>
+
+</form>

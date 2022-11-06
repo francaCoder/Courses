@@ -1,0 +1,31 @@
+<!--
+    Checkbox
+
+    - Caixas que podem ser marcadas
+    - Selecionar um valor para ser enviado
+    - Se não selecionado, não será enviado nenhum dado
+
+    Atrobutos
+    - Globais
+    - Value
+        ele vai vazio se não preenchido, ou eu posso colocar o value e mudar o valor para por exemplo 
+        "subscribed"
+    - Checked
+        Deixa marcado por padrão
+-->
+
+<label for="subscribe">Receber Notificações</label>
+<input type="checkbox" name="subscribe" id="subscribe">
+
+<fieldset>
+    <legend>Choose your interests</legend>
+
+    <div>
+        <input type="checkbox" id="coding" name="interest" value="coding" checked>
+        <label for="coding">Coding</label>
+    </div>
+    <div>
+        <input type="checkbox" id="music" name="interest" value="music" checked>
+        <label for="music">Music</label>
+    </div>
+</fieldset>

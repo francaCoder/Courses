@@ -1,0 +1,29 @@
+<!--
+    Espera o usuário digitar um email e já valida se de fato é um email válido ou não
+
+    - Pattern
+        * Uso de expressão irregular para validar o campo
+        * Exemplo: O usuário só poderá colocar o email da rocketseat
+            * pattern="[.+@rocketseat\.com\.br]"
+
+-->
+
+<form action="">
+    <datalist id="emailslist">
+        <option>ex1@rocketseat.com.br</option>
+        <option>ex2@rocketseat.com.br</option>
+        <option>ex3@rocketseat.com.br</option>
+    </datalist>
+
+    <input type="email"
+    placeholder="E-mail"
+    multiple
+    pattern=".+@rocketseat\.com\.br"
+    list="emailslist"
+    >
+    <!-- multiple permite que o usuário coloque um ou mais emails separados por vírgulas -->
+    <!-- Title para mudar a mensagem de erro -->
+    <button type="submit">Enviar</button>
+    
+
+</form>

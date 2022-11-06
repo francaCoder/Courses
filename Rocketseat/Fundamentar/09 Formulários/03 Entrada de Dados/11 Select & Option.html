@@ -1,0 +1,27 @@
+<!--
+    <Select>
+
+        - controle que fornece um menu de opções
+
+    <Option>
+        - Contém as opções a serem selecionadas
+        - Atributos necessários
+            * Value
+
+    Atributos únicos
+    - Multiple  
+        vou poder selecionar mais de um valor
+    - size
+        Quantas opções visíveis eu vejo por vez
+-->
+
+<label for="carselect">Qual modelo do carro?</label>
+
+<select name="carmodel" id="carselect">
+    <option value="">Selecione o modelo</option>
+    <option value="Fiat">Uno</option>
+    <option value="Audi">A3</option>
+    <!-- o valor fiat ou audi, vai ficar guardado no name quando o formulário for enviado -->
+</select>
+
+<!-- no backend teríamos algo semelhante a isso: carmodel=fiat ou carmodel=audi -->
