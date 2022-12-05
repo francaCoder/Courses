@@ -1,0 +1,12 @@
+É uma promessa de algo que vai acontecer
+
+Pegou o cel e chamou o uber, o app sempre promete uma corrida, e no momento que você aguarda você está em uma promessa pendente, e o motorista depois de um tempo aceitou (fulfilled) ou se ele rejeitou (rejected)
+
+Promisse é um objeto JS com a promessa de que algo vai ser realizado
+É usado para operações assíncronas (Carregar um arquivo, leitura de dados de uma API, etc.)
+
+Uma promessa pode ser:
+    Pending - Estado inicial, assim que o Objeto da promessa é iniciado
+    Fulfilled - Promessa concluída com sucesso
+    Rejected - Promessa rejeitada ou erro
+    Settled - Com sucesso ou não ela finalmente foi concluída

@@ -1,0 +1,7 @@
+S
+
+    No sistema síncrono temos um exemplo de 3 imagens, onde cada uma carrega de uma vez, a próxima imagem deve esperar a anterior carregar para ser carregada e assim sucessivamente.
+
+AS
+
+    As imagens carregariam no mesmo instante, não dependem uma da outra

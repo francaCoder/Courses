@@ -1,0 +1,1 @@
+// No tsconfig estão todas as configurações e imposições que o typescript faz no seu código

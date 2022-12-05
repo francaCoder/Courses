@@ -1,0 +1,40 @@
+body {
+    /* background-color: rgb(39, 30, 30); */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin: 84px 0 24px;
+}
+
+.container input {
+    width: 50%;
+    padding: 24px;
+    background-color: rgb(255, 219, 224);
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.container button {
+    width: 50%;
+    padding: 24px;
+    font-weight: 700;
+    background-color: #EA4C89;
+    color: white;
+    border-radius: 5px;
+    margin: 12px 0px 84px;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.2s;
+    font-size: 16px;
+}
+
+.container button:hover {
+    filter: brightness(0.9);
+}

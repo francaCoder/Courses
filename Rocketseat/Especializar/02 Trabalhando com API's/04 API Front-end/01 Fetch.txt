@@ -1,0 +1,1 @@
+Vamos usar o fetch para consumir API's no front, a gente passa a URL para ele, ele pega o resultado da URL e traz para a gente usar
