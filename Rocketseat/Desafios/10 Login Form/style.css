@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    color: var(--text-base);
+    font-family: 'Poppins', sans-serif;}
+
+aside {
+    flex-basis: 50%;
+    background-image: url(images/side-image.jpg);
+    height: 100vh;
+}
+
+main {
+    flex-basis: 50%;
+    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background-color: var(--form-background);
+    width: 80%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px solid rgba(0, 0, 0, 0.493);
+}
+
+form a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#login { 
+    height: 100%;
+    width: 70%;
+    padding: 0px 5% 0px 5%;
+}
+
+#d1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10%;
+    color: var(--text-title);
+}
+
+#info {
+    font-size: 10pt;
+}
+
+#d2 {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+#d3 {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#d2 input, #d3 input {
+    width: 100%;
+    height: 10%;
+    padding: 8px;
+    border-radius: 3px;
+    background: none;
+    outline: none;
+    border: var(--text-base) 2px solid;
+}
+
+#d2 input:focus, #d3 input:focus {
+    border-color: darkgoldenrod;
+    transition: ease-in-out 0.2s;
+}
+
+#d4 {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login button {
+    width: 100%;
+    height: 10%;
+    padding: 5px;
+    margin-top: 5%;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+#d6 {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
