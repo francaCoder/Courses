@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+body {
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#switch {
+    width: 260px;
+    height: 100px;
+    background-color: var(--label);
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50px;
+    justify-content: space-between;
+}
+
+#circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -162px;
+    bottom: 0;
+    right: 0px;
+    margin: auto;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.escuro {
+    background-color: var(--dark);
+}
+
+.moving {
+    left: 0px;
+    transform: translateX(162px);
+}

@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    display: flex;
+    gap: 35px;
+    margin: 15px;
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin: 2px solid red;
+    flex-basis: 25%;
+    height: 100vh;
+    gap: 15px;
+}
+
+img {
+    color: rgb(42, 3, 48);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin: 2px solid blue;
+    flex: 1;
+    height: 100vh;
+    gap: 15px;
+}
+
+aside .profile {
+    background-color: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+aside .profile .foto {
+    background-color: var(--text-color);
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    border: 5px solid rgb(42, 3, 48);
+    border-radius: 50%;
+}
+
+
+aside .info {
+    background-color: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 25px;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+aside .info ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 8px;
+    font-size: 12pt;
+    margin-left: 30px;
+}
+
+aside .info ul li:hover {
+    color: rgb(42, 3, 48);
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+aside .techs {
+    background-color: var(--bg-cards);
+    height: 150px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+aside .techs h3 {
+    padding-left: 30px;
+    font-weight: bolder;
+}
+
+aside .techs #techs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+
+aside .techs #techs p {
+    background-color: #3a3850;
+    width: 90px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
+}
+
+aside .techs #techs p:hover {
+    background-color: rgb(42, 3, 48);
+    width: 95px;
+    cursor: pointer;
+    border: 2px solid rgb(60, 2, 94);
+    transition: 0.2s;
+}
+
+main .projects {
+    background-color: var(--bg-cards);
+    height: 55px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .projects p {
+    margin-left: 30px;
+}
+
+main .container {
+    display: flex;
+    height: 150px;
+
+    border-radius: 15px;
+    gap: 5px;
+}
+
+main .container>div {
+    background-color: var(--bg-cards);
+    height: 130px;
+
+    flex-basis: 50%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title-my-onix {
+    background-color: var(--bg-cards);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.description-my-onix {
+    background-color: var(--bg-cards);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ft-myonix {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-projects {
+    background-color: var(--bg-cards);
+    height: 55px;
+    
+    display: flex;
+    align-items: center;
+    
+    font-weight: bolder;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.recent-projects p {
+    margin-left: 30px;
+}
+
+.description {
+    background-color: var(--bg-cards);
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.description .container2 {
+    display: flex;
+    align-items: center;
+
+    margin-left: 30px;
+    gap: 15px;
+}
+
+#foto {
+    background-color: var(--text-color);
+    width: 100px;
+    height: 100px;
+
+    border: 5px solid rgb(42, 3, 48);
+    border-radius: 6px;
+}
+
+.description .add-info p:nth-child(2) {
+    font-size: 10px;
+}
